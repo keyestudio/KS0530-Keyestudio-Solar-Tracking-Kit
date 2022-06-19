@@ -1,0 +1,16 @@
+*.gitignore.*
+*.BB
+make.bat
+*副本*
+*/Thumbs.db
+
+/tmpX/
+/_build/
+/_static/
+/_templates/
+/.vscode/
+
+
+
+
+
