@@ -1,0 +1,14 @@
+*.gitignore.*
+make.bat
+Makefile
+*副本*
+Thumbs.db
+*.doc
+*.docx
+*.pdf
+
+/tmpX/
+/_build/
+/_static/
+/_templates/
+/.vscode/
