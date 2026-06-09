@@ -1,8 +1,8 @@
-## Lektion 2.2: Verlangsamen der Änderung der Helligkeit der LED
+## Lección 2.2: Reducir la velocidad del cambio del brillo del LED
 
-**>>>>>>>>Diese Lektion ist eine Erweiterung von Lektion 2.1**
+**>>>>>>>>Esta lección es una ampliación de la Lección 2.1**
 
-Die für diese Lektion benötigte Hardware, die Konfiguration der Arduino IDE und die Verkabelung zwischen dem LED-Modul und dem Steuerboard erfolgen auf die gleiche Weise wie in **Lektion 1.1**.
+El hardware requerido para esta lección, la configuración del IDE de Arduino y el cableado entre el módulo LED y la placa de control es de la misma manera que en la **Lección 1.1**.
 
 ![](../media/485b0573e3c4e14d9b5c7df37c1223fb.png)
 

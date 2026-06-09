@@ -1,80 +1,80 @@
-# 6. Fehlerbehebung
+# 6.Resolución de problemas
 
-Hier sind einige Lösungen für häufige Probleme, die Ihnen helfen können.
+Aquí hay algunas soluciones a problemas comunes que pueden ayudarte.
 
-Wenn Sie hier nicht die Antwort finden, die Sie suchen, kontaktieren Sie bitte unseren technischen Support:
+Si no encuentras la respuesta que buscas aquí, por favor contacta a nuestro soporte técnico:
 
 Amazon: [service@keyestudio.com](mailto:service@keyestudio.com)
 
 AliExpress: [tivon@keyestudio.com](mailto:tivon@keyestudio.com)
 
-Andere Kanäle: [sunny@keyestudio.com](mailto:sunny@keyestudio.com)
+Otros canales: [sunny@keyestudio.com](mailto:sunny@keyestudio.com)
 
-Für eine schnellere und professionellere Lösung Ihres Problems geben Sie bitte beim Senden einer E-Mail folgende Informationen an:
+Para una resolución más rápida y profesional de tu problema, por favor incluye esta información cuando nos envíes un correo electrónico:
 
-Ihre Bestellnummer oder wo Sie dieses Produkt gekauft haben
+Tu número de pedido o dónde adquiriste este producto
 
-Die aufgetretenen Probleme, versuchen Sie detaillierte Beschreibungen, Bilder oder Videos beizufügen.
+Los problemas que encuentras, intenta incluir descripciones detalladas, fotos o videos.
 
-Wir benötigen mehr Informationen als „Es funktioniert nicht.“ Bitte geben Sie uns genaue Details darüber, was Sie erreichen möchten und was Sie bereits versucht haben.
+Necesitamos más información que "No funciona." Por favor danos detalles claros sobre lo que quieres lograr y lo que has intentado.
 
-Vielen Dank!
+¡Gracias!
 
-**(1) Das Steuerboard wird vom Computer nicht erkannt.**
+**(1) La placa de control no es reconocida por la computadora.**
 
--Bitte überprüfen Sie, ob das USB-Kabel in Ordnung ist und der USB-Anschluss Ihres Computers verfügbar ist.
+-Por favor verifica si el cable USB está en buen estado y si el puerto USB de tu computadora está disponible.
 
-**(2) USB-Anschluss wird vom Computer nicht erkannt.**
+**(2) El puerto USB no es reconocido por la computadora.**
 
--Prüfen Sie, ob Sie den USB-Treiber installiert haben.
+-Verifica si has instalado el controlador USB.
 
-**(3) Code-Probleme/Fehler beim Hochladen/Code-Fehler.**
+**(3) Problemas con el código/Fallo al cargar/Error en el código.**
 
-Diese Gründe können Probleme mit Ihrem Code verursachen:
+Estas razones pueden causar problemas con tu código:
 
-1) Der Treiber ist nicht installiert.
+1) El controlador no está instalado.
 
-2) Der Boardtyp und der COM-Port sind in der Arduino IDE nicht korrekt ausgewählt.
+2) El tipo de placa y el puerto COM no están seleccionados correctamente en el Arduino IDE.
 
-3) Die Bibliotheksdatei ist nicht installiert.
+3) El archivo de la librería no está instalado.
 
-(Bitte folgen Sie **2.Getting Started with Arduino**, um die oben genannten Probleme zu beheben)
+(Por favor sigue **2.Getting Started with Arduino** para solucionar los problemas anteriores)
 
 ![](../media/224c21b5aa737f11de351dbd9868e317.png)
 
-**(4) Schlechter USB-Kontakt**
+**(4) Mala conexión USB**
 
-Wenn Sie die Probleme 1-3 nicht haben, überprüfen Sie, ob die USB-Kabelverbindung gut ist, versuchen Sie, es erneut einzustecken, und laden Sie den Code dann erneut hoch.
+Si no tienes los problemas mencionados en 1-3, verifica que la conexión del cable USB sea buena, intenta desconectarlo y volverlo a conectar, y luego carga el código nuevamente.
 
-**(5) Das zusammengebaute Solar-Tracking-Kit reagiert nicht.**
+**(5) El kit ensamblado de seguimiento solar no responde.**
 
-1) Diese Gründe können dazu führen, dass der Roboter nicht funktioniert:
+1) Estas razones pueden causar que el robot no funcione:
 
-1) Falsche Verkabelung
+1) cableado incorrecto
 
-2) Sie haben den Code nicht hochgeladen
+2) No subiste el código
 
-3) Fehler beim Hochladen/Code-Fehler
+3) Fallo al cargar/Error en el código
 
-4) Sie haben den 5V-Schalter auf dem Steuerboard und den Netzschalter am Ladermodul nicht eingeschaltet.
+4) No encendiste el interruptor de 5V en la placa de control ni el interruptor de encendido en el módulo de carga.
 
 ![](../media/67fc5cb5b7eabda71fcb2296a8def597.png)![](../media/edc80fe0bd7a1cce69bd760ab5d247bc.png)
 
-5) Unzureichende Batterieleistung
+5) Batería con carga insuficiente
 
-Sie müssen die 18650-Batterie ausreichend aufgeladen halten, da sie benötigt wird, um zwei Servos, ein LCD-Display, vier Lichtsensoren, einen DHT11-Sensor und ein Tastenmodul mit Strom zu versorgen.
+Necesitas mantener la batería 18650 suficientemente cargada ya que se requiere para alimentar dos servos, una pantalla LCD, cuatro sensores de luz, un sensor DHT11 y el módulo de botones.
 
-**(6) Servo klemmt/Servo wird heiß**
+**(6) Servo atascado/servo caliente**
 
-Sie müssen den Anfangswinkel des Servos vor der Montage einstellen und den Winkel bis zum Abschluss der Montage nicht ändern, um sicherzustellen, dass der Servo für das Solar-Tracking-Kit ordnungsgemäß funktioniert.
+Necesitarás ajustar el ángulo inicial del servo antes de ensamblarlos y no cambiar el ángulo hasta que el ensamblaje esté completo para asegurar que el servo funcione correctamente en el kit de seguimiento solar.
 
-**(7) Das Solarpanel folgt nicht der Bewegung der Lichtquelle oder der Sonne**
+**(7) El panel solar no sigue el movimiento de la fuente de luz o del sol**
 
-Wenn der Umgebungslichtsensor Änderungen der Lichtintensität erkennt, drehen die Servos das Solarpanel in die Position, in der das Licht am stärksten ist.
+Cuando el sensor de luz ambiental detecta cambios en la intensidad de la luz, los servos giran el panel solar hacia la posición donde la luz es más fuerte.
 
-In einer Umgebung mit gleichmäßiger Beleuchtung kann das Solarpanel der Bewegung der Lichtquelle möglicherweise nicht folgen. Sie müssen möglicherweise eine sehr starke Lichtquelle anwenden oder eine Lichtquelle in einem schwach beleuchteten Bereich einsetzen, damit sich das Solarpanel mit der Lichtquelle bewegt. Das Solarpanel bewegt sich möglicherweise nicht zur Sonne, weil der Unterschied in der Lichtintensität, den jeder Umgebungslichtsensor erkennt, nicht groß genug ist.
+En un ambiente con iluminación uniforme, el panel solar puede no seguir el movimiento de la fuente de luz. Puede que necesites aplicar una fuente de luz muy fuerte, o aplicar una fuente de luz en un área con poca luz para que el panel solar se mueva con la fuente de luz. El panel solar puede no moverse hacia el sol porque la diferencia en la intensidad de luz detectada por cada sensor de luz ambiental puede no ser grande.
 
-1.  **Das Solarpanel bewegt sich sehr langsam, ruckelt oder bleibt stecken.**
-2.  Prüfen Sie, ob die Servo-Verkabelung ordentlich ist und nicht blockiert, damit der Servo genügend Bewegungsfreiheit hat.
-3.  Die 18650-Batterie muss vollständig aufgeladen sein.
-4.  Sie können das Tastenmodul drücken, um die Menge der Servodrehung einzustellen.
+1.  **El panel solar se mueve muy lentamente, da tirones o se queda atascado.**
+2.  Verifica que el cableado del servo esté organizado y no esté atascado para que el servo tenga suficiente espacio para moverse.
+3.  La batería 18650 debe estar completamente cargada.
+4.  Puedes presionar el módulo de botones para ajustar la cantidad de rotación del servo.

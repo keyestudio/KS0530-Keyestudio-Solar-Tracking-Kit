@@ -1,5 +1,5 @@
 =====================================
-3.Testen von elektronischen Bauteilen
+3.Probar partes electrónicas
 =====================================
 
 

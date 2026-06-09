@@ -1,150 +1,150 @@
-## Lektion 10: Ladeprinzip des Solar-Tracking-Kits
+## Lección 10: Principio de carga del Kit de Seguimiento Solar
 
-**(1) Solar- und USB-Lademodul:**
+**(1) Módulo de carga solar y USB:**
 
 ![](../media/35ee9ecf293719fbe6b09fa7d79673db.png)
 
-Dieses Modul integriert einen Lade- und Entladechip, der über die PH2.0MM-Schnittstellen mit einer externen wiederaufladbaren Batterie und einem Solarpanel verbunden werden kann.
+Este módulo integra un chip de carga y descarga, que puede conectarse con una batería recargable externa y un panel solar a través de las interfaces PH2.0MM.
 
-In diesem Kit stellen wir ein Batteriefach zur Verfügung, das eine 18650-Batterie aufnehmen kann, daher müssen Sie eine wiederaufladbare 18650-Batterie selbst vorbereiten.
+En este kit, proporcionamos una caja para batería que contiene una batería 18650, por lo que necesitarás preparar una batería recargable 18650 por tu cuenta.
 
-Das Modul verfügt über einen Micro-USB-Anschluss, über den Sie die 18650-Batterie mit einem Computer aufladen können.
+El módulo tiene un puerto Micro USB y puedes usar la computadora para cargar la batería 18650 a través del puerto micro USB.
 
-Außerdem besitzt es ein Boost-Modul, das die Batteriespannung auf 6,6 V erhöhen kann. Der DIP-Schalter auf dem Modul ist der OUTPUT-Schalter für 6,6 V. Der Pin G und V dieses Moduls können 6,6 V ausgeben und der Pin S kann die Batteriespannung nach dem Widerstand mit halber Spannung messen.
+Además, cuenta con un módulo boost que puede aumentar el voltaje de las baterías a 6.6V. El interruptor DIP en el módulo es el interruptor de SALIDA de 6.6V. El pin G y V de este módulo pueden entregar 6.6V y el pin S puede leer el voltaje de la batería después de la resistencia de 1/2 voltaje.
 
-**Parameter:**
+**Parámetros:**
 
-| Ladeanschluss                                | Micro USB HP2.0MM Schnittstelle für Solarpanel |
-|----------------------------------------------|------------------------------------------------|
-| Eingangsspannung der Solarpanel-Schnittstelle | 4,4-6 V                                        |
-| Konstantspannungsladewert der Batterie       | 4,15-4,24 V                                    |
-| Maximaler Ladestrom                          | 800 mA                                         |
-| Ausgangsschnittstelle                        | 3 P 2,54 mm gebogene Nadel                      |
-| Eingangsspannung                            | 6,6 V                                          |
-| Maximaler Ausgangsstrom                      | 1 A                                            |
-| Externe Batterie                            | 18650 Batterie                                 |
-| Umweltattribute                             | ROHS                                           |
+| Interfaz de carga                             | Interfaz Micro USB HP2.0MM para panel solar |
+|----------------------------------------------|----------------------------------------------|
+| Voltaje de entrada de la interfaz del panel solar | 4.4-6V                                       |
+| Valor de carga de voltaje constante de la batería | 4.15-4.24V                                   |
+| Corriente máxima de carga                     | 800mA                                        |
+| Interfaz de salida                            | 3 P 2.54mm Aguja doblada                      |
+| Voltaje de entrada                            | 6.6V                                         |
+| Corriente máxima de salida                     | 1A                                           |
+| Batería externa                              | Batería 18650                                |
+| Atributos ambientales                         | ROHS                                         |
 
-**Schaltplan**
+**Diagrama esquemático**
 
 ![](../media/de5fe1122f8eac68785a2894a8312194.png)
 
-**Eigenschaften**
+**Características**
 
 ![](../media/aff5ac4262adb20b7af065a4599f8b91.png)
 
 
 ![](../media/8cc32ae4cc95d353f08354f4746ee047.jpeg)
 
-**(2) PET-Solarpanel**
+**(2) Panel solar PET**
 
 ![](../media/9634ce5e4e9d603a21f5e83caafbd6f4.jpeg)
 
-Die Hauptfaktoren, die die Ausgangsleistung von Solarpanels beeinflussen, sind:
+Los principales factores que afectan el rendimiento de salida de los paneles solares son los siguientes:
 
-(1) Lastimpedanz
+(1) Impedancia de carga
 
-(2) Sonnenlichtintensität
+(2) Intensidad de la luz solar
 
-(3) Temperatur
+(3) Temperatura
 
-(4) Beleuchtungswinkel und Beleuchtungsfläche
+(4) Ángulo de iluminación y área de iluminación
 
-Sie können mit einem Multimeter den Ausgangsstrom des Solarpanels messen, stellen Sie das Multimeter auf Gleichstromstromstärke und großen Messbereich ein, verbinden Sie die rote Messleitung des Multimeters mit dem Pluspol des Solarpanels und die schwarze Messleitung mit dem Minuspol des Solarpanels und messen Sie.
+Puedes usar un multímetro para medir la corriente de salida del panel solar, ajusta el multímetro al nivel de corriente continua y al conector de rango grande, conecta la punta roja del multímetro al polo positivo del panel solar y la punta negra al polo negativo del panel solar, y mide.
 
-Können Solarpanels Strom speichern?
+¿Pueden los paneles solares almacenar electricidad?
 
-Nein, normalerweise müssen sie mit einer Batterie kombiniert werden, um Strom zu speichern.
+No, generalmente necesitan estar emparejados con una batería para almacenar electricidad.
 
-Können Solarpanels an bewölkten Tagen Strom erzeugen?
+¿Pueden los paneles solares generar electricidad en días nublados?
 
-Nein, die von Solarpanels an bewölkten Tagen erzeugte Leistung ist sehr gering. In diesem Fall haben sie Spannung, aber keinen Strom.
+No, la energía generada por los paneles solares en días nublados es muy pequeña. En este caso, tienen voltaje pero no corriente.
 
-Können Solarpanels unter Innenbeleuchtung Strom erzeugen?
+¿Pueden los paneles solares generar electricidad bajo iluminación interior?
 
-Nein, Solarpanels können unter Innenbeleuchtung keinen Strom erzeugen.
+No, los paneles solares no pueden generar electricidad bajo iluminación interior.
 
-**(3) Batterie mit dem Solarpanel aufladen**
+**(3) Cargar la batería con el panel solar.**
 
-In diesem Kit stellen wir ein Batteriefach zur Verfügung, das mit einer 18650-Batterie kompatibel ist und mit zwei Schnittstellen ausgestattet ist, sodass Sie die Batterie aufladen oder als Stromquelle verwenden können.
+En este kit, proporcionamos una caja para batería compatible con una batería 18650, y también está configurada con dos interfaces para que puedas cargar la batería o usarla como fuente de energía.
 
 ![](../media/0b1a78bcd390a4a21c6079f86dbb00ca.png)
 
-Sie müssen selbst eine 18650-Batterie sowie ein Ladegerät vorbereiten.
+Necesitarás preparar una batería 18650 así como un cargador de baterías.
 
-Die folgenden Parameter sind für Ihren Kauf verfügbar:
+Los siguientes parámetros están disponibles para tu compra：
 
-| Spezifikationen          |                                                           |
-|--------------------------|-----------------------------------------------------------|
-| Größe                    | 18650                                                     |
-| Pluspol：                | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png) mit oben |
-| Kapazität                | >2200 mAh                                                 |
-| Nennspannung             | 3,7 V                                                     |
-| Maximale Spannung        | 4,2 V                                                     |
-| Entladeschlussspannung   | 2,5 V                                                     |
-| Wiederaufladbar          | Ja                                                        |
-| Ca. Abmessungen          | 18,5 mm x 65,2 mm                                         |
+| Especificaciones         |                                                           |
+|-------------------------|-----------------------------------------------------------|
+| Tamaño                  | 18650                                                     |
+| Terminal positivo：      | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png) con parte superior |
+| Capacidad               | >2200mAh                                                  |
+| Voltaje nominal         | 3.7V                                                      |
+| Voltaje máximo          | 4.2V                                                      |
+| Voltaje de corte de descarga | 2.5V                                                      |
+| Recargable              | Sí                                                        |
+| Dimensiones aproximadas | 18.5mm x 65.2mm                                           |
 
-Wir können das Solarpanel mit dem Lademodul und einem 18650 Lithium-Batteriefach verbinden, sodass das Solarpanel die Batterie auflädt.
+Podemos conectar el panel solar al módulo de carga y a una caja para batería 18650, de modo que el panel solar cargue la batería.
 
 ![](../media/901cdf76ced95e24e2dc2a43441bb76f.png)
 
-Solarpanels sind keine Batterien und haben keine Funktion zur Stromspeicherung. Der Strom kann in der Batterie gespeichert werden.
+Los paneles solares no son baterías, no tienen la función de almacenamiento de energía. Pueden almacenar electricidad en la batería.
 
-Die Ausgangsleistung von Solarpanels ist in Umgebungen ohne Sonnenlicht, bei Innenbeleuchtung und geringem Winterlicht schwach. Die von diesen Lichtquellen getragene Energie ist sehr gering, selbst wenn es heller ist.
+La salida de los paneles solares es débil en ambientes donde no hay luz solar, iluminación interior y luz baja en invierno. La energía transportada por estas luces es muy pequeña, incluso si es más brillante.
 
-**Hinweis:**
+**Nota:**
 
-Das Solarpanel benötigt möglicherweise lange Zeiten direkter Sonneneinstrahlung, um die Batterien ausreichend zu laden. 18650-Batterien sollten nicht direktem Sonnenlicht ausgesetzt werden und hohe Temperaturen in der Umgebung sollten vermieden werden, um ein Durchbrennen zu verhindern.
+El panel solar puede requerir largos períodos de luz solar directa para cargar suficientemente las baterías. Las baterías 18650 no deben exponerse a la luz solar directa ni a altas temperaturas alrededor para evitar que se quemen.
 
 ![](../media/741dcf23d13ba6e94e4910ac0baccf90.png)
-**(4) Smartphone-Lademodul**
+**(4) Módulo de carga para teléfono inteligente**
 
-Das Handy-Lademodul ist ein Lithium-Batterie-Boost-Modul mit 3,7 V, das über den PH2.0-Anschluss und den USB-Anschluss 5 V, 1 A ausgeben kann.
+El módulo de carga para teléfono móvil es un módulo boost de batería de litio de 3.7V que puede entregar 5V, 1A a través del terminal PH2.0 y el puerto USB.
 
-Parameter:
+Parámetros:
 
-| Eigenschaft            | nicht isoliertes Boost-Modul (BOOST)                                                              |
-|-----------------------|--------------------------------------------------------------------------------------------------|
-| Eingangsspannung      | 1-5 V                                                                                            |
-| Ausgangsspannung      | 5 ± 0,1 V                                                                                       |
-| Ausgangsstrom:        | Nennstrom 1-1,5 A (Eingang Einzellithiumbatterie), maximal 1,5 A (Eingang Einzellithiumbatterie) |
-| Wirkungsgrad          | Bis zu 96 %                                                                                     |
-| Schaltfrequenz        | 500 kHz                                                                                        |
-| Betriebstemperatur    | Industriequalität (-40 °C bis +85 °C)                                                           |
-| Volllast-Erwärmung   | 30 °C                                                                                           |
-| Ruhestrom             | 130 µA                                                                                         |
+| Propiedad              | Módulo boost no aislado (BOOST)                                                                |
+|------------------------|------------------------------------------------------------------------------------------------|
+| Voltaje de entrada     | 1-5V                                                                                           |
+| Voltaje de salida      | 5±0.1V                                                                                        |
+| Corriente de salida:   | Nominal 1-1.5A (entrada de batería de litio de una celda), máximo 1.5A (entrada de batería de litio de una celda) |
+| Eficiencia de conversión | Hasta 96%                                                                                      |
+| Frecuencia de conmutación | 500KHz                                                                                       |
+| Temperatura de trabajo | Grado industrial (-40°C a +85°C)                                                              |
+| Calentamiento a carga completa | 30°C                                                                                     |
+| Corriente en reposo    | 130uA                                                                                         |
 
-Der PH2.0-Anschluss des Handy-Lademoduls kann mit dem Batteriefach verbunden werden.
+El terminal PH2.0 del módulo de carga del teléfono puede conectarse a la caja de batería.
 
-Der USB-Anschluss kann mit einem Android-Handy verbunden und aufgeladen werden.
+El puerto USB puede conectarse a un teléfono Android y cargarlo.
 
-Beachten Sie, dass die Leistung der 18650-Batterie ausreichend sein muss (Spannung bis zu 3,2-4,2 V), um ein Android-Handy zu laden. Andernfalls funktioniert es nicht, auch wenn das Handy anzeigt, dass es lädt.
+Ten en cuenta que la potencia de la batería 18650 debe ser suficiente (voltaje entre 3.2-4.2V) para cargar un teléfono Android. De lo contrario, no funcionará, aunque el teléfono muestre que se está cargando.
 
 ![](../media/ac10bacad797ef9104c98f1c2735cea4.png)
 
-**(5) Ladeprinzip des Solar-Tracking-Kits**
+**(5) Principio de carga del Kit de Seguimiento Solar**
 
-1. Maximaler Ladestrom des Micro-USB-Anschlusses 1 A
+1. Corriente máxima de carga del puerto micro USB 1A
 
-2. Maximaler Ladestrom des Solarpanels 80 mA
+2. Corriente máxima de carga del panel solar 80mA
 
-3. Maximale Ausgangsspannung des USB-A-Buchsenhalters: 5 V/1,5 A (kann zum Laden von Handys verwendet werden)
+3. Voltaje máximo de salida del puerto USB A hembra: 5V/1.5A (puede usarse para cargar teléfonos móviles)
 
 ![](../media/406f0b8202788f1214fddca0970bd688.png)
 
-4. Batterietyp: 18650 Lithium-Batterie mit obenliegendem Pluspol, empfohlen wird eine Kapazität von mehr als 2200 mAh
+4. Tipo de batería: batería de litio 18650 con parte superior, se recomienda comprar con capacidad mayor a 2200mAh
 
-**Hinweis:**
+**Nota:**
 
-1). Das Ladeprotokoll des Handy-Lademoduls unterstützt nur Android, nicht iOS.
+1). El protocolo de carga del módulo de carga para teléfono solo soporta Android, no iOS.
 
-2). Das Solarpanel kann Handys nicht direkt laden; es muss Strom in einer Batterie speichern und die Batterie lädt das Handy.
+2). El panel solar no puede cargar teléfonos móviles directamente; necesita almacenar electricidad en una batería y la batería carga el teléfono.
 
-3). Die Spannung der 18650-Batterie muss im Bereich von 3,2–4,2 V liegen, um das Handy zu laden. Wenn die Batteriespannung unter 3,2 V liegt, lädt das Handy trotz Anzeige nicht tatsächlich.
+3). El voltaje de la batería 18650 debe estar en el rango de 3.2---4.2V para cargar el teléfono celular. Cuando el voltaje de la batería es menor a 3.2V, aunque el teléfono muestre que se está cargando, en realidad no se está cargando.
 
-4). Das Solarpanel benötigt möglicherweise lange Zeiten direkter Sonneneinstrahlung, um die Batterien ausreichend zu laden. 18650-Batterien sollten nicht direktem Sonnenlicht ausgesetzt werden und hohe Temperaturen in der Umgebung sollten vermieden werden, um ein Durchbrennen zu verhindern.
+4). El panel solar puede requerir largos períodos de luz solar directa para cargar suficientemente las baterías. Las baterías 18650 no deben exponerse a la luz solar directa ni a altas temperaturas alrededor para evitar que se quemen.
 
-5). Wenn Sie Ihre 18650-Batterie schnell laden möchten, können Sie die Batterie mit einem speziellen 18650-Ladegerät laden. Oder verwenden Sie ein USB-2.0-zu-Micro-USB-Kabel, um das Lademodul anzuschließen und die Batterie mit einem Computer oder Netzteil zu laden. (USB-2.0-zu-Micro-USB-Kabel ist nicht im Kit enthalten)
+5). Si deseas cargar tu batería 18650 rápidamente, puedes cargar la batería usando un cargador dedicado para 18650. O usar un cable USB 2.0 a micro USB para conectar el módulo de carga y cargar la batería usando una computadora o fuente de alimentación. (El cable USB 2.0 a micro USB no está incluido en el kit)
 
-6). Dies ist nur ein Simulationsversuch und wird Ihren täglichen Strombedarf nicht decken, verwenden Sie es nicht als reguläre Stromquelle für Ihr Handy.
+6). Esto es solo un experimento de simulación y no cubrirá tus necesidades diarias de energía, no lo uses como fuente regular de energía para tu teléfono celular.

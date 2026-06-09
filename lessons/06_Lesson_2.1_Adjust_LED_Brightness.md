@@ -1,42 +1,42 @@
-## Lektion 2.1: Helligkeit der LED einstellen
+## Lección 2.1: Ajustar el Brillo del LED
 
-Die für diese Lektion benötigte Hardware, die Konfiguration der Arduino IDE und die Verkabelung zwischen dem LED-Modul und dem Steuerboard sind genauso wie in **Lektion 1.1**.
+El hardware requerido para esta lección, la configuración del IDE de Arduino y el cableado entre el módulo LED y la placa de control es de la misma manera que en la **Lección 1.1**.
 
-**(1). Beschreibung：**
+**(1). Descripción：**
 
-In der vorherigen Lektion haben wir die LED ein- und ausgeschaltet und zum Blinken gebracht.
+En la lección anterior, controlamos el encendido y apagado del LED y lo hicimos parpadear.
 
-In diesem Projekt steuern wir die Helligkeit der LED über PWM, um einen Atemeffekt zu simulieren. Ebenso können Sie die Schrittweite und die Verzögerungszeit im Code ändern, um verschiedene Atemeffekte zu demonstrieren.
+En este proyecto, controlaremos el brillo del LED mediante PWM para simular un efecto de respiración. De manera similar, puedes cambiar la longitud del paso y el tiempo de retardo en el código para demostrar diferentes efectos de respiración.
 
-![](../media/d1f48d97cbe0b6a29389c20533bfc00c.png)PWM ist ein Mittel, um analoge Ausgänge digital zu steuern. Die digitale Steuerung erzeugt Rechtecksignale mit unterschiedlichen Tastverhältnissen (ein Signal, das ständig zwischen hohen und niedrigen Pegeln wechselt), um den analogen Ausgang zu kontrollieren. Im Allgemeinen liegen die Eingangsspannungen des Ports bei 0V und 5V. Was ist, wenn 3V benötigt werden? Oder wenn zwischen 1V, 3V und 3,5V gewechselt werden soll? Wir können nicht ständig den Widerstand ändern. Für diese Situation benötigen wir die Steuerung mittels PWM.
+![](../media/d1f48d97cbe0b6a29389c20533bfc00c.png)PWM es un medio para controlar la salida analógica mediante medios digitales. El control digital se utiliza para generar ondas cuadradas con diferentes ciclos de trabajo (una señal que cambia constantemente entre niveles alto y bajo) para controlar la salida analógica. En general, el voltaje de entrada del puerto es 0V y 5V. ¿Qué pasa si se requiere 3V? ¿O si se quiere cambiar entre 1V, 3V y 3.5V? No podemos cambiar la resistencia constantemente. Para esta situación, necesitamos controlar mediante PWM.
 
-Für die digitale Ausgangsspannung des Arduino-Ports gibt es nur LOW und HIGH, die 0V bzw. 5V entsprechen. Man kann LOW als 0 und HIGH als 1 definieren und den Arduino innerhalb von 1 Sekunde fünfhundert 0- oder 1-Signale ausgeben lassen.
+Para la salida de voltaje del puerto digital de Arduino, solo existen LOW y HIGH, que corresponden a un voltaje de salida de 0V y 5V. Puedes definir LOW como 0 y HIGH como 1, y hacer que Arduino emita quinientas señales de 0 o 1 en 1 segundo.
 
-Wenn fünfhundert 1 ausgegeben werden, entspricht das 5V; wenn alle 0 sind, entspricht das 0V. Wenn man auf diese Weise 010101010101 ausgibt, beträgt die Ausgangsspannung 2,5V, was einem Film ähnelt. Der Film, den wir sehen, ist nicht vollständig kontinuierlich. Er gibt tatsächlich 25 Bilder pro Sekunde aus. In diesem Fall kann der Mensch das nicht erkennen, ebenso wenig PWM. Wenn man unterschiedliche Spannungen möchte, muss man das Verhältnis von 0 und 1 steuern. Je mehr 0- und 1-Signale pro Zeiteinheit ausgegeben werden, desto genauer die Steuerung.
+Si se emiten quinientas señales de 1, eso equivale a 5V; si todas son 0, eso equivale a 0V. Si se emite 010101010101 de esta manera, entonces el puerto de salida es 2.5V, lo cual es similar a mostrar una película. La película que vemos no es completamente continua. En realidad, emite 25 imágenes por segundo. En este caso, el humano no puede notarlo, ni tampoco PWM. Si se quiere un voltaje diferente, se necesita controlar la proporción de 0 y 1. Cuantas más señales 0 y 1 se emitan por unidad de tiempo, más preciso será el control.
 
 ![](../media/9ce4c120ad6d763102eb2544777c8536.png)
 
 ![](../media/fa2a60fcb812e3bb3a4776ac96bef1cb.png)
 
-**(2). Code-Erklärung:**
+**(2). Explicación del Código:**
 
-Wenn wir einige Anweisungen wiederholen müssen, können wir die FOR-Anweisung verwenden.
+Cuando necesitamos repetir algunas instrucciones, podemos usar la instrucción FOR.
 
-Das Format der FOR-Anweisung ist wie folgt:
+El formato de la instrucción FOR se muestra a continuación:
 
 ![](../media/f413519de8de75a850c98ac7695300fa.jpeg)
 
-FOR-Zyklusfolge:
+Secuencia cíclica FOR:
 
-Runde 1：1 → 2 → 3 → 4
+Ronda 1：1 → 2 → 3 → 4
 
-Runde 2：2 → 3 → 4
+Ronda 2：2 → 3 → 4
 
 …
 
-Bis die Zahl 2 nicht mehr erfüllt ist, ist die „for“-Schleife beendet.
+Hasta que el número 2 no se establezca, el bucle “for” termina,
 
-Nachdem wir diese Reihenfolge kennen, zurück zum Code:
+Después de conocer este orden, volvemos al código:
 
 for (int value = 0; value < 255; value=value+1){
 
@@ -46,26 +46,26 @@ for (int value = 255; value >0; value=value-1){
 
 …}
 
-Die beiden „for“-Anweisungen lassen value von 0 auf 255 steigen, dann von 255 auf 0 sinken, dann wieder auf 255 steigen, … unendlich oft.
+Las dos instrucciones “for” hacen que value aumente de 0 a 255, luego disminuya de 255 a 0, luego aumente a 255, … en un bucle infinito.
 
-Es gibt eine neue Funktion im Folgenden —– analogWrite()
+Hay una función nueva a continuación —– analogWrite()
 
-Wir wissen, dass der digitale Port nur zwei Zustände hat: 0 und 1. Wie sendet man also einen analogen Wert an einen digitalen Port? Hier wird diese Funktion benötigt. Schauen wir uns das Arduino-Board an und finden 6 Pins mit der Markierung „~“, die PWM-Signale ausgeben können.
+Sabemos que el puerto digital solo tiene dos estados: 0 y 1. Entonces, ¿cómo enviar un valor analógico a un valor digital? Aquí se necesita esta función. Observemos la placa Arduino y encontremos 6 pines marcados con “\~” que pueden emitir señales PWM.
 
-Funktionsformat wie folgt:
+El formato de la función es el siguiente:
 
 analogWrite(pin,value)
 
-analogWrite() wird verwendet, um einen analogen Wert von 0~255 für PWM-Ports zu schreiben, daher liegt der Wert im Bereich von 0~255. Achten Sie darauf, dass Sie nur digitale Pins mit PWM-Funktion beschreiben, wie z.B. Pin 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 44, 45, 46.
+analogWrite() se usa para escribir un valor analógico de 0~255 para el puerto PWM, por lo que el valor está en el rango de 0~255. Atención que solo debes escribir en los pines digitales con función PWM, tales como los pines 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 44, 45, 46.
 
-PWM ist eine Technologie, um analoge Größen durch digitale Methoden zu erhalten. Die digitale Steuerung erzeugt ein Rechtecksignal, das nur zwei Zustände hat: Ein- und Ausschalten (also hohe oder niedrige Pegel). Durch Steuerung des Verhältnisses der Ein- und Ausschaltzeit kann eine Spannung von 0 bis 5V simuliert werden. Die Einschaltzeit (fachsprachlich als High-Level bezeichnet) wird Pulsbreite genannt, daher heißt PWM auch Pulsweitenmodulation.
+PWM es una tecnología para obtener una cantidad analógica mediante un método digital. El control digital forma una onda cuadrada, y la señal de onda cuadrada solo tiene dos estados: encendido y apagado (es decir, niveles alto o bajo). Controlando la proporción de la duración del encendido y apagado, se puede simular un voltaje que varía de 0 a 5V. El tiempo de encendido (académicamente referido como nivel alto) se llama ancho de pulso, por lo que PWM también se llama modulación por ancho de pulso.
 
-Anhand der folgenden fünf Rechtecksignale lernen wir PWM besser kennen.
+A través de las siguientes cinco ondas cuadradas, conozcamos más sobre PWM.
 
 ![](../media/7c9452d3bb97cfee514ef146045866a8.png)
 
-In der obigen Abbildung stellt die grüne Linie eine Periode dar, und der Wert von analogWrite() entspricht einem Prozentsatz, der auch als Duty Cycle bezeichnet wird. Der Duty Cycle gibt an, wie lange der High-Pegel im Verhältnis zum Low-Pegel in einem Zyklus anhält. Von oben nach unten beträgt der Duty Cycle des ersten Rechtecksignals 0% und sein entsprechender Wert ist 0. Die LED-Helligkeit ist am niedrigsten, also aus. Je länger der High-Pegel anhält, desto heller leuchtet die LED. Daher beträgt der letzte Duty Cycle 100%, was 255 entspricht, die LED ist am hellsten. 25% bedeutet dunkler.
+En la figura anterior, la línea verde representa un período, y el valor de analogWrite() corresponde a un porcentaje que también se llama Ciclo de Trabajo (Duty Cycle). El ciclo de trabajo implica que la duración del nivel alto se divide por la duración del nivel bajo en un ciclo. De arriba hacia abajo, el ciclo de trabajo de la primera onda cuadrada es 0% y su valor correspondiente es 0. El brillo del LED es el más bajo, es decir, apagado. Cuanto más tiempo dure el nivel alto, más brillante será el LED. Por lo tanto, el último ciclo de trabajo es 100%, que corresponde a 255, el LED está más brillante. 25% significa más oscuro.
 
-PWM wird hauptsächlich verwendet, um die Helligkeit von LEDs oder die Drehzahl von Motoren zu steuern.
+PWM se usa principalmente para ajustar el brillo del LED o la velocidad de rotación del motor.
 
-Es spielt eine wichtige Rolle bei der Steuerung von intelligenten Roboterautos.
+Juega un papel vital en el control de coches robot inteligentes.

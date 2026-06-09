@@ -1,46 +1,46 @@
-## Lektion 5: 1602 LCD Display Modul
+## Lección 5: Módulo de Pantalla LCD 1602
 
-**(1).Beschreibung：**
+**(1).Descripción：**
 
 ![](../media/28bf5a86d2265afb050e55589e145fe9.png)
 
-Mit I2C-Kommunikationsmodul ist dies ein Display-Modul, das 2 Zeilen mit jeweils 16 Zeichen anzeigen kann.
+Con módulo de comunicación I2C, este es un módulo de pantalla que puede mostrar 2 líneas con 16 caracteres por línea.
 
-Es zeigt einen blauen Hintergrund mit weißen Buchstaben und wird an die I2C-Schnittstelle des MCU angeschlossen, was die MCU-Ressourcen erheblich spart.
+Muestra fondo azul y texto blanco y se conecta a la interfaz I2C del MCU, lo que ahorra muchos recursos del MCU.
 
-Auf der Rückseite des LCD-Displays befindet sich ein blauer Potentiometer zur Einstellung der Hintergrundbeleuchtung. Die Kommunikationsadresse ist standardmäßig auf 0x27 eingestellt.
+En la parte trasera de la pantalla LCD, hay un potenciómetro azul para ajustar la retroiluminación. La dirección de comunicación por defecto es 0x27.
 
-Das originale 1602 LCD kann mit 11 IO-Ports gestartet und betrieben werden, aber unseres ist mit ARDUINOIIC/I2C-Schnittstelle gebaut, wodurch 9 IO-Ports eingespart werden. Alternativ verfügt das Modul über 4 Befestigungslöcher mit einem Durchmesser von 3 mm, was es Ihnen erleichtert, es an anderen Geräten zu befestigen.
+El LCD 1602 original puede iniciar y funcionar con 11 puertos IO, pero el nuestro está construido con interfaz ARDUINOIIC/I2C, ahorrando 9 puertos IO. Alternativamente, el módulo viene con 4 orificios de posicionamiento con un diámetro de 3mm, lo que facilita su fijación en otros dispositivos.
 
-**(2).Parameter：**
+**(2).Parámetros：**
 
-I2C-Adresse: 0x27
+Dirección I2C: 0x27
 
-Hintergrundbeleuchtung (blau, weiß)
+Retroiluminación (azul, blanco)
 
-Versorgungsspannung: **5V**
+Voltaje de alimentación: **5V**
 
-Einstellbarer Kontrast
+Contraste ajustable
 
-GND: Ein Pin, der mit Masse verbunden wird
+GND: Un pin que se conecta a tierra
 
-VCC: Ein Pin, der mit einer +5V Stromversorgung verbunden wird
+VCC: Un pin que se conecta a una fuente de alimentación +5V
 
-SDA: Ein Pin, der für die IIC-Kommunikation mit dem analogen Port A4 verbunden wird
+SDA: Un pin que se conecta al puerto analógico A4 para comunicación IIC
 
-SCL: Ein Pin, der für die IIC-Kommunikation mit dem analogen Port A5 verbunden wird
+SCL: Un pin que se conecta al puerto analógico A5 para comunicación IIC
 
-**(3).Sie müssen vorbereiten:**
+**(3).Necesitas preparar:**
 
-| Steuerplatine*1                                | USB-Kabel*1                                    | LCD Display*1                                  | 4P-1P F-F DuPon Kabel                            |
+| Placa de Control*1                                | Cable USB*1                                    | Pantalla LCD*1                                  | Cable DuPon 4P-1P F-F                            |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/28bf5a86d2265afb050e55589e145fe9.png) | ![](../media/f4df3fe85086b2896d958b1caf93a038.png) |
 
-**(4)Anschlussdiagramm**
+**(4)Diagrama de Conexión**
 
-| Pin Anschluss Tabelle       |                      |
+| Tabla de Conexión de Pines |                      |
 |----------------------------|----------------------|
-| Pin des **LCD Displays**    | Pin der Steuerplatine |
+| Pin de la **Pantalla LCD** | Pin de la Placa de Control |
 | GND                        | G(GND)                 |
 | VCC                        | V(5V)                 |
 | SDA                        | A4                 |

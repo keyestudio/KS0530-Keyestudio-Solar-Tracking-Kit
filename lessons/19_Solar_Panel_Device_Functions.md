@@ -1,31 +1,31 @@
-# 5.Solarzellen-Gerät mit mehreren Funktionen
+# 5. Dispositivo de Panel Solar con Múltiples Funciones
 
-Das zusammengebaute Solarzellen-Gerät ist einsatzbereit!
+¡El dispositivo de panel solar ensamblado está listo!
 
-In den vorherigen Lektionen haben wir nur die Funktion und das Funktionsprinzip eines bestimmten elektronischen Bauteils einzeln untersucht und getestet, ob es normal funktioniert.
+En las lecciones anteriores, solo estudiamos la función y el principio de funcionamiento de una determinada parte electrónica de forma individual, y probamos si puede funcionar normalmente.
 
-Jetzt lassen wir sie zusammenarbeiten, um ein Solarzellen-Gerät mit mehreren Funktionen zu bauen.
+Ahora los tenemos trabajando juntos para construir un dispositivo de panel solar con múltiples funciones.
 
-Halten Sie die 18650-Batterie ausreichend geladen, da sie benötigt wird, um zwei Servos, ein LCD-Display, vier Lichtsensoren, einen DHT11-Sensor und ein Tastenmodul mit Strom zu versorgen.
+Mantén la batería 18650 suficientemente cargada ya que se necesitará para alimentar dos servos, una pantalla LCD, cuatro sensores de luz, un sensor DHT11 y un módulo de botón.
 
 ![](../media/f4b78ac6371097b2e32409c226873651.png)
 
 ![](../media/94d386c19c8b95904852ee2a11a4f272.png)
 
-Nachdem der Code erfolgreich hochgeladen wurde, schalten Sie den Netzschalter des Ladermoduls ein und drücken Sie den Netzschalter der Steuerplatine auf 5V.
+Después de que el código se cargue correctamente, enciende el interruptor de alimentación del módulo de carga y presiona el interruptor de alimentación de la placa de control a 5V.
 
 ![](../media/edc80fe0bd7a1cce69bd760ab5d247bc.png)![](../media/67fc5cb5b7eabda71fcb2296a8def597.png)
 
-Das Servo dreht sich auf den Anfangswinkel. Wenn der Umgebungslichtsensor Änderungen der Lichtintensität erkennt, drehen die Servos das Solarzellen-Panel in die Position, in der das Licht am stärksten ist, und das LCD1602 zeigt den Wert der Lichtintensität sowie die von BH1750 und DHT11 jeweils erfasste Temperatur und Luftfeuchtigkeit an.
+El servo girará al ángulo inicial. Cuando el sensor de luz ambiental detecta cambios en la intensidad de la luz, los servos giran el panel solar hacia la posición donde la luz es más fuerte y el LCD1602 muestra el valor de la intensidad de luz y la temperatura y humedad detectadas por el BH1750 y DHT11 respectivamente.
 
-Wenn Sie das Gefühl haben, dass sich das Solarzellen-Panel zu langsam dreht oder das Panel wackelt, können Sie die Drehgeschwindigkeit des Servos über das Tastenmodul einstellen.
+Si sientes que el panel solar gira demasiado lento o que el panel solar tiembla, puedes ajustar la velocidad de rotación del servo a través del módulo de botón.
 
-Zum Beispiel dreht sich das Servo innerhalb der vorgegebenen Zeit jedes Mal um 1°. Nach dem Drücken der Taste dreht sich das Servo innerhalb derselben Zeit jedes Mal um 2°.
+Por ejemplo, dentro del tiempo especificado, el servo gira 1° cada vez. Después de presionar el botón, el servo girará 2° cada vez dentro del mismo tiempo.
 
-Drücken Sie erneut, und das Servo dreht sich jedes Mal um 3° innerhalb derselben Zeit. Analog kann das Servo so eingestellt werden, dass es sich bis zu 5° jedes Mal innerhalb derselben Zeit dreht.
+Presiónalo de nuevo y el servo girará 3° cada vez en el mismo tiempo. Por analogía, el servo puede ajustarse para girar hasta 5° cada vez en el mismo tiempo.
 
-**„byte resolution = 1“**
+**“byte resolution = 1”**
 
-Sie können die Auflösung anpassen, um den Drehwinkel des Servos zu ändern. Drücken Sie die Taste, um die Auflösung von 1° auf 5° zu ändern. Sie können auch `byte m_speed = 10` ändern, um die Verzögerungszeit einzustellen und so die Geschwindigkeit des Servos zu regulieren; je länger die Zeit, desto kleiner die Geschwindigkeit.
+Puedes ajustar la resolución para cambiar el ángulo de rotación del servo. Presiona el botón para cambiar la resolución de 1° a 5°. También puedes cambiar `byte m_speed = 10` para establecer el tiempo de retardo y ajustar la velocidad del servo; cuanto más largo sea el tiempo, menor será la velocidad.
 
 ![](../media/55bbbb88c4e18c1b90ce588fa76d0e3d.png)

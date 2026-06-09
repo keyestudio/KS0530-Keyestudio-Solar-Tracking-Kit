@@ -1,35 +1,35 @@
-## Lektion 7: DHT11 Temperatur- und Feuchtigkeitssensor
+## Lección 7: Sensor de Temperatura y Humedad DHT11
 
 ![](../media/569a9b768ff44fd8a88841c4515cca9d.png)
 
 
-**(1)Beschreibung:**
+**(1)Descripción:**
 
-Dieser DHT11 Temperatur- und Feuchtigkeitssensor ist ein zusammengesetzter Sensor, der eine kalibrierte digitale Signalausgabe der Temperatur und Feuchtigkeit enthält.
+Este sensor de temperatura y humedad DHT11 es un sensor compuesto que contiene una salida digital calibrada de la señal de temperatura y humedad.
 
-Der DHT11 Temperatur- und Feuchtigkeitssensor verwendet die Erfassungstechnologie des digitalen Moduls sowie Temperatur- und Feuchtigkeitssensortechnologie, was eine hohe Zuverlässigkeit und ausgezeichnete Langzeitstabilität gewährleistet.
+El sensor de temperatura y humedad DHT11 utiliza la tecnología de adquisición del módulo digital y la tecnología de detección de temperatura y humedad, asegurando alta fiabilidad y excelente estabilidad a largo plazo.
 
-Er beinhaltet ein resistives Element und ein NTC-Temperaturmessgerät.
+Incluye un elemento resistivo y un dispositivo de medición de temperatura NTC.
 
-**(2)Parameter：**
+**(2)Parámetros：**
 
-Betriebsspannung: **+5 V**
+Voltaje de trabajo: **+5 V**
 
-Arbeitstemperatur: 0-50 ℃ Fehler von ± 2 ℃
+Temperatura de trabajo: 0-50 ℃ con un error de ± 2 ℃
 
-Luftfeuchtigkeit: 20-90% RH ± 5% RH Fehler
+Humedad: 20-90% RH con un error de ± 5% RH
 
-Schnittstelle: digitaler Anschluss
+Interfaz: puerto digital
 
-**(3).Sie müssen vorbereiten:**
+**(3).Necesitas preparar:**
 
-| Steuerplatine*1                                | USB-Kabel*1                                    | DHT11 Sensor*1                                        | 3-poliges DuPont-Kabel                                |
+| Placa de Control*1                                | Cable USB*1                                    | Sensor DHT11*1                                        | Cable DuPont de 3 pines                                |
 |-------------------------------------------------|-------------------------------------------------|--------------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/569a9b768ff44fd8a88841c4515cca9d.png) | ![](../media/1bd35f503278636f76403a931f5dc61a.png) |
 
-**(4)Anschlussdiagramm**
+**(4)Diagrama de Conexión**
 
-Die G-, V- und S-Pins des DHT11 Sensors*1 sind mit G, V und D7 der Steuerplatine verbunden.
+Los pines G, V y S del Sensor DHT11*1 están conectados a G, V y D7 de la placa de control.
 
 ![](../media/8beddf04e8c9ee1c94c91b225328036e.png)
 

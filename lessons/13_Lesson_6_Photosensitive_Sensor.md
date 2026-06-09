@@ -1,48 +1,48 @@
-## Lektion 6: Fotosensitiver Sensor
+## Lección 6: Sensor Fotosensible
 
-**(1)Beschreibung**
+**(1)Descripción**
 
-In diesem Kit sind vier Fotowiderstand-Sensormodule enthalten, die Umgebungslichtsensoren mit Fotowiderstand als Hauptkomponente.
+Hay cuatro módulos de sensor fotoresistor en este kit, sensores de luz ambiental, con fotoresistor como componente principal.
 
-Der Widerstand eines Fotowiderstands variiert mit der Lichtintensität. Wenn Licht vorhanden ist, liegt sein Widerstand im Bereich von 5-10KΩ; während er im Dunkeln nur 0,2MΩ beträgt. Basierend auf dieser Eigenschaft kann eine Schaltung aufgebaut werden, die die Widerstandsänderung in Spannungsänderungen umwandelt.
+La resistencia de un fotoresistor varía con la intensidad de la luz. Cuando hay luz alrededor, su resistencia oscila entre 5-10KΩ; mientras que cuando está oscuro, la resistencia es solo 0.2MΩ. Basado en esta propiedad, se puede construir un circuito para convertir el cambio en resistencia en cambios de voltaje.
 
-Außerdem verfügt der Sensor über einen verpolungssicheren Anschluss mit einem Rastermaß von 2,54 mm, um die Verkabelung zu erleichtern. Er ist auch mit vielen Arten von Mikrocontrollern kompatibel, wie der Arduino-Mikrocontroller-Serie.
+Además, el sensor viene con un terminal de inserción anti-reversa con un paso de 2.54mm para facilitar el cableado. También es compatible con muchos tipos de microcontroladores, como la serie de microcontroladores Arduino.
 
-Hier verwenden wir diesen Sensor mit dem Arduino-Mikrocontroller. Der S (Signal)-Anschluss des Sensors sollte an den analogen Pin des Arduino angeschlossen werden, um die Variation des analogen Werts zu erfassen, der im seriellen Monitor ausgegeben wird. Bitte beachten Sie, dass der Sensor zwei Positionierlöcher mit einem Durchmesser von 4,9 mm besitzt, um die Befestigung zu erleichtern.
+Aquí, aplicamos este sensor con el microcontrolador Arduino. El extremo S (señal) del sensor debe conectarse al pin analógico de Arduino para detectar la variación en el valor analógico que se imprimirá en el monitor serial. Y por favor, tenga en cuenta que hay dos orificios de posicionamiento con un diámetro de 4.9mm incorporados en el sensor para ayudar a fijarlo.
 
-**(2)Parameter:**
+**(2)Parámetros:**
 
-Betriebsspannung：3,3V-5V（DC）
+Voltaje de trabajo：3.3V-5V（DC）
 
-Schnittstelle：3PIN
+Interfaz：3PIN
 
-Ausgangssignal：analoges Signal
+Señal de salida：señal analógica
 
-Gewicht：2,3g
+Peso：2.3g
 
 ![](../media/537af5b84f09fe71a4e1f6cbeabdfc81.png)
 
-**(3)Sie müssen vorbereiten:**
+**(3)Necesitas preparar:**
 
-| Steuerplatine*1                                | USB-Kabel*1                                    | Gelbes LED-Modul*1                            | 3-poliges DuPont-Kabel*2                       | Taster-Modul*4                                |
+| Placa de Control*1                             | Cable USB*1                                   | Módulo LED Amarillo*1                         | Cable DuPont 3pin*2                            | Módulo de Botón Pulsador*4                     |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/628e402ae3fc455a2812705b17d7c30d.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) | ![](../media/537af5b84f09fe71a4e1f6cbeabdfc81.png) |
 
-**(4).Anschlussdiagramm:**
+**(4).Diagrama de Conexión:**
 
-| Anschluss-Tabelle       |                      |
-|------------------------|----------------------|
-| Pin des **Fotowiderstands** | Pin der Steuerplatine |
-| G                      | G(GND)               |
-| V                      | V(5V)                |
-| S                      | A0                   |
+| Tabla de Conexión de Pines |                      |
+|----------------------------|----------------------|
+| Pin del **Fotoresistor**   | Pin de la Placa de Control |
+| G                          | G(GND)               |
+| V                          | V(5V)                |
+| S                          | A0                   |
 
-| Anschluss-Tabelle      |                      |
-|-----------------------|----------------------|
-| Pin der **LED**       | Pin der Steuerplatine |
-| G                     | G(GND)               |
-| V                     | V(5V)                |
-| S                     | D3                   |
+| Tabla de Conexión de Pines |                      |
+|----------------------------|----------------------|
+| Pin del **LED**            | Pin de la Placa de Control |
+| G                          | G(GND)               |
+| V                          | V(5V)                |
+| S                          | D3                   |
 
 
 

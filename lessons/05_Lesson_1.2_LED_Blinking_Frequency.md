@@ -1,6 +1,6 @@
-## Lektion 1.2: Ändern der Blinkfrequenz der LED
+## Lección 1.2: Cambiar la frecuencia de parpadeo del LED
 
-**>>>>>>>>Diese Lektion ist eine Erweiterung der Lektion 1.1**
+**>>>>>>>>Esta lección es una ampliación de la Lección 1.1**
 
 ![](../media/dc02634b4874771998403f117ee1d947.png)
 

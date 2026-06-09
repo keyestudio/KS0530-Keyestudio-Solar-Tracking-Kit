@@ -1,40 +1,40 @@
-## Lektion 3.1: Das digitale Signal des Tastenmoduls auslesen
+## Lección 3.1: Leer la Señal Digital del Módulo de Botón
 
-**(1)Beschreibung**
+**(1)Descripción**
 
-In diesem Projekt möchten wir das Drucktastenmodul verwenden, um die LED zu steuern.
+En este proyecto, pretendemos usar el módulo de botón pulsador para controlar el LED.
 
-**(2)Parameter:**
+**(2)Parámetros:**
 
-Arbeitsspannung: DC 3,3-5V
+Voltaje de trabajo：DC 3.3-5V
 
-Steuersignal: digitales Signal
+Señal de control：señal digital
 
-Größe: 34mm
+Tamaño：34mm
 
-Gewicht: 3,8g
+Peso：3.8g
 
-**(3)Sie müssen vorbereiten:**
+**(3)Necesitas preparar:**
 
-| Steuerplatine*1                                | USB-Kabel*1                                    | Gelbes LED-Modul*1                            | 3poliges F-F 26AWG Kabel*2                          | Drucktastenmodul*1                           |
+| Placa de Control*1                             | Cable USB*1                                   | Módulo LED Amarillo*1                         | Cable 3pin F-F 26AWG*2                         | Módulo de Botón Pulsador*1                     |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/628e402ae3fc455a2812705b17d7c30d.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) | ![](../media/6ba7e34f89af660ac90bb2552907ef3f.png) |
 
-**(4)Anschlussdiagramm**
+**(4)Diagrama de Conexión**
 
-| Pin-Verbindungstabelle  |                      |
-|------------------------|----------------------|
-| Pin des **Tasters**     | Pin der Steuerplatine |
-| G                      | G(GND)               |
-| V                      | V(5V)                |
-| S                      | D2                   |
+| Tabla de Conexión de Pines |                      |
+|----------------------------|----------------------|
+| Pin del **Botón**          | Pin de la Placa de Control |
+| G                          | G(GND)               |
+| V                          | V(5V)                |
+| S                          | D2                   |
 
-| Pin-Verbindungstabelle |                      |
-|-----------------------|----------------------|
-| Pin der **LED**        | Pin der Steuerplatine |
-| G                      | G(GND)               |
-| V                      | V(5V)                |
-| S                      | D3                   |
+| Tabla de Conexión de Pines |                      |
+|----------------------------|----------------------|
+| Pin del **LED**            | Pin de la Placa de Control |
+| G                          | G(GND)               |
+| V                          | V(5V)                |
+| S                          | D3                   |
 
 ![](../media/024ba0bbd683bf28f7783c8645f488be.png)
 
@@ -44,10 +44,10 @@ Gewicht: 3,8g
 
 ![](../media/9688c560b185edabcf17838af3353b36.png)
 
-**(5)Code-Erklärung:**
+**(5)Explicación del Código:**
 
-Serial.begin(9600) – initialisiert die serielle Kommunikation und setzt die Baudrate auf 9600
+Serial.begin(9600)-inicializa la comunicación serial y establece la velocidad en baudios a 9600
 
-pinMode(pin, INPUT) – verwendet die Funktion pinMode(), um Arduino mitzuteilen, ob es sich um einen Ausgangs- oder Eingangs-Pin handelt
+pinMode(pin, INPUT)-usa la función pinMode() para indicarle a Arduino si es un pin de salida o un pin de entrada
 
-digitalRead(pin) – liest den digitalen Pegel der Pins aus, entweder HIGH oder LOW
+digitalRead(pin)-lee el nivel digital de los pines, puede ser ALTO o BAJO

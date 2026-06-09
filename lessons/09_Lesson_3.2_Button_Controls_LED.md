@@ -1,6 +1,6 @@
-## Lektion 3.2: Steuerung der LED mit dem Tastenmodul
+## Lección 3.2: Controlar el LED con el Módulo de Botón
 
-**>>>>>>>>Diese Lektion ist eine Erweiterung der Lektion 3.1**
+**>>>>>>>>Esta lección es una ampliación de la Lección 3.1**
 
 ![](../media/de673b32096aea19dd3aa94849b526f6.png)![3.2](../media/283cef6be70411c7ba729daab8b78cc8.png)
 

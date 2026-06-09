@@ -1,54 +1,54 @@
-# Lesen Sie zuerst
+# Léame Primero
 
-Hier ist, was Sie benötigen, um das Solar-Tracking-Kit zu betreiben:
+Esto es lo que necesitas para usar el kit de seguimiento solar:
 
-1) Bibliotheken
+1) Bibliotecas
 
-2) Code
+2) Código
 
 3) Manual.pdf
 
 4) Troubleshooting.pdf
 
-Die oben genannten Dateien können hier heruntergeladen werden:
+Los archivos anteriores se pueden descargar aquí:
 
 [https://fs.keyestudio.com/KS0530](https://fs.keyestudio.com/KS0530)
 
-5) Eine 18650 Batterie und ein Ladegerät (müssen selbst bereitgestellt werden)
+5) Una batería 18650 y un cargador (debes prepararlos tú mismo)
 
 ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png)
 
-Die folgenden Parameter sind für Ihren Kauf verfügbar：
+Los siguientes parámetros están disponibles para tu compra：
 
-| Spezifikationen     |                 |
+| Especificaciones    |                 |
 |---------------------|-----------------|
-| Größe               | 18650           |
-| Positiver Pol：     | Mit einem oberen Pol |
-| Kapazität           | >2200mAh        |
-| Nennspannung        | 3.7V            |
-| Maximalspannung     | 4.2V            |
-| Wiederaufladbar     | Ja              |
-| Ca. Abmessungen     | 18.5mm x 65.2mm |
-| Gewicht             | ca. 45g         |
+| Tamaño              | 18650           |
+| Terminal positivo： | Con una parte superior |
+| Capacidad           | >2200mAh        |
+| Voltaje nominal     | 3.7V            |
+| Voltaje máximo      | 4.2V            |
+| Recargable          | Sí              |
+| Dimensiones aprox.  | 18.5mm x 65.2mm |
+| Peso                | aprox. 45g      |
 
-Support
+Soporte
 
-KEYESTUDIO bietet kostenlosen und schnellen technischen Support, einschließlich, aber nicht beschränkt auf:
+KEYESTUDIO ofrece soporte técnico gratuito y rápido, que incluye pero no se limita a:
 
-1) Qualitätsprobleme des Produkts
+1) Problemas de calidad del producto
 
-2) Probleme bei der Verwendung des Produkts
+2) Problemas encontrados durante el uso del producto
 
-3) Kommentare und Vorschläge
+3) Comentarios y sugerencias
 
-4) Ihre Projekte und Ideen
+4) Tus proyectos e ideas
 
-Wenn Sie einen technischen oder verwirrenden Fehler in einem Dokument oder einer Datei finden, wären wir dankbar, wenn Sie uns diesen melden könnten.
+Si encuentras un error técnico o confuso en un documento o archivo, te agradeceríamos que nos lo reportaras.
 
-Bitte senden Sie eine E-Mail an:
+Por favor envía un correo electrónico a:
 
 Amazon: service@keyestudio.com
 
 AliExpress: tivon@keyestudio.com
 
-Andere Kanäle: sunny@keyestudio.com
+Otros canales: sunny@keyestudio.com

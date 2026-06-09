@@ -1,31 +1,31 @@
-## Lektion 1.1: LED blinkt
+## Lección 1.1: Parpadeo del LED
 
-**(1).Beschreibung：**
+**(1).Descripción：**
 
 ![](../media/90f495d6deb8516c95dea36fb1efa019.jpeg)![](../media/2aeeeb61ad2a3110303b3108f4ba31e1.png)
 
-LED, die Abkürzung für Leuchtdiode, besteht aus chemischen Verbindungen wie Ga, As, P, N usw. Die LED kann durch Ändern der Verzögerungszeit im Testcode in verschiedenen Farben blinken. Bei Steuerung und Stromversorgung über GND und VCC leuchtet die LED, wenn der S-Anschluss auf hohem Pegel ist; andernfalls erlischt sie.
+LED, la abreviatura de diodos emisores de luz, está compuesto por compuestos químicos como Ga, As, P, N, entre otros. El LED puede parpadear en diversos colores al alterar el tiempo de retardo en el código de prueba. Cuando está en control, al alimentar GND y VCC, el LED se encenderá si el extremo S está en un nivel alto; de lo contrario, se apagará.
 
-![](../media/628e402ae3fc455a2812705b17d7c30d.png)  
-**(2).Parameter：**
+![](../media/628e402ae3fc455a2812705b17d7c30d.png)
+**(2).Parámetros：**
 
-Steuerschnittstelle: digitaler Port
+Interfaz de control: puerto digital
 
-Betriebsspannung: DC 3,3-5V
+Voltaje de trabajo: DC 3.3-5V
 
-Pin-Abstand: 2,54 mm
+Espaciado de pines: 2.54mm
 
-LED-Anzeigefarbe: gelb
+Color de visualización del LED: amarillo
 
-**(3).Sie müssen vorbereiten:**
+**(3).Necesitas preparar:**
 
-| Steuerplatine*1                                | USB-Kabel*1                                    | Gelbes LED-Modul*1                            | 3pin F-F 26AWG Kabel                             |
+| Placa de control*1                             | Cable USB*1                                   | Módulo LED amarillo*1                         | Cable 3pin F-F 26AWG                            |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/628e402ae3fc455a2812705b17d7c30d.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) |
 
-**(4).Anschlussdiagramm des LED-Moduls：**
+**(4).Diagrama de conexión del módulo led：**
 
-Die Pins -, + und S des LED-Moduls sind mit den Pins G, 5V und D3 des Steuerboards verbunden.
+Los pines -, + y S del módulo LED se conectan a los pines G, 5V y D3 del puerto de la placa de control.
 
 ![](../media/045af155ff7b448adf0e819200ccef57.png)
 
@@ -33,12 +33,12 @@ Die Pins -, + und S des LED-Moduls sind mit den Pins G, 5V und D3 des Steuerboar
 
 ![](../media/188b0bea1512ccc6a9b3e20ff8a9265d.png)
 
-**(5).Testergebnisse:** LED blinkt im Intervall von 1 Sekunde
+**(5).Resultados de la prueba:** El LED parpadea con un intervalo de 1s
 
 ![](../media/351380ab56f691b54869160828bc56d0.png)
 
-**(6).Code-Erklärungen:**
+**(6).Explicaciones del código:**
 
-pinMode(LED，OUTPUT) - Diese Funktion legt fest, ob der Pin als INPUT oder OUTPUT verwendet wird
+pinMode(LED，OUTPUT) - Esta función puede indicar que el pin es INPUT o OUTPUT
 
-digitalWrite(LED，HIGH) - Wenn der Pin als OUTPUT definiert ist, kann er auf HIGH (5V Ausgang) oder LOW (0V Ausgang) gesetzt werden
+digitalWrite(LED，HIGH) - Cuando el pin es OUTPUT, podemos configurarlo en HIGH (salida 5V) o LOW (salida 0V)
