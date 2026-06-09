@@ -1,31 +1,31 @@
-# 5. Dispositivo de Panel Solar con Múltiples Funciones
+# 5. Dispositif de panneau solaire avec fonctions multiples
 
-¡El dispositivo de panel solar ensamblado está listo!
+Le dispositif de panneau solaire assemblé est prêt !
 
-En las lecciones anteriores, solo estudiamos la función y el principio de funcionamiento de una determinada parte electrónica de forma individual, y probamos si puede funcionar normalmente.
+Dans les leçons précédentes, nous avons uniquement étudié la fonction et le principe de fonctionnement d'une certaine pièce électronique individuellement, et testé si elle pouvait fonctionner normalement.
 
-Ahora los tenemos trabajando juntos para construir un dispositivo de panel solar con múltiples funciones.
+Maintenant, nous les faisons fonctionner ensemble pour construire un dispositif de panneau solaire avec plusieurs fonctions.
 
-Mantén la batería 18650 suficientemente cargada ya que se necesitará para alimentar dos servos, una pantalla LCD, cuatro sensores de luz, un sensor DHT11 y un módulo de botón.
+Gardez la batterie 18650 suffisamment chargée car elle sera nécessaire pour alimenter deux servomoteurs, un écran LCD, quatre capteurs de lumière, un capteur DHT11 et un module bouton.
 
 ![](../media/f4b78ac6371097b2e32409c226873651.png)
 
 ![](../media/94d386c19c8b95904852ee2a11a4f272.png)
 
-Después de que el código se cargue correctamente, enciende el interruptor de alimentación del módulo de carga y presiona el interruptor de alimentación de la placa de control a 5V.
+Après le téléchargement réussi du code, allumez l'interrupteur d'alimentation du module de charge et appuyez sur l'interrupteur d'alimentation de la carte de contrôle sur 5V.
 
 ![](../media/edc80fe0bd7a1cce69bd760ab5d247bc.png)![](../media/67fc5cb5b7eabda71fcb2296a8def597.png)
 
-El servo girará al ángulo inicial. Cuando el sensor de luz ambiental detecta cambios en la intensidad de la luz, los servos giran el panel solar hacia la posición donde la luz es más fuerte y el LCD1602 muestra el valor de la intensidad de luz y la temperatura y humedad detectadas por el BH1750 y DHT11 respectivamente.
+Le servomoteur tournera vers l'angle initial. Lorsque le capteur de lumière ambiante détecte des changements d'intensité lumineuse, les servomoteurs orientent le panneau solaire vers la position où la lumière est la plus forte et l'écran LCD1602 affiche la valeur de l'intensité lumineuse ainsi que la température et l'humidité détectées respectivement par le BH1750 et le DHT11.
 
-Si sientes que el panel solar gira demasiado lento o que el panel solar tiembla, puedes ajustar la velocidad de rotación del servo a través del módulo de botón.
+Si vous trouvez que le panneau solaire tourne trop lentement ou que le panneau solaire tremble, vous pouvez ajuster la vitesse de rotation du servomoteur via le module bouton.
 
-Por ejemplo, dentro del tiempo especificado, el servo gira 1° cada vez. Después de presionar el botón, el servo girará 2° cada vez dentro del mismo tiempo.
+Par exemple, dans le temps spécifié, le servomoteur tourne de 1° à chaque fois. Après avoir appuyé sur le bouton, le servomoteur tournera de 2° à chaque fois dans le même temps.
 
-Presiónalo de nuevo y el servo girará 3° cada vez en el mismo tiempo. Por analogía, el servo puede ajustarse para girar hasta 5° cada vez en el mismo tiempo.
+Appuyez de nouveau et le servomoteur tournera de 3° à chaque fois dans le même temps. Par analogie, le servomoteur peut être réglé pour tourner jusqu'à 5° à chaque fois dans le même temps.
 
 **“byte resolution = 1”**
 
-Puedes ajustar la resolución para cambiar el ángulo de rotación del servo. Presiona el botón para cambiar la resolución de 1° a 5°. También puedes cambiar `byte m_speed = 10` para establecer el tiempo de retardo y ajustar la velocidad del servo; cuanto más largo sea el tiempo, menor será la velocidad.
+Vous pouvez ajuster la résolution pour changer l'angle de rotation du servomoteur. Appuyez sur le bouton pour changer la résolution de 1° à 5°. Vous pouvez également modifier `byte m_speed = 10` pour régler le temps de délai afin d'ajuster la vitesse du servomoteur ; plus le temps est long, plus la vitesse est faible.
 
 ![](../media/55bbbb88c4e18c1b90ce588fa76d0e3d.png)

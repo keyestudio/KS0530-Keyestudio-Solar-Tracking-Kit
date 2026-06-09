@@ -1,6 +1,6 @@
-## Lección 1.2: Cambiar la frecuencia de parpadeo del LED
+## Leçon 1.2 : Changer la fréquence de clignotement de la LED
 
-**>>>>>>>>Esta lección es una ampliación de la Lección 1.1**
+**>>>>>>>>Cette leçon est une extension de la Leçon 1.1**
 
 ![](../media/dc02634b4874771998403f117ee1d947.png)
 

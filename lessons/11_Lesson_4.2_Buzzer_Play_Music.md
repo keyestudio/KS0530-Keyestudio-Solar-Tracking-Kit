@@ -1,8 +1,8 @@
-## Lección 4.2: Usar el Zumbador Pasivo para Tocar Música
+## Leçon 4.2 : Utiliser un buzzer passif pour jouer de la musique
 
-**>>>>>>>>Esta lección es una ampliación de la Lección 4.1**
+**>>>>>>>>Cette leçon est une extension de la Leçon 4.1**
 
-En la última lección, hicimos que el módulo zumbador emitiera "do re mi fa so la si do". En esta lección, subiremos un código diferente para hacer que el zumbador pasivo toque "Feliz Cumpleaños".
+Dans la leçon précédente, nous avons fait émettre au module buzzer les notes "do ré mi fa sol la si do". Dans cette leçon, nous allons téléverser un code différent pour faire jouer au buzzer passif la chanson "Joyeux Anniversaire".
 
 ![](../media/c9ac3665f8ba3a9a78bae143823cc143.png)
 

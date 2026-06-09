@@ -1,122 +1,122 @@
-# 4. Montaje del Kit de Seguimiento Solar
+# 4.Assemblage du kit de suivi solaire
 
-Cosas a tener en cuenta antes del montaje:
+Points à noter avant l'assemblage :
 
-1. Antes del montaje, por favor retire la película protectora de las placas acrílicas.
+1. Avant l'assemblage, veuillez retirer le film protecteur sur les plaques acryliques.
 
 ![](../media/15aad64ba3edebe3004541446eacc823.png)
 
-2. Necesitará preparar una batería 18650 así como un cargador de baterías.
+2. Vous devrez vous procurer une batterie 18650 ainsi qu'un chargeur de batterie.
 
-Los siguientes parámetros están disponibles para su compra：
+Les paramètres suivants sont disponibles pour votre achat：
 
-| Especificaciones          |                                                           |
-|--------------------------|-----------------------------------------------------------|
-| Tamaño                   | 18650                                                     |
-| Terminal positivo：       | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png)Con parte superior |
-| Capacidad                | >2200mAh                                                 |
-| Voltaje nominal          | 3.7V                                                      |
-| Voltaje máximo           | 4.2V                                                      |
-| Voltaje de corte de descarga | 2.5V                                                      |
-| Recargable               | Sí                                                        |
-| Dimensiones aproximadas  | 18.5mm x 65.2mm                                           |
+| Spécifications            |                                                           |
+|---------------------------|-----------------------------------------------------------|
+| Taille                    | 18650                                                     |
+| Pôle positif：            | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png)Avec un dessus |
+| Capacité                  | >2200mAh                                                 |
+| Tension nominale          | 3.7V                                                      |
+| Tension maximale          | 4.2V                                                      |
+| Tension de coupure décharge | 2.5V                                                      |
+| Rechargeable              | Oui                                                       |
+| Dimensions approximatives | 18.5mm x 65.2mm                                           |
 
 
 
-**Parte 1**
+**Partie 1**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/5b08f5dd3cc6a24979d83addfba135e3.png)
 
-Montaje de la pantalla 1602 y la caja de la batería
+Assemblage de l'écran 1602 et de la boîte à batterie
 
 ![](../media/f8aabfb9c14e1d0072298f751a2f114f.png)
 
 ![](../media/d9156cedcf4e898026c92001597b0c8a.png)
 
-**Parte 2**
+**Partie 2**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/f74712c21427762025bdb9b44cd4d748.png)
 
-Montaje de la placa de control
+Assemblage de la carte de contrôle
 
 ![](../media/081d0d21d1bd9f964723c8f323a3f177.png)
 
 ![](../media/ec727ba8f455586f2120e984ba181e03.png)
 
-**Parte 3**
+**Partie 3**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/cde397ed998ff584eceec0d4e5904531.png)
 
-Montaje del módulo de alimentación de batería de litio y módulo de carga
+Assemblage du module d'alimentation batterie Lithium et du module de charge
 
 ![](../media/29ccce1d21aefa84a68b8aeacf40f964.png)
 
 ![](../media/98b5873c9dd038506b3d5c92d88741fe.png)
 
-**Parte 4**
+**Partie 4**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/4dfed35fb3b9411520d379b76b55e2e5.png)
 
-Montaje de las columnas de cobre M3*45MM
+Assemblage des colonnes en cuivre M3*45MM
 
 ![](../media/284424ec29729ad222977eaff93489c1.png)
 
 ![](../media/d63b4374373005a015d39bd6720642c6.png)
 
-**Cableado de la parte inferior del kit**
+**Câblage de la partie inférieure du kit**
 
-Use el cable DuPont M a F de 20cm para conectar el módulo de carga solar USB a la placa de control uno. El pin G del módulo se conecta al GND del UNO, el pin V del módulo se conecta al Vin del UNO.
+Utilisez le fil DuPont M vers F de 20 cm pour connecter le module de charge USB solaire à la carte de contrôle uno. La broche G du module est connectée au GND de UNO, la broche V du module est connectée au Vin de UNO.
 
 ![](../media/fc355889b96c325ccac72e887b379b16.png)
 
 ![](../media/5c2fcdb796c2da6a41ba70061a49710b.png)
 
-Conecte la pantalla LCD a la placa UNO
+Connectez l'écran LCD à la carte UNO
 
-| Tabla de conexión de pines |                      |
-|----------------------------|----------------------|
-| Pin de la **pantalla LCD** | Pin de la placa de control |
-| GND (cable negro)           | G (GND)               |
-| VCC (cable rojo)            | V (5V)                |
-| SDA (cable azul)            | A4                   |
-| SCL (cable verde)           | A5                   |
+| Tableau de connexion des broches |                      |
+|---------------------------------|----------------------|
+| Broche de l'**écran LCD**       | Broche de la carte de contrôle |
+| GND (fil noir)                  | G (GND)               |
+| VCC (fil rouge)                 | V (5V)                |
+| SDA (fil bleu)                  | A4                   |
+| SCL (fil vert)                  | A5                   |
 
 ![](../media/ca85a47344a459c91d3a20079f9687a1.png)![](../media/f912e3561a5fdb4f7004149f5a53f828.png)
 
-Nota: El voltaje de trabajo de la pantalla LCD es 5V, por favor asegúrese de que el interruptor 3.3-5V en la placa de control esté configurado a 5V.
+Note : La tension de fonctionnement de l'écran LCD est de 5V, veuillez vous assurer que l'interrupteur 3.3-5V sur la carte de contrôle est réglé sur 5V.
 
 ![](../media/62285b96cb0ec086bc79a72f776aba8f.png)
 
-Instale una batería 18650 dentro de la caja de la batería, cuidando que los terminales positivo y negativo de la batería coincidan con los terminales positivo y negativo de la caja.
+Installez une batterie 18650 à l'intérieur du boîtier à batterie, en veillant à ce que les bornes positive et négative de la batterie correspondent bien aux bornes positive et négative du boîtier.
 
-Conecte la caja de la batería al módulo de carga solar USB y al módulo de carga para teléfono móvil.
+Connectez le boîtier à batterie au module de charge USB solaire et au module de charge pour téléphone portable.
 
 ![](../media/4fae5606d8a89cf3d64cad13fac2df19.png)
 
 
-**Parte 5**
+**Partie 5**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/d267f4fefc6c90283e57c0b9db9cc2fd.png)
 
 ![](../media/14a35fc0cc7372a856fc09880a885b78.png)
 
-Montaje de los sensores y módulos
+Assemblage des capteurs et modules
 
 ![](../media/e776075a7ae1c43745cfeeb837a1c738.png)
 
-**Parte 6**
+**Partie 6**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/5e270635b02e1c4a7c1be9f2353da395.png)
 
@@ -124,21 +124,21 @@ Componentes necesarios
 
 ![](../media/5975368bb162a843736b912b1c172e95.png)
 
-**Parte 7**
+**Partie 7**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/211500037f52144a3aa4b18bd39c1870.png)
 
 ![](../media/c90ed1203ee35f25e00fb3974b6082f1.png)
 
-Tenga en cuenta la orientación de la sección superior, el módulo del zumbador y la pantalla LCD debajo están en la misma orientación.
+Notez l'orientation de la partie supérieure, le module buzzer et l'écran LCD en dessous sont dans la même orientation.
 
 ![](../media/2e04abbf3613d39afb2cdcff86e1932c.png)
 
-**Parte 8**
+**Partie 8**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/af21087f2c4fc3ce4b51107b3258caa4.png)
 
@@ -146,51 +146,51 @@ Componentes necesarios
 
 ![](../media/be529a21c1ca16d114c73475fb6c0c58.png)
 
-**Parte 9**
+**Partie 9**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/459a9081531592d6dfa2b09ec0096488.png)
 
 ![](../media/b6329bbd1ea9fba2fbc79e6897141b71.png)
 
-Diagrama de instalación (preste atención a la dirección de instalación del servo)
+Schéma d'installation (faites attention à la direction d'installation du servo)
 
 ![](../media/a9b2e2050d9a0b207c7afb00fe0522ca.png)
 
-**Parte 10**
+**Partie 10**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/14fab09683530ffb01429f381608d3f7.png)
 
 ![](../media/b28eb76d7b5d5d25f807b15b91349f03.png)
 
-**Parte 11**
+**Partie 11**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/98be19dcc673e5efe24a759b0a54b7dd.png)
 
 ![](../media/81c82980c0d3ccac09a316e2fa35e99e.png)
 
-Antes de ensamblarlos, necesita ajustar el ángulo del **servo ②**. Configure su ángulo inicial a **10 grados** para mantener el panel solar nivelado.
+Avant de les assembler, vous devez régler l'angle du **servo ②**. Réglez son angle initial à **10 degrés** pour maintenir le panneau solaire à niveau.
 
-**Diagrama de conexión**
+**Schéma de connexion**
 
-Nota: El servo está conectado a G (GND), V (VCC), D10. El cable marrón está conectado a Gnd (G), el cable rojo está conectado a (V), y el cable naranja está conectado al pin digital D10.
+Note : Le servo est connecté à G (GND), V (VCC), D10. Le fil marron est connecté à Gnd (G), le fil rouge est connecté à (V), et le fil orange est connecté à la broche numérique D10.
 
 ![](../media/b36a6b47705944879c4200ab1a56b75e.jpeg)
 
 ![](../media/6d2a91b6d38e208bec80b10ac6faa08d.png)![](../media/26b8abdd5862d20ced793e36668ac9cf.png)
 
-Diagrama de instalación (preste atención al ángulo del servo, como se muestra en la imagen)![](../media/15f493110d37113d992fd9e5a76450f5.png)![](../media/fc8e14e930751266c581a1685afbcf97.png)
+Schéma d'installation (faites attention à l'angle du servo, comme montré sur l'image)![](../media/15f493110d37113d992fd9e5a76450f5.png)![](../media/fc8e14e930751266c581a1685afbcf97.png)
 
-**Nota:** No puede girar el eje del servo hasta que haya completado este paso de fijación, de lo contrario tendrá que reajustarlo a 10 grados usando el código anterior.
+**Note :** Vous ne pouvez pas tourner l'axe du servo avant d'avoir terminé cette étape de fixation, sinon vous devrez le régler à nouveau à 10 degrés en utilisant le code ci-dessus.
 
-**Parte 12**
+**Partie 12**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/459a9081531592d6dfa2b09ec0096488.png)
 
@@ -200,9 +200,9 @@ Componentes necesarios
 
 ![](../media/3fb558672b4f1ef52b40b5cb60a93882.png)
 
-**Parte 13**
+**Partie 13**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/459a9081531592d6dfa2b09ec0096488.png)
 
@@ -212,19 +212,19 @@ Componentes necesarios
 
 ![](../media/27efd1be66e14cfacc161c620e513c1c.png)
 
-**Parte 14**
+**Partie 14**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/98be19dcc673e5efe24a759b0a54b7dd.png)
 
 ![](../media/a2bc82e4973fde85b2c549a0da860400.png)
 
-Antes de ensamblarlos, necesita ajustar el ángulo del **servo ①**. Configure su ángulo inicial a **90 grados**.
+Avant de les assembler, vous devez régler l'angle du **servo ①**. Réglez son angle initial à **90 degrés**.
 
-**Diagrama de conexión**
+**Schéma de connexion**
 
-Nota: El servo está conectado a G (GND), V (VCC), D9. El cable marrón está conectado a Gnd (G), el cable rojo está conectado a (V), y el cable naranja está conectado al pin digital D9.
+Note : Le servo est connecté à G (GND), V (VCC), D9. Le fil marron est connecté à Gnd (G), le fil rouge est connecté à (V), et le fil orange est connecté à la broche numérique D9.
 
 ![](../media/2e5505ffa429fb27b8e3e054358e9128.png)
 
@@ -232,17 +232,17 @@ Nota: El servo está conectado a G (GND), V (VCC), D9. El cable marrón está co
 
 ![](../media/f1ffd660bc1faab0118f50ed08794c3d.png)
 
-Diagrama de instalación
+Schéma d'installation
 
-**Nota:** No puede girar el eje del servo hasta que haya completado este paso de fijación, de lo contrario tendrá que reajustarlo a 90 grados usando el código anterior.
+**Note :** Vous ne pouvez pas tourner l'axe du servo avant d'avoir terminé cette étape de fixation, sinon vous devrez le régler à nouveau à 90 degrés en utilisant le code ci-dessus.
 
 ![](../media/da31eb334e0c1e9d7d81060359ecba73.png)
 
 ![](../media/e52f51035e537315152c7498cf9bd6eb.png)
 
-**Parte 15**
+**Partie 15**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/170390970615486d961355a328e60a86.png)
 
@@ -250,9 +250,9 @@ Componentes necesarios
 
 ![](../media/cd803e2e6709d1633a22cc6f57de88ea.png)
 
-**Parte 16**
+**Partie 16**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/3b52ffb52dae7c7c450af6fe3d3d9402.png)
 
@@ -260,9 +260,9 @@ Componentes necesarios
 
 ![](../media/b56cc707cebe05c8e98b6f6afc795423.png)
 
-**Parte 17**
+**Partie 17**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/2d22837fabdcc1c8c34a9927129ddcb5.png)
 
@@ -270,9 +270,9 @@ Componentes necesarios
 
 ![](../media/4a5cc2caf5c79ef0538cf1861fa73298.png)
 
-**Parte 18**
+**Partie 18**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/f0a1f87a34e18a1c1f22ffb93fc98c2c.png)
 
@@ -280,9 +280,9 @@ Componentes necesarios
 
 ![](../media/77b94d52457f9104fc85ae91d3c18027.png)
 
-**Parte 19**
+**Partie 19**
 
-Componentes necesarios
+Composants nécessaires
 
 ![](../media/7a023d5f4e9a13cf7d2141ab4700d811.png)
 
@@ -290,46 +290,46 @@ Componentes necesarios
 
 ![](../media/db89b632a149b4431d9e01a2a373851d.png)
 
-**Cableado de la parte superior del kit**
+**Câblage de la partie supérieure du kit**
 
-1)![](../media/469d80ec804ed66cc813071e3cf56aa8.png)Conecte el servo inferior al D9 de la placa de control UNO, y el servo superior al D10 de la placa de control UNO. Conecte el cable marrón del servo a G, el cable rojo a V, y el cable amarillo a S.
+1)![](../media/469d80ec804ed66cc813071e3cf56aa8.png)Connectez le servo inférieur à D9 de la carte de contrôle UNO, et le servo supérieur à D10 sur la carte UNO. Connectez le fil marron du servo à G, le fil rouge à V, et le fil jaune à S.
 
-2) Enchufe el conector del panel solar al extremo SOLAR4.8-6.0V del módulo de carga solar USB.
+2) Branchez la prise du panneau solaire à l'extrémité SOLAR4.8-6.0V du module de charge USB solaire.
 
 ![](../media/56b3303300870f07a6cf4e38ab1fa998.png)
 
-3) A continuación, usaremos los siete cables DuPont 3P 26AWG 200mm F-F para conectar los fotosensores, el módulo zumbador, el módulo de botón pulsador y el sensor de temperatura y humedad DHT11 a la placa uno.
+3) Ensuite, nous utiliserons les sept fils DuPont 3P 26AWG 200mm F-F pour connecter les photosenseurs, le module buzzer, le module bouton-poussoir et le capteur de température et humidité DHT11 à la carte uno.
 
 ![](../media/ffb7fb703ade99a7d7a932da7c781d81.png)
 
-El sensor fotosensible de la izquierda está conectado al pin A0 de la placa UNO.
+Le capteur photosensible à gauche est connecté à la broche A0 de la carte UNO.
 
-El sensor fotosensible de la derecha está conectado al pin A1 de la placa UNO.
+Le capteur photosensible à droite est connecté à la broche A1 de la carte UNO.
 
-El sensor fotosensible trasero está conectado al pin A2 de la placa UNO.
+Le capteur photosensible à l'arrière est connecté à la broche A2 de la carte UNO.
 
-El sensor fotosensible delantero está conectado al pin A3 de la placa UNO.
+Le capteur photosensible à l'avant est connecté à la broche A3 de la carte UNO.
 
-El módulo de botón está conectado al pin D2 de la placa UNO.
+Le module bouton est connecté à la broche D2 de la carte UNO.
 
-El módulo zumbador está conectado al pin D6 de la placa UNO.
+Le module buzzer est connecté à la broche D6 de la carte UNO.
 
-El sensor de temperatura y humedad dht11 está conectado al pin D7 de la placa UNO.
+Le capteur de température et humidité dht11 est connecté à la broche D7 de la carte UNO.
 
 ![](../media/9822f50f9d1906833347175a42ff3fea.png)
 
-**Nota: Para evitar conexiones inversas, recomendamos cablear según el siguiente método：**
+**Note : Afin d'éviter une connexion inversée, nous recommandons de câbler selon la méthode suivante :**
 
-- El pin G del módulo se conecta al pin G del UNO con un cable negro;
+- La broche G du module est connectée à la broche G de UNO avec un fil noir ;
 
-- El pin V del módulo se conecta al pin V del UNO con un cable rojo;
+- La broche V du module est connectée à la broche V de UNO avec un fil rouge ;
 
-- El pin S del módulo se conecta al pin S del UNO con un cable naranja.
+- La broche S du module est connectée à la broche S de UNO avec un fil orange.
 
-Como se muestra en la forma en que el sensor de temperatura y humedad dht11 está conectado a la placa UNO.
+Comme montré dans la façon dont le capteur de température et humidité dht11 est connecté à la carte UNO.
 
 ![](../media/8beddf04e8c9ee1c94c91b225328036e.png)
 
-4) Finalmente, conecte el módulo digital de intensidad de luz bh1750 a la placa UNO.
+4) Enfin, connectez le module d'intensité lumineuse numérique bh1750 à la carte UNO.
 
 ![](../media/d7fccd89d5bed291ccce34babfbf5c91.png)

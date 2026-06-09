@@ -1,80 +1,80 @@
-# 6.Resolución de problemas
+# 6.Dépannage
 
-Aquí hay algunas soluciones a problemas comunes que pueden ayudarte.
+Voici quelques solutions aux problèmes courants qui pourraient vous aider.
 
-Si no encuentras la respuesta que buscas aquí, por favor contacta a nuestro soporte técnico:
+Si vous ne trouvez pas la réponse que vous cherchez ici, veuillez contacter notre support technique :
 
-Amazon: [service@keyestudio.com](mailto:service@keyestudio.com)
+Amazon : [service@keyestudio.com](mailto:service@keyestudio.com)
 
-AliExpress: [tivon@keyestudio.com](mailto:tivon@keyestudio.com)
+AliExpress : [tivon@keyestudio.com](mailto:tivon@keyestudio.com)
 
-Otros canales: [sunny@keyestudio.com](mailto:sunny@keyestudio.com)
+Autres canaux : [sunny@keyestudio.com](mailto:sunny@keyestudio.com)
 
-Para una resolución más rápida y profesional de tu problema, por favor incluye esta información cuando nos envíes un correo electrónico:
+Pour une résolution plus rapide et professionnelle de votre problème, veuillez inclure ces informations lors de l'envoi de votre e-mail :
 
-Tu número de pedido o dónde adquiriste este producto
+Votre numéro de commande ou l'endroit où vous avez acheté ce produit
 
-Los problemas que encuentras, intenta incluir descripciones detalladas, fotos o videos.
+Les problèmes rencontrés, essayez d'inclure des descriptions détaillées, des photos ou des vidéos.
 
-Necesitamos más información que "No funciona." Por favor danos detalles claros sobre lo que quieres lograr y lo que has intentado.
+Nous avons besoin de plus d'informations que "Ça ne marche pas." Merci de nous donner des détails précis sur ce que vous souhaitez accomplir et ce que vous avez essayé.
 
-¡Gracias!
+Merci !
 
-**(1) La placa de control no es reconocida por la computadora.**
+**(1) La carte de contrôle n'est pas reconnue par l'ordinateur.**
 
--Por favor verifica si el cable USB está en buen estado y si el puerto USB de tu computadora está disponible.
+-Veuillez vérifier si le câble USB est en bon état et si le port USB de votre ordinateur est disponible.
 
-**(2) El puerto USB no es reconocido por la computadora.**
+**(2) Le port USB n’est pas reconnu par l’ordinateur.**
 
--Verifica si has instalado el controlador USB.
+-Vérifiez si vous avez installé le pilote USB.
 
-**(3) Problemas con el código/Fallo al cargar/Error en el código.**
+**(3) Problèmes de code / Échec de téléchargement / Erreur de code.**
 
-Estas razones pueden causar problemas con tu código:
+Ces raisons peuvent causer des problèmes avec votre code :
 
-1) El controlador no está instalado.
+1) Le pilote n'est pas installé.
 
-2) El tipo de placa y el puerto COM no están seleccionados correctamente en el Arduino IDE.
+2) Le type de carte et le port COM ne sont pas correctement sélectionnés dans l'IDE Arduino.
 
-3) El archivo de la librería no está instalado.
+3) Le fichier de la bibliothèque n'est pas installé.
 
-(Por favor sigue **2.Getting Started with Arduino** para solucionar los problemas anteriores)
+(Veuillez suivre **2.Getting Started with Arduino** pour résoudre les problèmes ci-dessus)
 
 ![](../media/224c21b5aa737f11de351dbd9868e317.png)
 
-**(4) Mala conexión USB**
+**(4) Mauvais contact USB**
 
-Si no tienes los problemas mencionados en 1-3, verifica que la conexión del cable USB sea buena, intenta desconectarlo y volverlo a conectar, y luego carga el código nuevamente.
+Si vous n'avez pas les problèmes mentionnés en 1-3, vérifiez que la connexion du câble USB est bonne, essayez de le rebrancher, puis téléchargez à nouveau le code.
 
-**(5) El kit ensamblado de seguimiento solar no responde.**
+**(5) Le kit de suivi solaire assemblé ne répond pas.**
 
-1) Estas razones pueden causar que el robot no funcione:
+1) Ces raisons peuvent empêcher le robot de fonctionner :
 
-1) cableado incorrecto
+1) mauvais câblage
 
-2) No subiste el código
+2) Vous n'avez pas téléchargé le code
 
-3) Fallo al cargar/Error en el código
+3) Échec de téléchargement / Erreur de code
 
-4) No encendiste el interruptor de 5V en la placa de control ni el interruptor de encendido en el módulo de carga.
+4) Vous n'avez pas activé l'interrupteur 5V sur la carte de contrôle ni l'interrupteur d'alimentation sur le module de charge.
 
 ![](../media/67fc5cb5b7eabda71fcb2296a8def597.png)![](../media/edc80fe0bd7a1cce69bd760ab5d247bc.png)
 
-5) Batería con carga insuficiente
+5) Batterie insuffisamment chargée
 
-Necesitas mantener la batería 18650 suficientemente cargada ya que se requiere para alimentar dos servos, una pantalla LCD, cuatro sensores de luz, un sensor DHT11 y el módulo de botones.
+Vous devez maintenir la batterie 18650 suffisamment chargée car elle alimentera deux servomoteurs, un écran LCD, quatre capteurs de lumière, un capteur DHT11 et un module bouton.
 
-**(6) Servo atascado/servo caliente**
+**(6) Servomoteur bloqué / servomoteur chaud**
 
-Necesitarás ajustar el ángulo inicial del servo antes de ensamblarlos y no cambiar el ángulo hasta que el ensamblaje esté completo para asegurar que el servo funcione correctamente en el kit de seguimiento solar.
+Vous devrez ajuster l'angle initial du servomoteur avant de les assembler et ne pas changer l'angle jusqu'à ce que l'assemblage soit terminé pour garantir que le servomoteur fonctionne correctement pour le kit de suivi solaire.
 
-**(7) El panel solar no sigue el movimiento de la fuente de luz o del sol**
+**(7) Le panneau solaire ne suit pas le mouvement de la source lumineuse ou du soleil**
 
-Cuando el sensor de luz ambiental detecta cambios en la intensidad de la luz, los servos giran el panel solar hacia la posición donde la luz es más fuerte.
+Lorsque le capteur de lumière ambiante détecte des changements d'intensité lumineuse, les servomoteurs font pivoter le panneau solaire vers la position où la lumière est la plus forte.
 
-En un ambiente con iluminación uniforme, el panel solar puede no seguir el movimiento de la fuente de luz. Puede que necesites aplicar una fuente de luz muy fuerte, o aplicar una fuente de luz en un área con poca luz para que el panel solar se mueva con la fuente de luz. El panel solar puede no moverse hacia el sol porque la diferencia en la intensidad de luz detectada por cada sensor de luz ambiental puede no ser grande.
+Dans un environnement à éclairage uniforme, le panneau solaire peut ne pas suivre le mouvement de la source lumineuse. Vous devrez peut-être appliquer une source lumineuse très forte, ou appliquer une source lumineuse dans une zone peu éclairée pour que le panneau solaire se déplace avec la source lumineuse. Le panneau solaire peut ne pas se diriger vers le soleil car la différence d'intensité lumineuse détectée par chaque capteur de lumière ambiante peut ne pas être importante.
 
-1.  **El panel solar se mueve muy lentamente, da tirones o se queda atascado.**
-2.  Verifica que el cableado del servo esté organizado y no esté atascado para que el servo tenga suficiente espacio para moverse.
-3.  La batería 18650 debe estar completamente cargada.
-4.  Puedes presionar el módulo de botones para ajustar la cantidad de rotación del servo.
+1.  **Le panneau solaire se déplace très lentement, fait des à-coups ou se bloque.**
+2.  Vérifiez que le câblage du servomoteur est organisé et non coincé afin que le servomoteur ait suffisamment d'espace pour bouger.
+3.  La batterie 18650 doit être complètement chargée.
+4.  Vous pouvez appuyer sur le module bouton pour ajuster la quantité de rotation du servomoteur.

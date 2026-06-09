@@ -52,7 +52,7 @@
    lessons/03_Getting_Started_with_Arduino
    lessons/lessons
    lessons/18_Assembling_the_Kit
-   lessons/18_Assembling_the_Kit
+   lessons/19_Solar_Panel_Device_Functions
    lessons/20_Troubleshooting
 
 

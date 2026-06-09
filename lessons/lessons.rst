@@ -1,5 +1,5 @@
 =====================================
-3.Probar partes electrónicas
+3.Test des composants électroniques
 =====================================
 
 
