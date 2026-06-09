@@ -1,122 +1,122 @@
-# 4.Assembling the Solar Tracking Kit
+# 4. Zusammenbau des Solar-Tracking-Kits
 
-Things to note before assembly:
+Wichtige Hinweise vor dem Zusammenbau:
 
-1.Before assembly, please tear off the protective film on the acrylic boards.
+1. Vor dem Zusammenbau bitte die Schutzfolie von den Acrylplatten abziehen.
 
 ![](../media/15aad64ba3edebe3004541446eacc823.png)
 
-2.You will need to prepare yourself a 18650 battery as well as a battery charger.
+2. Sie benötigen eine 18650-Batterie sowie ein Ladegerät.
 
-The following parameters are available for your purchase：
+Die folgenden Parameter sind für Ihren Kauf verfügbar：
 
-| Specifications            |                                                           |
+| Spezifikationen           |                                                           |
 |---------------------------|-----------------------------------------------------------|
-| Size                      | 18650                                                     |
-| Positive Terminal：       | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png)With a top |
-| Capacity                  | >2200mAh                                                 |
-| Nominal Voltage           | 3.7V                                                      |
-| Maximum Voltage           | 4.2V                                                      |
-| Discharge cut-off Voltage | 2.5V                                                      |
-| Rechargeable              | Yes                                                       |
-| Approx. Dimensions        | 18.5mm x 65.2mm                                           |
+| Größe                     | 18650                                                     |
+| Positiver Pol：           | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png)Mit Oberseite |
+| Kapazität                 | >2200mAh                                                 |
+| Nennspannung              | 3.7V                                                      |
+| Maximalspannung           | 4.2V                                                      |
+| Entladeschlussspannung    | 2.5V                                                      |
+| Wiederaufladbar           | Ja                                                        |
+| Ca. Abmessungen           | 18.5mm x 65.2mm                                           |
 
 
 
-**Part 1**
+**Teil 1**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/5b08f5dd3cc6a24979d83addfba135e3.png)
 
-Assembling the 1602 display and battery box
+Zusammenbau des 1602 Displays und der Batteriebox
 
 ![](../media/f8aabfb9c14e1d0072298f751a2f114f.png)
 
 ![](../media/d9156cedcf4e898026c92001597b0c8a.png)
 
-**Part 2**
+**Teil 2**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/f74712c21427762025bdb9b44cd4d748.png)
 
-Assembling the control board
+Zusammenbau der Steuerplatine
 
 ![](../media/081d0d21d1bd9f964723c8f323a3f177.png)
 
 ![](../media/ec727ba8f455586f2120e984ba181e03.png)
 
-**Part 3**
+**Teil 3**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/cde397ed998ff584eceec0d4e5904531.png)
 
-Assembling the Lithium Battery Power Module and Charging module
+Zusammenbau des Lithium-Batterie-Power-Moduls und des Ladungsmoduls
 
 ![](../media/29ccce1d21aefa84a68b8aeacf40f964.png)
 
 ![](../media/98b5873c9dd038506b3d5c92d88741fe.png)
 
-**Part 4**
+**Teil 4**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/4dfed35fb3b9411520d379b76b55e2e5.png)
 
-Assembling the M3*45MM Copper Columns
+Zusammenbau der M3*45MM Kupfersäulen
 
 ![](../media/284424ec29729ad222977eaff93489c1.png)
 
 ![](../media/d63b4374373005a015d39bd6720642c6.png)
 
-**Wiring the Lower Part Of The Kit**
+**Verdrahtung des unteren Teils des Kits**
 
-Use the 20cm M to F DuPont Wire to connect the Solar USB Charging Module to the uno control board. The G pin of the module is connected to the GND of UNO, the V pin of the module is connected to the Vin of UNO
+Verwenden Sie das 20cm M-zu-F DuPont-Kabel, um das Solar-USB-Lademodul mit der Uno-Steuerplatine zu verbinden. Der G-Pin des Moduls wird mit GND von UNO verbunden, der V-Pin des Moduls wird mit Vin von UNO verbunden.
 
 ![](../media/fc355889b96c325ccac72e887b379b16.png)
 
 ![](../media/5c2fcdb796c2da6a41ba70061a49710b.png)
 
-Connect the LCD display to the UNO board
+Verbinden Sie das LCD-Display mit der UNO-Platine
 
-| Pin Connection Table       |                      |
-|----------------------------|----------------------|
-| Pin of the **LCD Display** | Pin of Control Board |
-| GND(black wire)            | G(GND)               |
-| VCC(red wire)              | V(5V)                |
-| SDA(blue wire)             | A4                   |
-| SCL(green wire)            | A5                   |
+| Pin-Verbindungstabelle    |                      |
+|---------------------------|----------------------|
+| Pin des **LCD Displays**  | Pin der Steuerplatine|
+| GND (schwarzes Kabel)     | G (GND)              |
+| VCC (rotes Kabel)         | V (5V)               |
+| SDA (blaues Kabel)        | A4                   |
+| SCL (grünes Kabel)        | A5                   |
 
 ![](../media/ca85a47344a459c91d3a20079f9687a1.png)![](../media/f912e3561a5fdb4f7004149f5a53f828.png)
 
-Note: The working voltage of the LCD Display is 5V, please make sure the 3.3-5V Switch on the control board is dial to 5V.
+Hinweis: Die Betriebsspannung des LCD-Displays beträgt 5V, bitte stellen Sie sicher, dass der 3.3-5V-Schalter auf der Steuerplatine auf 5V eingestellt ist.
 
 ![](../media/62285b96cb0ec086bc79a72f776aba8f.png)
 
-Install an 18650 battery inside the battery case, taking care that the positive and negative terminals of the battery are all the way to the positive and negative terminals of the battery case.
+Installieren Sie eine 18650-Batterie in das Batteriefach, achten Sie darauf, dass die positiven und negativen Pole der Batterie mit den entsprechenden Polen des Batteriefachs übereinstimmen.
 
-Connect the battery case to the solar usb charging module and mobile phone charging module.
+Verbinden Sie das Batteriefach mit dem Solar-USB-Lademodul und dem Handy-Lademodul.
 
 ![](../media/4fae5606d8a89cf3d64cad13fac2df19.png)
 
 
-**Part 5**
+**Teil 5**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/d267f4fefc6c90283e57c0b9db9cc2fd.png)
 
 ![](../media/14a35fc0cc7372a856fc09880a885b78.png)
 
-Assembling the sensors and modules
+Zusammenbau der Sensoren und Module
 
 ![](../media/e776075a7ae1c43745cfeeb837a1c738.png)
 
-**Part 6**
+**Teil 6**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/5e270635b02e1c4a7c1be9f2353da395.png)
 
@@ -124,21 +124,21 @@ Components Needed
 
 ![](../media/5975368bb162a843736b912b1c172e95.png)
 
-**Part 7**
+**Teil 7**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/211500037f52144a3aa4b18bd39c1870.png)
 
 ![](../media/c90ed1203ee35f25e00fb3974b6082f1.png)
 
-Note the orientation of the upper section, the buzzer module and the LCD display below are in the same orientation.
+Beachten Sie die Ausrichtung des oberen Abschnitts, das Summer-Modul und das LCD-Display darunter haben die gleiche Ausrichtung.
 
 ![](../media/2e04abbf3613d39afb2cdcff86e1932c.png)
 
-**Part 8**
+**Teil 8**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/af21087f2c4fc3ce4b51107b3258caa4.png)
 
@@ -146,51 +146,51 @@ Components Needed
 
 ![](../media/be529a21c1ca16d114c73475fb6c0c58.png)
 
-**Part 9**
+**Teil 9**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/459a9081531592d6dfa2b09ec0096488.png)
 
 ![](../media/b6329bbd1ea9fba2fbc79e6897141b71.png)
 
-Installation Diagram (mind the installation direction of the servo)
+Installationsdiagramm (achten Sie auf die Einbaurichtung des Servos)
 
 ![](../media/a9b2e2050d9a0b207c7afb00fe0522ca.png)
 
-**Part 10**
+**Teil 10**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/14fab09683530ffb01429f381608d3f7.png)
 
 ![](../media/b28eb76d7b5d5d25f807b15b91349f03.png)
 
-**Part 11**
+**Teil 11**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/98be19dcc673e5efe24a759b0a54b7dd.png)
 
 ![](../media/81c82980c0d3ccac09a316e2fa35e99e.png)
 
-Before putting them together, you need to adjust the angle of the **servo ②**.Set its initial angle to **10 degrees** to keep the solar panel level.
+Bevor Sie sie zusammenbauen, müssen Sie den Winkel des **Servos ②** einstellen. Setzen Sie seinen Anfangswinkel auf **10 Grad**, um das Solarpanel waagerecht zu halten.
 
-**Connection Diagram**
+**Anschlussdiagramm**
 
-Note: The servo is connected to G (GND), V (VCC), D10. The brown wire is connected to Gnd (G), the red wire is connected to (V), and the orange wire is connected to digital pin D10.
+Hinweis: Der Servo ist mit G (GND), V (VCC), D10 verbunden. Das braune Kabel ist mit Gnd (G) verbunden, das rote Kabel mit (V) und das orange Kabel mit dem digitalen Pin D10.
 
 ![](../media/b36a6b47705944879c4200ab1a56b75e.jpeg)
 
 ![](../media/6d2a91b6d38e208bec80b10ac6faa08d.png)![](../media/26b8abdd5862d20ced793e36668ac9cf.png)
 
-Installation Diagram (pay attention to the angle of the servo, as shown in the picture)![](../media/15f493110d37113d992fd9e5a76450f5.png)![](../media/fc8e14e930751266c581a1685afbcf97.png)
+Installationsdiagramm (achten Sie auf den Winkel des Servos, wie im Bild gezeigt)![](../media/15f493110d37113d992fd9e5a76450f5.png)![](../media/fc8e14e930751266c581a1685afbcf97.png)
 
-**Note:** You cannot turn the servo shaft until you have completed this fixing step, otherwise you will need to re-set it to 10 degree using the code above.
+**Hinweis:** Sie dürfen die Servoachse nicht drehen, bis Sie diesen Fixierschritt abgeschlossen haben, andernfalls müssen Sie ihn mit dem obigen Code erneut auf 10 Grad einstellen.
 
-**Part 12**
+**Teil 12**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/459a9081531592d6dfa2b09ec0096488.png)
 
@@ -200,9 +200,9 @@ Components Needed
 
 ![](../media/3fb558672b4f1ef52b40b5cb60a93882.png)
 
-**Part 13**
+**Teil 13**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/459a9081531592d6dfa2b09ec0096488.png)
 
@@ -212,19 +212,19 @@ Components Needed
 
 ![](../media/27efd1be66e14cfacc161c620e513c1c.png)
 
-**Part 14**
+**Teil 14**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/98be19dcc673e5efe24a759b0a54b7dd.png)
 
 ![](../media/a2bc82e4973fde85b2c549a0da860400.png)
 
-Before putting them together, you need to adjust the angle of the **servo ①**. Set its initial angle to **90 degrees**.
+Bevor Sie sie zusammenbauen, müssen Sie den Winkel des **Servos ①** einstellen. Setzen Sie seinen Anfangswinkel auf **90 Grad**.
 
-**Connection Diagram**
+**Anschlussdiagramm**
 
-Note: The servo is connected to G (GND), V (VCC), D9. The brown wire is connected to Gnd (G), the red wire is connected to (V), and the orange wire is connected to digital pin D9.
+Hinweis: Der Servo ist mit G (GND), V (VCC), D9 verbunden. Das braune Kabel ist mit Gnd (G) verbunden, das rote Kabel mit (V) und das orange Kabel mit dem digitalen Pin D9.
 
 ![](../media/2e5505ffa429fb27b8e3e054358e9128.png)
 
@@ -232,17 +232,17 @@ Note: The servo is connected to G (GND), V (VCC), D9. The brown wire is connecte
 
 ![](../media/f1ffd660bc1faab0118f50ed08794c3d.png)
 
-Installation Diagram
+Installationsdiagramm
 
-**Note:** You cannot turn the servo shaft until you have completed this fixing step, otherwise you will need to re-set it to 90 degree using the code above.
+**Hinweis:** Sie dürfen die Servoachse nicht drehen, bis Sie diesen Fixierschritt abgeschlossen haben, andernfalls müssen Sie ihn mit dem obigen Code erneut auf 90 Grad einstellen.
 
 ![](../media/da31eb334e0c1e9d7d81060359ecba73.png)
 
 ![](../media/e52f51035e537315152c7498cf9bd6eb.png)
 
-**Part 15**
+**Teil 15**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/170390970615486d961355a328e60a86.png)
 
@@ -250,9 +250,9 @@ Components Needed
 
 ![](../media/cd803e2e6709d1633a22cc6f57de88ea.png)
 
-**Part 16**
+**Teil 16**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/3b52ffb52dae7c7c450af6fe3d3d9402.png)
 
@@ -260,9 +260,9 @@ Components Needed
 
 ![](../media/b56cc707cebe05c8e98b6f6afc795423.png)
 
-**Part 17**
+**Teil 17**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/2d22837fabdcc1c8c34a9927129ddcb5.png)
 
@@ -270,9 +270,9 @@ Components Needed
 
 ![](../media/4a5cc2caf5c79ef0538cf1861fa73298.png)
 
-**Part 18**
+**Teil 18**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/f0a1f87a34e18a1c1f22ffb93fc98c2c.png)
 
@@ -280,9 +280,9 @@ Components Needed
 
 ![](../media/77b94d52457f9104fc85ae91d3c18027.png)
 
-**Part 19**
+**Teil 19**
 
-Components Needed
+Benötigte Komponenten
 
 ![](../media/7a023d5f4e9a13cf7d2141ab4700d811.png)
 
@@ -290,47 +290,46 @@ Components Needed
 
 ![](../media/db89b632a149b4431d9e01a2a373851d.png)
 
-**Wiring the Upper Part Of The Kit**
+**Verdrahtung des oberen Teils des Kits**
 
-1)![](../media/469d80ec804ed66cc813071e3cf56aa8.png)Connect the lower servo to D9 of the UNO control board, and the upper servo of D10 on the UNO control board. Connect the brown wire of the servo to G, the red wire to V, and the yellow wire to S.
+1)![](../media/469d80ec804ed66cc813071e3cf56aa8.png)Verbinden Sie den unteren Servo mit D9 der UNO-Steuerplatine und den oberen Servo mit D10 der UNO-Steuerplatine. Verbinden Sie das braune Kabel des Servos mit G, das rote Kabel mit V und das gelbe Kabel mit S.
 
-2)Plug the jack of the solar panel to the SOLAR4.8-6.0V end of the solar USB charging module.
+2)Stecken Sie den Stecker des Solarpanels in den SOLAR4.8-6.0V-Anschluss des Solar-USB-Lademoduls.
 
 ![](../media/56b3303300870f07a6cf4e38ab1fa998.png)
 
-3)Next, we will use the seven 3P 26AWG 200mm F-F DuPont Wires to connect the photosensors, buzzer module, pushbutton module and the DHT11 temperature and humidity sensor to the uno board.
+3)Als nächstes verwenden wir sieben 3P 26AWG 200mm F-F DuPont-Kabel, um die Fotosensoren, das Summer-Modul, das Taster-Modul und den DHT11 Temperatur- und Feuchtigkeitssensor mit der Uno-Platine zu verbinden.
 
 ![](../media/ffb7fb703ade99a7d7a932da7c781d81.png)
 
-The photosensitive sensor on the left is connected to the A0 pin of UNO board.
+Der links befindliche Fotosensor ist mit dem A0-Pin der UNO-Platine verbunden.
 
-The photosensitive sensor on the right is connected to the A1 pin of UNO board.
+Der rechts befindliche Fotosensor ist mit dem A1-Pin der UNO-Platine verbunden.
 
-The photosensitive sensor on the back is connected to the A2 pin of UNO board.
+Der hinten befindliche Fotosensor ist mit dem A2-Pin der UNO-Platine verbunden.
 
-The photosensitive sensor on the front is connected to the A3 pin of UNO board.
+Der vorne befindliche Fotosensor ist mit dem A3-Pin der UNO-Platine verbunden.
 
-The button module is connected to the D2 pin of UNO board.
+Das Taster-Modul ist mit dem D2-Pin der UNO-Platine verbunden.
 
-The buzzer module is connected to the D6 pin of UNO board.
+Das Summer-Modul ist mit dem D6-Pin der UNO-Platine verbunden.
 
-The dht11 temperature and humidity sensor is connected to the D7 pin of UNO board.
+Der DHT11 Temperatur- und Feuchtigkeitssensor ist mit dem D7-Pin der UNO-Platine verbunden.
 
 ![](../media/9822f50f9d1906833347175a42ff3fea.png)
 
-**Note: In order to avoid reverse connection, we recommend wiring according to the following method：**
+**Hinweis: Um eine Verpolung zu vermeiden, empfehlen wir folgende Verdrahtung:**
 
--The G pin of the module is connected to the G pin of UNO with a black wire;
+- Der G-Pin des Moduls wird mit einem schwarzen Kabel mit dem G-Pin von UNO verbunden;
 
--The V pin of the module is connected to the V pin of UNO with a red wire;
+- Der V-Pin des Moduls wird mit einem roten Kabel mit dem V-Pin von UNO verbunden;
 
--The S pin of the module is connected to the S pin of UNO with a orange wire.
+- Der S-Pin des Moduls wird mit einem orangefarbenen Kabel mit dem S-Pin von UNO verbunden.
 
-As shown in the way the dht11 temperature and humidity sensor is connected to the UNO board.
+Wie im Anschlussbeispiel des DHT11 Temperatur- und Feuchtigkeitssensors an die UNO-Platine gezeigt.
 
 ![](../media/8beddf04e8c9ee1c94c91b225328036e.png)
 
-4)Finally, connect the bh1750 digital light intensity module to the UNO board.
+4)Zum Schluss verbinden Sie das BH1750 Digital-Lichtintensitätsmodul mit der UNO-Platine.
 
 ![](../media/d7fccd89d5bed291ccce34babfbf5c91.png)
-

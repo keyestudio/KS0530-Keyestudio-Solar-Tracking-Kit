@@ -1,151 +1,150 @@
-## Lesson 10: Charging Principle of the Solar Tracking Kit
+## Lektion 10: Ladeprinzip des Solar-Tracking-Kits
 
-**(1)Solar and usb charging module:**
+**(1) Solar- und USB-Lademodul:**
 
 ![](../media/35ee9ecf293719fbe6b09fa7d79673db.png)
 
-This module integrates a charging and discharging chip, which can be connected with an external rechargeable battery and a solar panel through the PH2.0MM interfaces.
+Dieses Modul integriert einen Lade- und Entladechip, der über die PH2.0MM-Schnittstellen mit einer externen wiederaufladbaren Batterie und einem Solarpanel verbunden werden kann.
 
-In this kit, we provide a battery box that holds one 18650 battery, so you will need to prepare a rechargeable 18650 battery yourself.
+In diesem Kit stellen wir ein Batteriefach zur Verfügung, das eine 18650-Batterie aufnehmen kann, daher müssen Sie eine wiederaufladbare 18650-Batterie selbst vorbereiten.
 
-The module has a Micro USB port and you can use the computer to charge the 18650 battery through the micro USB port.
+Das Modul verfügt über einen Micro-USB-Anschluss, über den Sie die 18650-Batterie mit einem Computer aufladen können.
 
-In addition, it has a boost module which can increase the voltage of batteries to 6.6V. The DIP switch on the module is the OUTPUT switch of 6.6V. The pin G and V of this module can output 6.6V and the pin S can read the battery voltage after the resistance 1/2 voltage.
+Außerdem besitzt es ein Boost-Modul, das die Batteriespannung auf 6,6 V erhöhen kann. Der DIP-Schalter auf dem Modul ist der OUTPUT-Schalter für 6,6 V. Der Pin G und V dieses Moduls können 6,6 V ausgeben und der Pin S kann die Batteriespannung nach dem Widerstand mit halber Spannung messen.
 
-**Parameters:**
+**Parameter:**
 
-| Charging Interface                             | Micro USB HP2.0MM Interface for Solar Panel |
-|------------------------------------------------|---------------------------------------------|
-| Input voltage of the solar panel interface     | 4.4-6V                                      |
-| Constant voltage charging value of the battery | 4.15-4.24V                                  |
-| Maximum charging current                       | 800mA                                       |
-| Output interface                               | 3 P 2.54mm Bent Needle                      |
-| Input Voltage                                  | 6.6V                                        |
-| Maximum output current                         | 1A                                          |
-| External Battery                               | 18650 battery                               |
-| Environmental attributes                       | ROHS                                        |
+| Ladeanschluss                                | Micro USB HP2.0MM Schnittstelle für Solarpanel |
+|----------------------------------------------|------------------------------------------------|
+| Eingangsspannung der Solarpanel-Schnittstelle | 4,4-6 V                                        |
+| Konstantspannungsladewert der Batterie       | 4,15-4,24 V                                    |
+| Maximaler Ladestrom                          | 800 mA                                         |
+| Ausgangsschnittstelle                        | 3 P 2,54 mm gebogene Nadel                      |
+| Eingangsspannung                            | 6,6 V                                          |
+| Maximaler Ausgangsstrom                      | 1 A                                            |
+| Externe Batterie                            | 18650 Batterie                                 |
+| Umweltattribute                             | ROHS                                           |
 
-**Schematic Diagram**
+**Schaltplan**
 
 ![](../media/de5fe1122f8eac68785a2894a8312194.png)
 
-**Features**
+**Eigenschaften**
 
 ![](../media/aff5ac4262adb20b7af065a4599f8b91.png)
 
 
 ![](../media/8cc32ae4cc95d353f08354f4746ee047.jpeg)
 
-**(2)PET Solar Panel**
+**(2) PET-Solarpanel**
 
 ![](../media/9634ce5e4e9d603a21f5e83caafbd6f4.jpeg)
 
-The main factors that affect the output performance of solar panels are as follows:
+Die Hauptfaktoren, die die Ausgangsleistung von Solarpanels beeinflussen, sind:
 
-(1) Load impedance
+(1) Lastimpedanz
 
-(2) Sunlight intensity
+(2) Sonnenlichtintensität
 
-(3)Temperature
+(3) Temperatur
 
-(4) Illumination angle and illumination area
+(4) Beleuchtungswinkel und Beleuchtungsfläche
 
-You can use a multimeter to measure the output current of the solar panel, adjust the multimeter to DC current level and large range jack, connect the red pen of the multimeter to the positive pole of the solar panel and the black pen to the negative pole of the solar panel, and measure it.
+Sie können mit einem Multimeter den Ausgangsstrom des Solarpanels messen, stellen Sie das Multimeter auf Gleichstromstromstärke und großen Messbereich ein, verbinden Sie die rote Messleitung des Multimeters mit dem Pluspol des Solarpanels und die schwarze Messleitung mit dem Minuspol des Solarpanels und messen Sie.
 
-Can solar panels store electricity?
+Können Solarpanels Strom speichern?
 
-No, generally it needs to be paired with a battery to store electricity.
+Nein, normalerweise müssen sie mit einer Batterie kombiniert werden, um Strom zu speichern.
 
-Can solar panels generate electricity on cloudy days?
+Können Solarpanels an bewölkten Tagen Strom erzeugen?
 
-No, the power generated by solar panels on cloudy days is very small. In this case, they have voltage but no current.
+Nein, die von Solarpanels an bewölkten Tagen erzeugte Leistung ist sehr gering. In diesem Fall haben sie Spannung, aber keinen Strom.
 
-Can solar panels generate electricity under indoor lighting?
+Können Solarpanels unter Innenbeleuchtung Strom erzeugen?
 
-No, solar panels cannot generate electricity under indoor lighting.
+Nein, Solarpanels können unter Innenbeleuchtung keinen Strom erzeugen.
 
-**(3)Charge the battery with the solar panel.**
+**(3) Batterie mit dem Solarpanel aufladen**
 
-In this kit, we provide a battery case that is compatible with one 18650 battery, and it is also configured with two interfaces so that you can charge the battery or use it for power.
+In diesem Kit stellen wir ein Batteriefach zur Verfügung, das mit einer 18650-Batterie kompatibel ist und mit zwei Schnittstellen ausgestattet ist, sodass Sie die Batterie aufladen oder als Stromquelle verwenden können.
 
 ![](../media/0b1a78bcd390a4a21c6079f86dbb00ca.png)
 
-You will need to prepare yourself a 18650 battery as well as a battery charger.
+Sie müssen selbst eine 18650-Batterie sowie ein Ladegerät vorbereiten.
 
-The following parameters are available for your purchase：
+Die folgenden Parameter sind für Ihren Kauf verfügbar:
 
-| Specifications            |                                                           |
-|---------------------------|-----------------------------------------------------------|
-| Size                      | 18650                                                     |
-| Positive Terminal：       | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png)with a top |
-| Capacity                  | >2200mAh                                                 |
-| Nominal Voltage           | 3.7V                                                      |
-| Maximum Voltage           | 4.2V                                                      |
-| Discharge cut-off Voltage | 2.5V                                                      |
-| Rechargeable              | Yes                                                       |
-| Approx. Dimensions        | 18.5mm x 65.2mm                                           |
+| Spezifikationen          |                                                           |
+|--------------------------|-----------------------------------------------------------|
+| Größe                    | 18650                                                     |
+| Pluspol：                | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png) mit oben |
+| Kapazität                | >2200 mAh                                                 |
+| Nennspannung             | 3,7 V                                                     |
+| Maximale Spannung        | 4,2 V                                                     |
+| Entladeschlussspannung   | 2,5 V                                                     |
+| Wiederaufladbar          | Ja                                                        |
+| Ca. Abmessungen          | 18,5 mm x 65,2 mm                                         |
 
-We can connect the solar panel to the charging module and a 18650 lithium case, so that the solar panel will charge the battery.
+Wir können das Solarpanel mit dem Lademodul und einem 18650 Lithium-Batteriefach verbinden, sodass das Solarpanel die Batterie auflädt.
 
 ![](../media/901cdf76ced95e24e2dc2a43441bb76f.png)
 
-Solar panels are not batteries, do not have the function of power storage. It can store electricity in the battery.
+Solarpanels sind keine Batterien und haben keine Funktion zur Stromspeicherung. Der Strom kann in der Batterie gespeichert werden.
 
-The output of solar panels is weak in environments where there is no sunlight, indoor lighting and low winter light. The energy carried by these lights is very small, even if it is brighter.
+Die Ausgangsleistung von Solarpanels ist in Umgebungen ohne Sonnenlicht, bei Innenbeleuchtung und geringem Winterlicht schwach. Die von diesen Lichtquellen getragene Energie ist sehr gering, selbst wenn es heller ist.
 
-**Note:**
+**Hinweis:**
 
-The solar panel may require long periods of direct sunlight to charge the batteries enough. 18650 batteries should not be exposed to direct sunlight as well as avoiding high temperatures around it to avoid burnout.
+Das Solarpanel benötigt möglicherweise lange Zeiten direkter Sonneneinstrahlung, um die Batterien ausreichend zu laden. 18650-Batterien sollten nicht direktem Sonnenlicht ausgesetzt werden und hohe Temperaturen in der Umgebung sollten vermieden werden, um ein Durchbrennen zu verhindern.
 
 ![](../media/741dcf23d13ba6e94e4910ac0baccf90.png)
-**(4)Smart phone charging Module**
+**(4) Smartphone-Lademodul**
 
-The mobile phone charging module is a lithium battery boost module of 3.7V which can output 5V, 1A through the PH2.0 terminal and USB port.
+Das Handy-Lademodul ist ein Lithium-Batterie-Boost-Modul mit 3,7 V, das über den PH2.0-Anschluss und den USB-Anschluss 5 V, 1 A ausgeben kann.
 
-Parameters:
+Parameter:
 
-| Property              | non-isolated boost module (BOOST)                                                                  |
-|-----------------------|----------------------------------------------------------------------------------------------------|
-| Input voltage         | 1-5V                                                                                               |
-| Output voltage        | 5士0.1V                                                                                            |
-| Output current:       | Rated 1-1.5A (single cell lithium battery input), maximum 1.5A (single cell lithium battery input) |
-| Conversion efficiency | Up to 96% .                                                                                        |
-| Switching frequency   | 500KHz .                                                                                           |
-| Working temperature   | industrial grade (-40°C to +85°C )                                                                 |
-| Full load heating     | 30°C                                                                                               |
-| Quiescent current     | 130uA                                                                                              |
+| Eigenschaft            | nicht isoliertes Boost-Modul (BOOST)                                                              |
+|-----------------------|--------------------------------------------------------------------------------------------------|
+| Eingangsspannung      | 1-5 V                                                                                            |
+| Ausgangsspannung      | 5 ± 0,1 V                                                                                       |
+| Ausgangsstrom:        | Nennstrom 1-1,5 A (Eingang Einzellithiumbatterie), maximal 1,5 A (Eingang Einzellithiumbatterie) |
+| Wirkungsgrad          | Bis zu 96 %                                                                                     |
+| Schaltfrequenz        | 500 kHz                                                                                        |
+| Betriebstemperatur    | Industriequalität (-40 °C bis +85 °C)                                                           |
+| Volllast-Erwärmung   | 30 °C                                                                                           |
+| Ruhestrom             | 130 µA                                                                                         |
 
-PH2.0 terminal of the phone charging module can be connected to the battery case.
+Der PH2.0-Anschluss des Handy-Lademoduls kann mit dem Batteriefach verbunden werden.
 
-The USB port of it can be connected to an android phone and charged.
+Der USB-Anschluss kann mit einem Android-Handy verbunden und aufgeladen werden.
 
-Note that the power of 18650 battery must be sufficient (voltage up to 3.2-4.2V) to charge an Android phone. Otherwise it does not work, even if the phone shows it is charging.
+Beachten Sie, dass die Leistung der 18650-Batterie ausreichend sein muss (Spannung bis zu 3,2-4,2 V), um ein Android-Handy zu laden. Andernfalls funktioniert es nicht, auch wenn das Handy anzeigt, dass es lädt.
 
 ![](../media/ac10bacad797ef9104c98f1c2735cea4.png)
 
-**(5)Charging Principle of the Solar Tracking Kit**
+**(5) Ladeprinzip des Solar-Tracking-Kits**
 
-1、Maximum charging current of micro USB port 1A
+1. Maximaler Ladestrom des Micro-USB-Anschlusses 1 A
 
-2、Solar panel maximum charging current 80mA
+2. Maximaler Ladestrom des Solarpanels 80 mA
 
-3、Maximum output voltage of USB A port female holder: 5V/1.5A (can be used for mobile phone charging)
+3. Maximale Ausgangsspannung des USB-A-Buchsenhalters: 5 V/1,5 A (kann zum Laden von Handys verwendet werden)
 
 ![](../media/406f0b8202788f1214fddca0970bd688.png)
 
-4、Battery type: 18650 lithium battery with a top, recommended to buy capacity greater than 2200mAh
+4. Batterietyp: 18650 Lithium-Batterie mit obenliegendem Pluspol, empfohlen wird eine Kapazität von mehr als 2200 mAh
 
-**Note:**
+**Hinweis:**
 
-1).The charging protocol of phone charging Module only supports Android but not iOS.
+1). Das Ladeprotokoll des Handy-Lademoduls unterstützt nur Android, nicht iOS.
 
-2).The solar panel can't charge mobile phones directly; it need to store electricity in a battery and the battery charge the phone.
+2). Das Solarpanel kann Handys nicht direkt laden; es muss Strom in einer Batterie speichern und die Batterie lädt das Handy.
 
-3).The voltage of the 18650 battery needs to be in the range of 3.2---4.2V to charge the cell phone. When the voltage of the battery is less than 3.2V, even though the phone shows that it is charging, it is not actually charging.
+3). Die Spannung der 18650-Batterie muss im Bereich von 3,2–4,2 V liegen, um das Handy zu laden. Wenn die Batteriespannung unter 3,2 V liegt, lädt das Handy trotz Anzeige nicht tatsächlich.
 
-4).The solar panel may require long periods of direct sunlight to charge the batteries enough. 18650 batteries should not be exposed to direct sunlight as well as avoiding high temperatures around it to avoid burnout.
+4). Das Solarpanel benötigt möglicherweise lange Zeiten direkter Sonneneinstrahlung, um die Batterien ausreichend zu laden. 18650-Batterien sollten nicht direktem Sonnenlicht ausgesetzt werden und hohe Temperaturen in der Umgebung sollten vermieden werden, um ein Durchbrennen zu verhindern.
 
-5).If you want to charge your 18650 battery quickly, you can charge the battery using the 18650 dedicated charger. Or use a USB 2.0 to micro USB cable to connect the charging module and charge the battery using a computer or power supply. (USB 2.0 to micro USB cable not included in kit)
+5). Wenn Sie Ihre 18650-Batterie schnell laden möchten, können Sie die Batterie mit einem speziellen 18650-Ladegerät laden. Oder verwenden Sie ein USB-2.0-zu-Micro-USB-Kabel, um das Lademodul anzuschließen und die Batterie mit einem Computer oder Netzteil zu laden. (USB-2.0-zu-Micro-USB-Kabel ist nicht im Kit enthalten)
 
-6).This is just a simulation experiment and will not meet your daily power needs, don't use it as your regular cell phone power source.
-
+6). Dies ist nur ein Simulationsversuch und wird Ihren täglichen Strombedarf nicht decken, verwenden Sie es nicht als reguläre Stromquelle für Ihr Handy.

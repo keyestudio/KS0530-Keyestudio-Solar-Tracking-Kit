@@ -1,48 +1,48 @@
-## Lesson 6: Photosensitive Sensor
+## Lektion 6: Fotosensitiver Sensor
 
-**(1)Description**
+**(1)Beschreibung**
 
-There are four photoresistor sensor modules in this kit, the ambient light sensors, with photoresistor as main component.
+In diesem Kit sind vier Fotowiderstand-Sensormodule enthalten, die Umgebungslichtsensoren mit Fotowiderstand als Hauptkomponente.
 
-The resistance of a photoresistor varies with the light intensity. When there is light around, its resistance ranges in 5-10KΩ; while when it is dark, the resistance is only 0.2MΩ. Based on this property, a circuit can be built to convert the change in resistance to changes in voltage.
+Der Widerstand eines Fotowiderstands variiert mit der Lichtintensität. Wenn Licht vorhanden ist, liegt sein Widerstand im Bereich von 5-10KΩ; während er im Dunkeln nur 0,2MΩ beträgt. Basierend auf dieser Eigenschaft kann eine Schaltung aufgebaut werden, die die Widerstandsänderung in Spannungsänderungen umwandelt.
 
-What’s more, the sensor comes with an anti-reverse insertion terminal with a pitch of 2.54mm to facilitate the wiring. It is also compatible with many kinds of microcontrollers, such the Arduino microcontroller series.
+Außerdem verfügt der Sensor über einen verpolungssicheren Anschluss mit einem Rastermaß von 2,54 mm, um die Verkabelung zu erleichtern. Er ist auch mit vielen Arten von Mikrocontrollern kompatibel, wie der Arduino-Mikrocontroller-Serie.
 
-Here, we apply this sensor with the Arduino microcontroller. The S (signal) end of the sensor should be input to the analog pin of Arduino to detect the variation in analog value which will be printed on the serial monitor. And please notice that there are two positioning holes with a diameter of 4.9mm built on the sensor to help fix it.
+Hier verwenden wir diesen Sensor mit dem Arduino-Mikrocontroller. Der S (Signal)-Anschluss des Sensors sollte an den analogen Pin des Arduino angeschlossen werden, um die Variation des analogen Werts zu erfassen, der im seriellen Monitor ausgegeben wird. Bitte beachten Sie, dass der Sensor zwei Positionierlöcher mit einem Durchmesser von 4,9 mm besitzt, um die Befestigung zu erleichtern.
 
-**(2)Parameters:**
+**(2)Parameter:**
 
-Working voltage：3.3V-5V（DC）
+Betriebsspannung：3,3V-5V（DC）
 
-Interface：3PIN
+Schnittstelle：3PIN
 
-Output signal：analog signal
+Ausgangssignal：analoges Signal
 
-Weight：2.3g
+Gewicht：2,3g
 
 ![](../media/537af5b84f09fe71a4e1f6cbeabdfc81.png)
 
-**(3)You need to prepare:**
+**(3)Sie müssen vorbereiten:**
 
-| Control Board*1                                | USB Cable*1                                    | Yellow LED Module*1                            | 3pin DuPont Wire*2                             | Push Button Module*4                           |
+| Steuerplatine*1                                | USB-Kabel*1                                    | Gelbes LED-Modul*1                            | 3-poliges DuPont-Kabel*2                       | Taster-Modul*4                                |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/628e402ae3fc455a2812705b17d7c30d.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) | ![](../media/537af5b84f09fe71a4e1f6cbeabdfc81.png) |
 
-**(4).Connection Diagram:**
+**(4).Anschlussdiagramm:**
 
-| Pin Connection Table     |                      |
-|--------------------------|----------------------|
-| Pin of **Photoresistor** | Pin of Control Board |
-| G                        | G(GND)               |
-| V                        | V(5V)                |
-| S                        | A0                   |
+| Anschluss-Tabelle       |                      |
+|------------------------|----------------------|
+| Pin des **Fotowiderstands** | Pin der Steuerplatine |
+| G                      | G(GND)               |
+| V                      | V(5V)                |
+| S                      | A0                   |
 
-| Pin Connection Table |                      |
-|----------------------|----------------------|
-| Pin of the **LED**   | Pin of Control Board |
-| G                    | G(GND)               |
-| V                    | V(5V)                |
-| S                    | D3                   |
+| Anschluss-Tabelle      |                      |
+|-----------------------|----------------------|
+| Pin der **LED**       | Pin der Steuerplatine |
+| G                     | G(GND)               |
+| V                     | V(5V)                |
+| S                     | D3                   |
 
 
 
@@ -55,4 +55,3 @@ Weight：2.3g
 
 
 ![](../media/e08a2aa856074276ab58ab45e2652f17.png)![](../media/819aafadd69170aca8063e25a198f0ae.png)
-

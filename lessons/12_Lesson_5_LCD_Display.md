@@ -1,46 +1,46 @@
-## Lesson 5: 1602 LCD Display Module
+## Lektion 5: 1602 LCD Display Modul
 
-**(1).Description：**
+**(1).Beschreibung：**
 
 ![](../media/28bf5a86d2265afb050e55589e145fe9.png)
 
-With I2C communication module, this is a display module that can show 2 lines with 16 characters per line.
+Mit I2C-Kommunikationsmodul ist dies ein Display-Modul, das 2 Zeilen mit jeweils 16 Zeichen anzeigen kann.
 
-It shows blue background and white word and connects to I2C interface of MCU, which highly save the MCU resources.
+Es zeigt einen blauen Hintergrund mit weißen Buchstaben und wird an die I2C-Schnittstelle des MCU angeschlossen, was die MCU-Ressourcen erheblich spart.
 
-On the back of LCD display, there is a blue potentiometer for adjusting the backlight. The communication address defaults to 0x27.
+Auf der Rückseite des LCD-Displays befindet sich ein blauer Potentiometer zur Einstellung der Hintergrundbeleuchtung. Die Kommunikationsadresse ist standardmäßig auf 0x27 eingestellt.
 
-The original 1602 LCD can start and run with 11 IO ports, but ours is built with ARDUINOIIC/I2C interface, saving 9 IO ports. Alternatively, the module comes with 4 positioning holes with a diameter of 3mm, which is convenient for you to fix on other devices.
+Das originale 1602 LCD kann mit 11 IO-Ports gestartet und betrieben werden, aber unseres ist mit ARDUINOIIC/I2C-Schnittstelle gebaut, wodurch 9 IO-Ports eingespart werden. Alternativ verfügt das Modul über 4 Befestigungslöcher mit einem Durchmesser von 3 mm, was es Ihnen erleichtert, es an anderen Geräten zu befestigen.
 
-**(2).Parameters：**
+**(2).Parameter：**
 
-I2C address: 0x27
+I2C-Adresse: 0x27
 
-Backlight (blue, white)
+Hintergrundbeleuchtung (blau, weiß)
 
-Power supply voltage: **5V**
+Versorgungsspannung: **5V**
 
-Adjustable contrast
+Einstellbarer Kontrast
 
-GND: A pin that connects to ground
+GND: Ein Pin, der mit Masse verbunden wird
 
-VCC: A pin that connects to a +5V power supply
+VCC: Ein Pin, der mit einer +5V Stromversorgung verbunden wird
 
-SDA: A pin that connects to analog port A4 for IIC communication
+SDA: Ein Pin, der für die IIC-Kommunikation mit dem analogen Port A4 verbunden wird
 
-SCL: A pin that connects to analog port A5 for IIC communication
+SCL: Ein Pin, der für die IIC-Kommunikation mit dem analogen Port A5 verbunden wird
 
-**(3).You need to prepare:**
+**(3).Sie müssen vorbereiten:**
 
-| Control Board*1                                | USB Cable*1                                    | LCD Display*1                                  | 4P-1P F-F DuPon Wire                            |
+| Steuerplatine*1                                | USB-Kabel*1                                    | LCD Display*1                                  | 4P-1P F-F DuPon Kabel                            |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/28bf5a86d2265afb050e55589e145fe9.png) | ![](../media/f4df3fe85086b2896d958b1caf93a038.png) |
 
-**(4)Connection Diagram**
+**(4)Anschlussdiagramm**
 
-| Pin Connection Table       |                      |
+| Pin Anschluss Tabelle       |                      |
 |----------------------------|----------------------|
-| Pin of the **LCD Display** | Pin of Control Board |
+| Pin des **LCD Displays**    | Pin der Steuerplatine |
 | GND                        | G(GND)                 |
 | VCC                        | V(5V)                 |
 | SDA                        | A4                 |
@@ -53,4 +53,3 @@ SCL: A pin that connects to analog port A5 for IIC communication
 ![](../media/2ab182ee1dd52f41062a95d8519d6a17.png)
 
 ![](../media/6eb2b20c59f81f11a84c57be5d8a91f4.png)![](../media/5facbfa2ab2b3bb0a6946cf0a77d263a.png)
-

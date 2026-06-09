@@ -1,32 +1,31 @@
-# 5.Solar Panel Device with Multiply Functions
+# 5.Solarzellen-Gerät mit mehreren Funktionen
 
-The assembled solar panel device is ready!
+Das zusammengebaute Solarzellen-Gerät ist einsatzbereit!
 
-In the previous lessons, we only studied the function and working principle of a certain electronic part individually, and tested whether it can work normally.
+In den vorherigen Lektionen haben wir nur die Funktion und das Funktionsprinzip eines bestimmten elektronischen Bauteils einzeln untersucht und getestet, ob es normal funktioniert.
 
-Now we have them working together to build a solar panel device with multiple functions.
+Jetzt lassen wir sie zusammenarbeiten, um ein Solarzellen-Gerät mit mehreren Funktionen zu bauen.
 
-Keep the 18650 battery charged enough as it will be needed to power two servos, an LCD display, four light sensors, a DHT11 sensor and button module.
+Halten Sie die 18650-Batterie ausreichend geladen, da sie benötigt wird, um zwei Servos, ein LCD-Display, vier Lichtsensoren, einen DHT11-Sensor und ein Tastenmodul mit Strom zu versorgen.
 
 ![](../media/f4b78ac6371097b2e32409c226873651.png)
 
 ![](../media/94d386c19c8b95904852ee2a11a4f272.png)
 
-After the code is uploaded successfully, turn on the power switch of the charging module and press the power switch of the control board to 5V.
+Nachdem der Code erfolgreich hochgeladen wurde, schalten Sie den Netzschalter des Ladermoduls ein und drücken Sie den Netzschalter der Steuerplatine auf 5V.
 
 ![](../media/edc80fe0bd7a1cce69bd760ab5d247bc.png)![](../media/67fc5cb5b7eabda71fcb2296a8def597.png)
 
-The servo will rotate to the initial angle. When the ambient light sensor detects changes in light intensity, servos rotate the solar panel to the position where the light is the strongest and LCD1602 shows the value of the light intensity and temperature and humidity detected by the BH1750 and DHT11 respectively.
+Das Servo dreht sich auf den Anfangswinkel. Wenn der Umgebungslichtsensor Änderungen der Lichtintensität erkennt, drehen die Servos das Solarzellen-Panel in die Position, in der das Licht am stärksten ist, und das LCD1602 zeigt den Wert der Lichtintensität sowie die von BH1750 und DHT11 jeweils erfasste Temperatur und Luftfeuchtigkeit an.
 
-If you feel that the solar panel rotates too slowly or the solar panel shakes, you can adjust the rotation speed of the servo through the button module.
+Wenn Sie das Gefühl haben, dass sich das Solarzellen-Panel zu langsam dreht oder das Panel wackelt, können Sie die Drehgeschwindigkeit des Servos über das Tastenmodul einstellen.
 
-For example, within the specified time, the servo rotates 1° each time. After pressing the button, the servo will rotate 2° each time within the same time.
+Zum Beispiel dreht sich das Servo innerhalb der vorgegebenen Zeit jedes Mal um 1°. Nach dem Drücken der Taste dreht sich das Servo innerhalb derselben Zeit jedes Mal um 2°.
 
-Press it again and the servo will rotate 3° each time in the same time. By analogy, the servo can be adjusted to rotate up to 5° each time in the same time.
+Drücken Sie erneut, und das Servo dreht sich jedes Mal um 3° innerhalb derselben Zeit. Analog kann das Servo so eingestellt werden, dass es sich bis zu 5° jedes Mal innerhalb derselben Zeit dreht.
 
-**“byte resolution = 1”**
+**„byte resolution = 1“**
 
-You can adjust the resolution to change the rotation angle of the servo. Press the button to change the resolution from 1° to 5°. You can also change `byte m_speed = 10` to set the delay time to adjust the speed of the servo; the longer the time, the smaller the speed.
+Sie können die Auflösung anpassen, um den Drehwinkel des Servos zu ändern. Drücken Sie die Taste, um die Auflösung von 1° auf 5° zu ändern. Sie können auch `byte m_speed = 10` ändern, um die Verzögerungszeit einzustellen und so die Geschwindigkeit des Servos zu regulieren; je länger die Zeit, desto kleiner die Geschwindigkeit.
 
 ![](../media/55bbbb88c4e18c1b90ce588fa76d0e3d.png)
-

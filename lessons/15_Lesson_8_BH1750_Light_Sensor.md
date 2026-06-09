@@ -1,46 +1,46 @@
-## Lesson 8: BH1750 Digital Light Intensity Module
+## Lektion 8: BH1750 Digitales Lichtintensitätsmodul
 
-**(1)Description:**
+**(1)Beschreibung:**
 
 ![](../media/53ab41d84e93814e57076a8cc25e1aa7.png)
 
-The main component of this sensor is chip BH1750FVI which is an integrated chip for digital light intensity.
+Die Hauptkomponente dieses Sensors ist der Chip BH1750FVI, ein integrierter Chip für digitale Lichtintensität.
 
-As shown in the picture below, BH1750 is composed of a photodiode, an operational amplifier, an ADC acquisition, a crystal oscillator, etc. The photodiode converts the input optical signal into an electrical signal through the photovoltaic effect. After being amplified by the operational amplifier circuit, the voltage is collected by the ADC, and then converted into a 16-bit binary number through the logic circuit and stored in the internal register(Note: The stronger the light, the greater the photocurrent, and the greater the voltage, so the intensity of the light can be judged by the value of the voltage.
+Wie im Bild unten gezeigt, besteht der BH1750 aus einer Photodiode, einem Operationsverstärker, einer ADC-Erfassung, einem Quarzoszillator usw. Die Photodiode wandelt das eingehende optische Signal durch den photovoltaischen Effekt in ein elektrisches Signal um. Nach der Verstärkung durch die Operationsverstärkerschaltung wird die Spannung vom ADC erfasst und dann durch die Logikschaltung in eine 16-Bit-Binärzahl umgewandelt und im internen Register gespeichert (Hinweis: Je stärker das Licht, desto größer der Fotostrom und desto höher die Spannung, daher kann die Lichtintensität anhand des Spannungswertes beurteilt werden.
 
-However, it should be noted that the voltage and the light intensity are one-to-one correspondence, but not proportional. That is why this chip linear processing is done and why the integrated IC is used directly instead of photodiodes). BH1750 leads out the clock line and data line. The single-chip microcomputer can communicate with the BH1750 module through the I2C protocol. You can choose the working mode of the BH1750, or you can extract the illuminance data of the BH1750 register.
+Es ist jedoch zu beachten, dass Spannung und Lichtintensität eine Eins-zu-eins-Beziehung haben, aber nicht proportional sind. Deshalb wird in diesem Chip eine lineare Verarbeitung durchgeführt und warum der integrierte IC direkt anstelle von Photodioden verwendet wird). Der BH1750 führt die Taktleitung und Datenleitung heraus. Der Mikrocontroller kann über das I2C-Protokoll mit dem BH1750-Modul kommunizieren. Sie können den Arbeitsmodus des BH1750 wählen oder die Beleuchtungsstärkedaten aus dem BH1750-Register auslesen.
 
-**(2)Parameters:**
+**(2)Parameter:**
 
-I2C digital interface, supporting a maximum rate of 400Kbps
+I2C-Digitalinterface, unterstützt eine maximale Geschwindigkeit von 400Kbps
 
-The output is Illuminance
+Die Ausgabe ist Beleuchtungsstärke
 
-Measuring range is 1\~65535 lux, the minimum resolution is 1lux
+Messbereich ist 1~65535 Lux, die minimale Auflösung beträgt 1 Lux
 
-Low power consumption (Power down) function
+Niedriger Stromverbrauch (Power down) Funktion
 
-Shield the interference of light changes caused by 50/60Hz mains frequency 
+Schirmt Störungen durch Lichtänderungen verursacht durch 50/60Hz Netzfrequenz ab
 
-Supports two I2C addresses, selected by the ADDR pin
+Unterstützt zwei I2C-Adressen, ausgewählt durch den ADDR-Pin
 
-Small measurement deviation(maximum accuracy error +/-20%)
+Geringe Messabweichung (maximaler Genauigkeitsfehler +/-20%)
 
-GND power ground
+GND Masseanschluss
 
-SDA I2C bus data pin
+SDA I2C-Bus Datenpin
 
-SCL I2C bus clock pin
+SCL I2C-Bus Taktpin
 
-VCC power supply voltage 3-5V
+VCC Versorgungsspannung 3-5V
 
-**(3)You need to prepare:**
+**(3)Sie müssen vorbereiten:**
 
-| Control Board*1                                | USB Cable*1                                    | BH1750FVI Sensor*1                             | 350mm 4pin F-F Wire                             |
+| Steuerplatine*1                                | USB-Kabel*1                                    | BH1750FVI Sensor*1                             | 350mm 4poliges F-F Kabel                        |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/53ab41d84e93814e57076a8cc25e1aa7.png) | ![](../media/626e88c46a8a1385bd0558610a17ca9f.png) |
 
-**(4)Connection Diagram:**
+**(4)Anschlussdiagramm:**
 
 ![](../media/d7fccd89d5bed291ccce34babfbf5c91.png)
 
@@ -50,5 +50,4 @@ VCC power supply voltage 3-5V
 
 ![](../media/92857c7b8c368330acb6630e39bd462c.png)
 
-(**Note**: since the I2C bus can have multiple devices with different addresses, when the digital light intensity module is used together with the I2C LCD1602 module, there is no conflict because they have different addresses.)
-
+(**Hinweis**: Da der I2C-Bus mehrere Geräte mit unterschiedlichen Adressen haben kann, gibt es keine Konflikte, wenn das digitale Lichtintensitätsmodul zusammen mit dem I2C LCD1602 Modul verwendet wird, da sie unterschiedliche Adressen haben.)

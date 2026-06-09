@@ -1,20 +1,20 @@
-# 2.Getting Started with Arduino
+# 2.Einstieg in Arduino
 
-## **2.1 What is Arduino?**
+## **2.1 Was ist Arduino?**
 
-Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. You can tell your board what to do by writing the program code in the IDE and sending the instructions to the microcontroller on the board. To do so you use the Arduino programming language (based on Wiring), and the Arduino Software (IDE), based on Processing.
+Arduino ist eine Open-Source-Elektronikplattform, die auf einfach zu verwendender Hardware und Software basiert. Arduino-Boards können Eingaben lesen – Licht auf einem Sensor, einen Finger auf einem Knopf oder eine Twitter-Nachricht – und diese in eine Ausgabe umwandeln – einen Motor aktivieren, eine LED einschalten, etwas online veröffentlichen. Sie können Ihrem Board sagen, was es tun soll, indem Sie den Programmcode in der IDE schreiben und die Anweisungen an den Mikrocontroller auf dem Board senden. Dazu verwenden Sie die Arduino-Programmiersprache (basierend auf Wiring) und die Arduino-Software (IDE), die auf Processing basiert.
 
-## **2.2 Installing the Arduino IDE for Windows**
+## **2.2 Installation der Arduino IDE für Windows**
 
-Visit <https://www.arduino.cc/en/software> to download the latest Arduino IDE version for your computer’s operating system. There are versions for Windows, Mac, and Linux systems.
+Besuchen Sie <https://www.arduino.cc/en/software>, um die neueste Version der Arduino IDE für das Betriebssystem Ihres Computers herunterzuladen. Es gibt Versionen für Windows, Mac und Linux.
 
-**The Arduino IDE 2**
+**Die Arduino IDE 2**
 
-The Arduino IDE 2 is a big step from its sturdy predecessor, Arduino IDE 1.x, and comes with revamped UI, improved board & library manager, debugger, autocomplete feature and much more.
+Die Arduino IDE 2 ist ein großer Schritt gegenüber ihrem robusten Vorgänger, der Arduino IDE 1.x, und bietet eine überarbeitete Benutzeroberfläche, einen verbesserten Board- & Bibliotheksmanager, Debugger, Autovervollständigungsfunktion und vieles mehr.
 
-Here we will show how to download and install the Arduino IDE 2.2.1 on your Windows
+Hier zeigen wir, wie man die Arduino IDE 2.2.1 auf Ihrem Windows installiert.
 
-You can choose between the Installer (.exe) and the Zip packages. We suggest you use the first one that installs directly everything you need to use the Arduino Software (IDE), including the drivers. With the Zip package you need to install the drivers manually. The Zip file is also useful if you want to create a [portable installation](https://arduino.cc/en/Guide/PortableIDE).
+Sie können zwischen dem Installer (.exe) und den Zip-Paketen wählen. Wir empfehlen die erste Option, die direkt alles installiert, was Sie benötigen, um die Arduino Software (IDE) zu verwenden, einschließlich der Treiber. Mit dem Zip-Paket müssen Sie die Treiber manuell installieren. Die Zip-Datei ist auch nützlich, wenn Sie eine [portable Installation](https://arduino.cc/en/Guide/PortableIDE) erstellen möchten.
 
 ![](../media/06c450364fe07776520f5b245a6ed165.png)
 
@@ -34,11 +34,11 @@ You can choose between the Installer (.exe) and the Zip packages. We suggest you
 
 ![](../media/7a1e5c40aec7d793ca7975966ddf3cc4.png)
 
-Click Finish and run Arduino IDE
+Klicken Sie auf Fertigstellen und starten Sie die Arduino IDE
 
 ![](../media/5038e9b20e71f7b401a691c43baf599a.png)
 
-Firewall will ask whether we'd like to give allow access,just simply click on **Allowaccess**.
+Die Firewall wird fragen, ob Sie den Zugriff erlauben möchten, klicken Sie einfach auf **Zugriff erlauben**.
 
 ![](../media/0194e55376dc05f8f403d1b547150003.png)
 
@@ -46,89 +46,89 @@ Arduino IDE 2.0
 
 ![Arduino IDE](../media/a438335b489d8e6390131b6f44eb2019.jpeg)
 
-**Verify / Upload** - compile and upload your code to your Arduino Board.
+**Verify / Upload** – kompiliert und lädt Ihren Code auf Ihr Arduino-Board hoch.
 
-**Select Board & Port** - detected Arduino boards automatically show up here, along with the port number.
+**Select Board & Port** – erkannte Arduino-Boards werden hier automatisch zusammen mit der Portnummer angezeigt.
 
-**Sketchbook** - here you will find all of your sketches locally stored on your computer. Additionally, you can sync with the Arduino Cloud, and also obtain your sketches from the online environment.
+**Sketchbook** – hier finden Sie alle Ihre lokal auf dem Computer gespeicherten Sketche. Zusätzlich können Sie mit der Arduino Cloud synchronisieren und Ihre Sketche auch aus der Online-Umgebung abrufen.
 
-**Boards Manager** - browse through Arduino & third party packages that can be installed. For example, using a MKR WiFi 1010 board requires the Arduino SAMD Boards package installed.
+**Boards Manager** – durchsuchen Sie Arduino- und Drittanbieter-Pakete, die installiert werden können. Zum Beispiel erfordert die Verwendung eines MKR WiFi 1010 Boards die Installation des Arduino SAMD Boards-Pakets.
 
-**Library Manager** - browse through thousands of Arduino libraries, made by Arduino & its community.
+**Library Manager** – durchsuchen Sie Tausende von Arduino-Bibliotheken, erstellt von Arduino und seiner Community.
 
-**Debugger** - test and debug programs in real time.
+**Debugger** – testen und debuggen Sie Programme in Echtzeit.
 
-**Search** - search for keywords in your code.
+**Search** – suchen Sie nach Schlüsselwörtern in Ihrem Code.
 
-**Open Serial Monitor** - opens the Serial Monitor tool, as a new tab in the console.
+**Open Serial Monitor** – öffnet das Serial Monitor Tool als neuen Tab in der Konsole.
 
-If you want to learn more about Arduino IDE, please refer to this document：[Getting Started with Arduino IDE 2](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2)
+Wenn Sie mehr über die Arduino IDE erfahren möchten, lesen Sie bitte dieses Dokument: [Getting Started with Arduino IDE 2](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2)
 
-## 2.3 Introduce of Keyestudio UNO Board
+## 2.3 Vorstellung des Keyestudio UNO Boards
 
-The core processor of this board is ATMEGA328P-AU and ATMEGA16U2 is used as a UART-to-USB conversion chip.
+Der Kernprozessor dieses Boards ist der ATMEGA328P-AU, und der ATMEGA16U2 wird als UART-zu-USB-Konvertierungschip verwendet.
 
-It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz crystal oscillator, a USB connection, a power jack, 1 ICSP header, and a reset button.
+Es verfügt über 14 digitale Ein-/Ausgangspins (von denen 6 als PWM-Ausgänge verwendet werden können), 6 analoge Eingänge, einen 16 MHz Quarzoszillator, eine USB-Verbindung, einen Stromanschluss, 1 ICSP-Header und einen Reset-Knopf.
 
-All you need to do is connect it to a computer via a USB cable and power it with an external power supply of DC 7-12V.
+Alles, was Sie tun müssen, ist, es über ein USB-Kabel mit einem Computer zu verbinden und mit einer externen Stromversorgung von DC 7-12V zu versorgen.
 
 ![](../media/8bb76386a2505a9dd0b18a8c78745a64.png)
 
-| **Microcontroller**         | **ATMEGA328P-AU**                                        |
+| **Mikrocontroller**         | **ATMEGA328P-AU**                                        |
 |-----------------------------|----------------------------------------------------------|
-| Operating Voltage           | 5V                                                       |
-| Input Voltage (recommended) | DC 7-12V                                                 |
-| Digital I/O Pins            | 14 (D0-D13)                                              |
-| PWM Digital I/O Pins        | 6 (D3，D5，D6，D9，D10，D11)                             |
-| Analog Input Pins           | 6 (A0-A5)                                                |
-| Flash Memory                | 32 KB (ATMEGA328P-AU) of which 0.5 KB used by bootloader |
+| Betriebsspannung            | 5V                                                       |
+| Eingangsspannung (empfohlen)| DC 7-12V                                                 |
+| Digitale I/O-Pins           | 14 (D0-D13)                                              |
+| PWM Digitale I/O-Pins       | 6 (D3，D5，D6，D9，D10，D11)                             |
+| Analoge Eingangspins        | 6 (A0-A5)                                                |
+| Flash-Speicher              | 32 KB (ATMEGA328P-AU), davon 0,5 KB vom Bootloader genutzt |
 | SRAM                        | 2 KB (ATMEGA328P-AU)                                     |
 | EEPROM                      | 1 KB (ATMEGA328P-AU)                                     |
-| Clock Speed                 | 16 MHz                                                   |
+| Taktfrequenz                | 16 MHz                                                   |
 
 ![](../media/fad6c7bef8e618006f403af9a068476f.png)
 
-| **Interface number** | **Introduce**                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1                    | **ICSP (In-Circuit Serial Programming) Header ICSP**  It is the AVR, an Arduino micro-program header consisting of MOSI, MISO, SCK, RESET, VCC, and GND. It is often called the SPI (serial peripheral interface) and can be considered an "extension" of the output. In fact, slave the output devices under the SPI bus host. When connecting to PC, program the firmware to ATMEGA328P-AU.                                                                       |
-| 2                    | **Serial Communication Pin**  Connect to serial communication. 4Pins (GND, VCC (3.3V or 5V controlled by slide switch), RX, TX)                                                                                                                                                                                                                                                                                                                                     |
-| 3                    | **GND**  Ground pins                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 4                    | **V Pin (VCC)**  Power the external sensors and modules. Select the voltage of 3.3V or 5V via a slide switch.                                                                                                                                                                                                                                                                                                                                                       |
-| 5                    | **Digital I/O**  It has 14 digital input/output pins, labeled D0 to D13 (of which 6 can be used as PWM outputs). These pins can be configured as digital input pin to read the logic value (0 or 1). Or used as digital output pin to drive different modules like LED, relay, etc. The pin D3, D5, D6, D9, D10, and D11 can be used to generate PWM. For digital port, you can connect through female headers, or through pin headers (labeled S) of 2.54mm pitch. |
-| 6                    | **AREF**  For Analog reference. Sometimes used to set an external reference voltage (0-5V) as the upper limit of analog input pins.                                                                                                                                                                                                                                                                                                                                 |
-| 7                    | **SDA**  IIC communication pin                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 8                    | **SCL**  IIC communication pin                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 9                    | **ICSP (In-Circuit Serial Programming) Header**  ICSP is an AVR, an Arduino micro-program header consisting of MOSI, MISO, SCK, RESET, VCC, and GND. Connected to ATMEGA 16U2-MU. When connecting to PC, program the firmware to ATMEGA 16U2-MU.                                                                                                                                                                                                                    |
-| 10                   | **Microcontroller** Each control board has its own microcontroller. You can regard it as the brain of your board. Microcontrollers are usually from ATMEL. Before you load a new program on the Arduino IDE, you must know what IC is on your board. This information can be checked at the top of IC. The microcontroller used in this board is ATMEGA328P-AU.                                                                                                     |
-| 11                   | **D13 LED**  There is a built-in LED driven by digital pin 13. When the pin is HIGH value, the LED is on, when the pin is LOW, it's off.                                                                                                                                                                                                                                                                                                                            |
-| 12                   | **TX LED**  Onboard you can find the label: TX (transmit) When the board communicates via serial port, send the message, TX led flashes.                                                                                                                                                                                                                                                                                                                            |
-| 13                   | **RX LED**  Onboard you can find the label: RX(receive ) When the board communicates via serial port, receive the message, RX led flashes.                                                                                                                                                                                                                                                                                                                          |
-| 14                   | **Power LED**  LED on means that your circuit board is correctly powered on. Otherwise LED is off.                                                                                                                                                                                                                                                                                                                                                                  |
-| 15                   | **USB Connection**  You can power the board via USB connection. Or can upload the program to the board via USB port. Connect the board to PC using a USB cable via USB port.                                                                                                                                                                                                                                                                                        |
-| 16                   | **ATMEGA 16U2-MU**  USB to serial chip, can convert the USB signal into serial port signal.                                                                                                                                                                                                                                                                                                                                                                         |
-| 17                   | **Power Switch**  You can slide the switch to control the voltage of pin V (VCC), 3.3V or 5V.                                                                                                                                                                                                                                                                                                                                                                       |
-| 18                   | **Voltage Regulator**  To control the voltage provided to the board, as well as to stabilize the DC voltage used by the processor and other components. Convert an external input DC7-12V voltage into DC 5V, then switch DC 5V to the processor and other components, output DC 5V, drive current is 2A.                                                                                                                                                           |
-| 19                   | **DC Power Jack**  The board can be supplied with an external power DC7-12V from the DC power jack.                                                                                                                                                                                                                                                                                                                                                                 |
-| 20                   | **IOREF**  Used to configure the operating voltage of microcontroller. Use it less.                                                                                                                                                                                                                                                                                                                                                                                 |
-| 21                   | **RESET Header**  Connect an external button to reset the board. The function is the same as reset button.                                                                                                                                                                                                                                                                                                                                                          |
-| 22                   | **Pin 3.3V** Output Provides 3.3V voltage output                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| 23                   | **Pin 5V**  Output Provides 5V voltage output                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| 24                   | **Vin**  You can supply an external voltage input DC7-12V through this pin to the board.                                                                                                                                                                                                                                                                                                                                                                            |
-| 25                   | **Analog Pins**  The board has 6 analog inputs, labeled A0 through A5. Can also used as digital pins, A0=D14, A1=D15, A2=D16, A3=D17, A4=D18, A5=D19. For analog port, you can connect through female headers, or through pin headers (labeled S) of 2.54mm pitch.                                                                                                                                                                                                  |
-| 26                   | **IIC Communication Pin**  Connect to the IIC communication. 4Pins (GND, VCC (3.3V or 5V controlled by slide switch), SDA, SCL)                                                                                                                                                                                                                                                                                                                                     |
-| 27                   | **RESET Button**  You can reset your board to start the program from the initial status.                                                                                                                                                                                                                                                                                                                                                                            |
+| **Schnittstellennummer** | **Beschreibung**                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1                       | **ICSP (In-Circuit Serial Programming) Header ICSP**  Es ist der AVR, ein Arduino Mikroprogramm-Header bestehend aus MOSI, MISO, SCK, RESET, VCC und GND. Wird oft als SPI (Serial Peripheral Interface) bezeichnet und kann als „Erweiterung“ der Ausgänge betrachtet werden. Tatsächlich sind Slave-Ausgabegeräte unter dem SPI-Bus-Host angeschlossen. Beim Anschluss an den PC wird die Firmware auf den ATMEGA328P-AU programmiert.                                                                       |
+| 2                       | **Serielle Kommunikationspins**  Anschluss für serielle Kommunikation. 4 Pins (GND, VCC (3,3V oder 5V, gesteuert durch Schiebeschalter), RX, TX)                                                                                                                                                                                                                                                                                                                        |
+| 3                       | **GND**  Masseanschlüsse                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| 4                       | **V Pin (VCC)**  Versorgung externer Sensoren und Module. Die Spannung von 3,3V oder 5V wird über einen Schiebeschalter ausgewählt.                                                                                                                                                                                                                                                                                                                                   |
+| 5                       | **Digitale I/O**  Es gibt 14 digitale Ein-/Ausgangspins, beschriftet von D0 bis D13 (von denen 6 als PWM-Ausgänge verwendet werden können). Diese Pins können als digitale Eingänge konfiguriert werden, um den Logikwert (0 oder 1) zu lesen, oder als digitale Ausgänge, um verschiedene Module wie LED, Relais usw. anzusteuern. Die Pins D3, D5, D6, D9, D10 und D11 können PWM erzeugen. Für digitale Ports können Sie über Buchsenleisten oder über Pinleisten (beschriftet mit S) mit 2,54 mm Raster anschließen. |
+| 6                       | **AREF**  Für analoge Referenz. Wird manchmal verwendet, um eine externe Referenzspannung (0-5V) als obere Grenze der analogen Eingänge einzustellen.                                                                                                                                                                                                                                                                                                                 |
+| 7                       | **SDA**  IIC-Kommunikationspin                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| 8                       | **SCL**  IIC-Kommunikationspin                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| 9                       | **ICSP (In-Circuit Serial Programming) Header**  ICSP ist ein AVR, ein Arduino Mikroprogramm-Header bestehend aus MOSI, MISO, SCK, RESET, VCC und GND. Verbunden mit ATMEGA 16U2-MU. Beim Anschluss an den PC wird die Firmware auf den ATMEGA 16U2-MU programmiert.                                                                                                                                                                                                      |
+| 10                      | **Mikrocontroller** Jedes Steuerboard hat seinen eigenen Mikrocontroller. Man kann ihn als das Gehirn des Boards betrachten. Mikrocontroller stammen üblicherweise von ATMEL. Bevor Sie ein neues Programm auf der Arduino IDE laden, müssen Sie wissen, welcher IC auf Ihrem Board ist. Diese Information finden Sie auf der Oberseite des ICs. Der auf diesem Board verwendete Mikrocontroller ist der ATMEGA328P-AU.                                                                 |
+| 11                      | **D13 LED**  Es gibt eine eingebaute LED, die von digitalem Pin 13 gesteuert wird. Wenn der Pin HIGH ist, leuchtet die LED, wenn der Pin LOW ist, ist sie aus.                                                                                                                                                                                                                                                                                                         |
+| 12                      | **TX LED**  An Bord finden Sie die Beschriftung: TX (Transmit). Wenn das Board über die serielle Schnittstelle kommuniziert und eine Nachricht sendet, blinkt die TX-LED.                                                                                                                                                                                                                                                                                              |
+| 13                      | **RX LED**  An Bord finden Sie die Beschriftung: RX (Receive). Wenn das Board über die serielle Schnittstelle kommuniziert und eine Nachricht empfängt, blinkt die RX-LED.                                                                                                                                                                                                                                                                                             |
+| 14                      | **Power LED**  LED an bedeutet, dass Ihr Schaltkreis korrekt mit Strom versorgt wird. Andernfalls ist die LED aus.                                                                                                                                                                                                                                                                                                                                                     |
+| 15                      | **USB-Anschluss**  Sie können das Board über USB mit Strom versorgen oder das Programm über den USB-Port auf das Board hochladen. Verbinden Sie das Board mit einem PC über ein USB-Kabel am USB-Port.                                                                                                                                                                                                                                                               |
+| 16                      | **ATMEGA 16U2-MU**  USB-zu-Seriell-Chip, kann das USB-Signal in ein serielles Signal umwandeln.                                                                                                                                                                                                                                                                                                                                                                        |
+| 17                      | **Netzschalter**  Sie können den Schalter schieben, um die Spannung des Pins V (VCC) auf 3,3V oder 5V zu steuern.                                                                                                                                                                                                                                                                                                                                                      |
+| 18                      | **Spannungsregler**  Steuert die Spannung, die dem Board zugeführt wird, und stabilisiert die Gleichspannung, die vom Prozessor und anderen Komponenten verwendet wird. Wandelt eine externe Eingangsspannung von DC 7-12V in DC 5V um und versorgt dann den Prozessor und andere Komponenten mit DC 5V. Die Ausgangsstromstärke beträgt 2A.                                                                                                                             |
+| 19                      | **DC-Stromanschluss**  Das Board kann über den DC-Stromanschluss mit einer externen Spannung von DC 7-12V versorgt werden.                                                                                                                                                                                                                                                                                                                                             |
+| 20                      | **IOREF**  Wird verwendet, um die Betriebsspannung des Mikrocontrollers zu konfigurieren. Wird selten verwendet.                                                                                                                                                                                                                                                                                                                                                       |
+| 21                      | **RESET Header**  Anschluss für einen externen Knopf zum Zurücksetzen des Boards. Die Funktion ist dieselbe wie die des Reset-Knopfs.                                                                                                                                                                                                                                                                                                                                  |
+| 22                      | **Pin 3.3V** Ausgang Bietet eine 3,3V Spannungsversorgung                                                                                                                                                                                                                                                                                                                                                                                                             |
+| 23                      | **Pin 5V** Ausgang Bietet eine 5V Spannungsversorgung                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 24                      | **Vin**  Sie können eine externe Spannung von DC 7-12V über diesen Pin an das Board anlegen.                                                                                                                                                                                                                                                                                                                                                                           |
+| 25                      | **Analoge Pins**  Das Board hat 6 analoge Eingänge, beschriftet von A0 bis A5. Können auch als digitale Pins verwendet werden: A0=D14, A1=D15, A2=D16, A3=D17, A4=D18, A5=D19. Für analoge Ports können Sie über Buchsenleisten oder über Pinleisten (beschriftet mit S) mit 2,54 mm Raster anschließen.                                                                                                                                                                  |
+| 26                      | **IIC-Kommunikationspin**  Anschluss für die IIC-Kommunikation. 4 Pins (GND, VCC (3,3V oder 5V, gesteuert durch Schiebeschalter), SDA, SCL)                                                                                                                                                                                                                                                                                                                            |
+| 27                      | **RESET-Knopf**  Sie können Ihr Board zurücksetzen, um das Programm vom Anfangszustand zu starten.                                                                                                                                                                                                                                                                                                                                                                     |
 
-## 2.4 Select Board and Port in Arduino IDE
+## 2.4 Auswahl von Board und Port in der Arduino IDE
 
 ![](../media/9719a62c6ebf40346819de383b90d86c.png)
 
-Before uploading code to the connected control board, we need to select board and port in Arduino IDE.
+Bevor Sie Code auf das angeschlossene Steuerboard hochladen, müssen Sie in der Arduino IDE Board und Port auswählen.
 
-Two methods are introduced below:
+Es werden zwei Methoden vorgestellt:
 
-1. Using the Board and Port selector of the Tool drop-down list
+1. Verwendung des Board- und Port-Auswahlmenüs im Tool-Dropdown
 
-2. Using the board selector
+2. Verwendung des Board-Selectors
 
 ![](../media/9b6c571bb9efb9776d7f13e97356520f.jpeg)
 
@@ -136,21 +136,21 @@ Two methods are introduced below:
 
 ![](../media/7f90bccae208b43956dbb5ea18e7b96d.png)
 
-## 2.5 Add Libraries to Arduino IDE
+## 2.5 Bibliotheken zur Arduino IDE hinzufügen
 
-**Why Use Libraries?**
+**Warum Bibliotheken verwenden?**
 
-Libraries are incredibly useful when creating a project of any type. They make our development experience much smoother, and there almost an infinite amount out there. They are used to interface with many different sensors, RTCs, Wi-Fi modules, RGB matrices and of course with other components on your board.
+Bibliotheken sind unglaublich nützlich, wenn man ein Projekt jeglicher Art erstellt. Sie machen die Entwicklung viel einfacher, und es gibt fast unendlich viele davon. Sie werden verwendet, um mit vielen verschiedenen Sensoren, RTCs, Wi-Fi-Modulen, RGB-Matrizen und natürlich mit anderen Komponenten auf Ihrem Board zu interagieren.
 
-**Including a Library in the sketch**
+**Eine Bibliothek im Sketch einbinden**
 
 ![](../media/04646b12f83ae55602cd7e186850034c.png)
 
 ![](../media/79939cc2b0037a52ce8b7571cb448699.png)![](../media/067e9b7efcc117f4dd702c49f66f1735.png)
 
-**Two ways to add libraries to Arduino IDE**
+**Zwei Wege, Bibliotheken zur Arduino IDE hinzuzufügen**
 
-1.**Method One: Importing a .zip Library**
+1.**Methode Eins: Importieren einer .zip-Bibliothek**
 
 ![](../media/68b46d43a6912da4b010ae4c37cc496e.png)
 
@@ -158,15 +158,15 @@ Libraries are incredibly useful when creating a project of any type. They make o
 
 ![](../media/0713a4d4dc9e43f97ffb5175bc094c96.jpeg)
 
-2.**Method Two: Manual Installation**
+2.**Methode Zwei: Manuelle Installation**
 
-The default location where Arduino sketches you write will be saved is called the Sketchbook. The Sketchbook is simply a folder on your computer like any other. It acts as a handy repository for sketches and is also where add-on code libraries get saved.
+Der Standardordner, in dem Arduino-Sketche gespeichert werden, heißt Sketchbook. Das Sketchbook ist einfach ein Ordner auf Ihrem Computer wie jeder andere. Es dient als praktisches Repository für Sketche und ist auch der Ort, an dem Zusatz-Bibliotheken gespeichert werden.
 
-**Libraries Folder**
+**Bibliotheken-Ordner**
 
-The **sketchbook\\libraries** folder is the default location where libraries are installed to from the Arduino IDE.
+Der Ordner **sketchbook\\libraries** ist der Standardort, an dem Bibliotheken von der Arduino IDE installiert werden.
 
-If you want to add a library manually, the library file cannot be added as a zip file, you need to unzip it and put it in the **libraries** folder of your sketchbook by yourself.
+Wenn Sie eine Bibliothek manuell hinzufügen möchten, darf die Bibliotheksdatei nicht als Zip-Datei hinzugefügt werden. Sie müssen sie entpacken und selbst in den **libraries**-Ordner Ihres Sketchbooks legen.
 
 ![](../media/54ed3cb6b4303dfb851d49ec6c998256.jpeg)
 
@@ -174,10 +174,10 @@ If you want to add a library manually, the library file cannot be added as a zip
 
 ![](../media/28fdb140904c915c2b37ba02923a68f6.png)
 
-Uninstalling an Arduino Library
+Deinstallation einer Arduino-Bibliothek
 
-Uninstalling an Arduino Library is simpler than installing it. Find the sketchbook folder on your computer (same as in the “Manually installing a library” chapter). Go to the location and open the “libraries” folder. Select the folder containing the library you want to delete, and then simply delete it. Next time you open your Arduino IDE, there won’t be the deleted library under the Sketch > Include Library menu.
+Das Deinstallieren einer Arduino-Bibliothek ist einfacher als die Installation. Finden Sie den Sketchbook-Ordner auf Ihrem Computer (wie im Kapitel „Manuelle Installation einer Bibliothek“ beschrieben). Gehen Sie zu diesem Ort und öffnen Sie den Ordner „libraries“. Wählen Sie den Ordner der Bibliothek aus, die Sie löschen möchten, und löschen Sie ihn einfach. Beim nächsten Öffnen der Arduino IDE wird die gelöschte Bibliothek nicht mehr im Menü Sketch > Include Library angezeigt.
 
 ![](../media/7a7fc5fc95be160fe7f9aa50be140f6d.png)
 
-Libraries don’t take much space and most of the time there is no reason to remove them. If you don’t intend to use them again, though, and want to declutter the list, you can safely delete them. You can always install any Arduino Library again if you need to use it in the future.
+Bibliotheken nehmen nicht viel Platz ein und meistens gibt es keinen Grund, sie zu entfernen. Wenn Sie sie jedoch nicht mehr verwenden möchten und die Liste aufräumen wollen, können Sie sie bedenkenlos löschen. Sie können jede Arduino-Bibliothek jederzeit wieder installieren, wenn Sie sie in Zukunft benötigen.

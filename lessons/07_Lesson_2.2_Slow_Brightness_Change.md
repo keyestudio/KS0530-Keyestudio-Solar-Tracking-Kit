@@ -1,10 +1,9 @@
-## Lesson 2.2: Slow down the change of the brightness of the LED
+## Lektion 2.2: Verlangsamen der Änderung der Helligkeit der LED
 
-**>>>>>>>>This lesson is an expansion of the Lesson 2.1**
+**>>>>>>>>Diese Lektion ist eine Erweiterung von Lektion 2.1**
 
-Hardware required for this lesson, the configuration of the arduino IDE, and the wiring between the LED module and the control board is in the same way as **Lesson 1.1**.
+Die für diese Lektion benötigte Hardware, die Konfiguration der Arduino IDE und die Verkabelung zwischen dem LED-Modul und dem Steuerboard erfolgen auf die gleiche Weise wie in **Lektion 1.1**.
 
 ![](../media/485b0573e3c4e14d9b5c7df37c1223fb.png)
 
 ![](../media/2f2321ff4900efb42453e5142e066829.png)
-

@@ -1,31 +1,31 @@
-## Lesson 1.1: LED Blinks
+## Lektion 1.1: LED blinkt
 
-**(1).Description：**
+**(1).Beschreibung：**
 
 ![](../media/90f495d6deb8516c95dea36fb1efa019.jpeg)![](../media/2aeeeb61ad2a3110303b3108f4ba31e1.png)
 
-LED, the abbreviation of light emitting diodes consists of Ga, As, P, N chemical compounds, and so on. The LED can flash in diverse colors by altering the delay time in the test code. When in control, power on GND and VCC, the LED will be on if the S end is at a high level; nevertheless, it will go off.
+LED, die Abkürzung für Leuchtdiode, besteht aus chemischen Verbindungen wie Ga, As, P, N usw. Die LED kann durch Ändern der Verzögerungszeit im Testcode in verschiedenen Farben blinken. Bei Steuerung und Stromversorgung über GND und VCC leuchtet die LED, wenn der S-Anschluss auf hohem Pegel ist; andernfalls erlischt sie.
 
-![](../media/628e402ae3fc455a2812705b17d7c30d.png)
-**(2).Parameters：**
+![](../media/628e402ae3fc455a2812705b17d7c30d.png)  
+**(2).Parameter：**
 
-Control interface: digital port
+Steuerschnittstelle: digitaler Port
 
-Working voltage: DC 3.3-5V
+Betriebsspannung: DC 3,3-5V
 
-Pin spacing: 2.54mm
+Pin-Abstand: 2,54 mm
 
-LED display color: yellow
+LED-Anzeigefarbe: gelb
 
-**(3).You need to prepare:**
+**(3).Sie müssen vorbereiten:**
 
-| Control Board*1                                | USB Cable*1                                    | Yellow LED Module*1                            | 3pin F-F 26AWG Wire                             |
+| Steuerplatine*1                                | USB-Kabel*1                                    | Gelbes LED-Modul*1                            | 3pin F-F 26AWG Kabel                             |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/628e402ae3fc455a2812705b17d7c30d.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) |
 
-**(4).Connection diagram of the led module：**
+**(4).Anschlussdiagramm des LED-Moduls：**
 
-The pin -, + and S of LED module are connected to the pin G, 5V and D3 port of the control board.
+Die Pins -, + und S des LED-Moduls sind mit den Pins G, 5V und D3 des Steuerboards verbunden.
 
 ![](../media/045af155ff7b448adf0e819200ccef57.png)
 
@@ -33,13 +33,12 @@ The pin -, + and S of LED module are connected to the pin G, 5V and D3 port of t
 
 ![](../media/188b0bea1512ccc6a9b3e20ff8a9265d.png)
 
-**(5).Test Results:** LED blinks at the interval of 1s
+**(5).Testergebnisse:** LED blinkt im Intervall von 1 Sekunde
 
 ![](../media/351380ab56f691b54869160828bc56d0.png)
 
-**(6).Code Explanations:**
+**(6).Code-Erklärungen:**
 
-pinMode(LED，OUTPUT) - This function can denote that the pin is INPUT or OUTPUT
+pinMode(LED，OUTPUT) - Diese Funktion legt fest, ob der Pin als INPUT oder OUTPUT verwendet wird
 
-digitalWrite(LED，HIGH) - When pin is OUTPUT, we can set it to HIGH(output 5V) or LOW(output 0V)
-
+digitalWrite(LED，HIGH) - Wenn der Pin als OUTPUT definiert ist, kann er auf HIGH (5V Ausgang) oder LOW (0V Ausgang) gesetzt werden

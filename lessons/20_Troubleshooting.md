@@ -1,80 +1,80 @@
-# 6.Troubleshooting
+# 6. Fehlerbehebung
 
-Here are some solutions to common problems that may help you.
+Hier sind einige Lösungen für häufige Probleme, die Ihnen helfen können.
 
-If you don't get the answer you're looking for here, please contact our technical support:
+Wenn Sie hier nicht die Antwort finden, die Sie suchen, kontaktieren Sie bitte unseren technischen Support:
 
 Amazon: [service@keyestudio.com](mailto:service@keyestudio.com)
 
 AliExpress: [tivon@keyestudio.com](mailto:tivon@keyestudio.com)
 
-Other channels: [sunny@keyestudio.com](mailto:sunny@keyestudio.com)
+Andere Kanäle: [sunny@keyestudio.com](mailto:sunny@keyestudio.com)
 
-For a faster and more professional resolution of your issue, please include this information when sending us an email:
+Für eine schnellere und professionellere Lösung Ihres Problems geben Sie bitte beim Senden einer E-Mail folgende Informationen an:
 
-Your order number or where you got this product from
+Ihre Bestellnummer oder wo Sie dieses Produkt gekauft haben
 
-The problems you encounter, try to include detailed descriptions, pictures or videos.
+Die aufgetretenen Probleme, versuchen Sie detaillierte Beschreibungen, Bilder oder Videos beizufügen.
 
-We need more information than "It doesn't work." Please give us good detail on what you want to accomplish and what you have tried.
+Wir benötigen mehr Informationen als „Es funktioniert nicht.“ Bitte geben Sie uns genaue Details darüber, was Sie erreichen möchten und was Sie bereits versucht haben.
 
-Thank You!
+Vielen Dank!
 
-**(1)The control board is not recognized by the computer.**
+**(1) Das Steuerboard wird vom Computer nicht erkannt.**
 
--Please check if the USB cable is good and your computer's USB port is available.
+-Bitte überprüfen Sie, ob das USB-Kabel in Ordnung ist und der USB-Anschluss Ihres Computers verfügbar ist.
 
-**(2)USB port can’t recognized by computer.**
+**(2) USB-Anschluss wird vom Computer nicht erkannt.**
 
--Check if you have installed the USB driver
+-Prüfen Sie, ob Sie den USB-Treiber installiert haben.
 
-**(3)Code problems/Failed uploading/Code error.**
+**(3) Code-Probleme/Fehler beim Hochladen/Code-Fehler.**
 
-These reasons can cause problems with your code:
+Diese Gründe können Probleme mit Ihrem Code verursachen:
 
-1) The driver is not installed.
+1) Der Treiber ist nicht installiert.
 
-2) The board type and COM port are not selected correctly in the Arduino IDE.
+2) Der Boardtyp und der COM-Port sind in der Arduino IDE nicht korrekt ausgewählt.
 
-3) The library file is not installed.
+3) Die Bibliotheksdatei ist nicht installiert.
 
-(Please follow **2.Getting Started with Arduino** to troubleshoot the above problems)
+(Bitte folgen Sie **2.Getting Started with Arduino**, um die oben genannten Probleme zu beheben)
 
 ![](../media/224c21b5aa737f11de351dbd9868e317.png)
 
-**(4)Poor USB contact**
+**(4) Schlechter USB-Kontakt**
 
-If you don’t have the problems in 1-3 above, check that the USB cable connection is good, try re-plugging it, and then upload the code again.
+Wenn Sie die Probleme 1-3 nicht haben, überprüfen Sie, ob die USB-Kabelverbindung gut ist, versuchen Sie, es erneut einzustecken, und laden Sie den Code dann erneut hoch.
 
-**(5)The assembled Solar tracking kit doesn’t respond.**
+**(5) Das zusammengebaute Solar-Tracking-Kit reagiert nicht.**
 
-1)These reasons may cause the robot not to work:
+1) Diese Gründe können dazu führen, dass der Roboter nicht funktioniert:
 
-1)wrong wiring
+1) Falsche Verkabelung
 
-2)You didn't upload the code
+2) Sie haben den Code nicht hochgeladen
 
-3)Failed uploading/Code error
+3) Fehler beim Hochladen/Code-Fehler
 
-4)You didn't turn on the 5V switch on the control board and the power switch on the charging module.
+4) Sie haben den 5V-Schalter auf dem Steuerboard und den Netzschalter am Ladermodul nicht eingeschaltet.
 
 ![](../media/67fc5cb5b7eabda71fcb2296a8def597.png)![](../media/edc80fe0bd7a1cce69bd760ab5d247bc.png)
 
-5)Insufficient battery power
+5) Unzureichende Batterieleistung
 
-You need to keep the 18650 battery charged enough as it will be needed to power two servos, an LCD display, four light sensors, a DHT11 sensor and button module.
+Sie müssen die 18650-Batterie ausreichend aufgeladen halten, da sie benötigt wird, um zwei Servos, ein LCD-Display, vier Lichtsensoren, einen DHT11-Sensor und ein Tastenmodul mit Strom zu versorgen.
 
-**(6)Servo stuck/servo hot**
+**(6) Servo klemmt/Servo wird heiß**
 
-You will need to adjust the initial angle of the servo before assembling them and not change the angle until assembly is complete to ensure that the servo operates properly for solar tracking kit.
+Sie müssen den Anfangswinkel des Servos vor der Montage einstellen und den Winkel bis zum Abschluss der Montage nicht ändern, um sicherzustellen, dass der Servo für das Solar-Tracking-Kit ordnungsgemäß funktioniert.
 
-**(7)The solar panel does not track the movement of the light source or the sun**
+**(7) Das Solarpanel folgt nicht der Bewegung der Lichtquelle oder der Sonne**
 
-When the ambient light sensor detects changes in light intensity, servos rotate the solar panel to the position where the light is the strongest.
+Wenn der Umgebungslichtsensor Änderungen der Lichtintensität erkennt, drehen die Servos das Solarpanel in die Position, in der das Licht am stärksten ist.
 
-In an environment with uniform lighting, the solar panel may not track the movement of the light source. You may need to apply a very strong light source, or apply a light source in a weak light area to make the solar panel move with the light source. The solar panel may not move toward the sun because the difference in light intensity detected by each ambient light sensor may not be large.
+In einer Umgebung mit gleichmäßiger Beleuchtung kann das Solarpanel der Bewegung der Lichtquelle möglicherweise nicht folgen. Sie müssen möglicherweise eine sehr starke Lichtquelle anwenden oder eine Lichtquelle in einem schwach beleuchteten Bereich einsetzen, damit sich das Solarpanel mit der Lichtquelle bewegt. Das Solarpanel bewegt sich möglicherweise nicht zur Sonne, weil der Unterschied in der Lichtintensität, den jeder Umgebungslichtsensor erkennt, nicht groß genug ist.
 
-1.  **The solar panel moves very slowly, jerks or gets stuck.**
-2.  Check that the servo wiring is organised and not jammed so that the servo can have enough room to move.
-3.  18650 battery needs to be fully charged
-4.  You can press the button module to adjust the amount of servo rotation.
+1.  **Das Solarpanel bewegt sich sehr langsam, ruckelt oder bleibt stecken.**
+2.  Prüfen Sie, ob die Servo-Verkabelung ordentlich ist und nicht blockiert, damit der Servo genügend Bewegungsfreiheit hat.
+3.  Die 18650-Batterie muss vollständig aufgeladen sein.
+4.  Sie können das Tastenmodul drücken, um die Menge der Servodrehung einzustellen.
