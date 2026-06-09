@@ -1,20 +1,20 @@
-# 2.Arduinoの始め方
+# 2.Aan de slag met Arduino
 
-## **2.1 Arduinoとは何か？**
+## **2.1 Wat is Arduino?**
 
-Arduinoは使いやすいハードウェアとソフトウェアに基づいたオープンソースの電子プラットフォームです。Arduinoボードは入力を読み取ることができます。例えば、センサーの光、ボタンに触れた指、またはTwitterのメッセージなどです。そしてそれを出力に変換します。例えば、モーターを動かす、LEDを点灯させる、オンラインで何かを公開するなどです。IDEでプログラムコードを書き、ボード上のマイクロコントローラに指示を送ることで、ボードに何をするかを伝えることができます。そのためにArduinoプログラミング言語（Wiringに基づく）と、Processingに基づいたArduinoソフトウェア（IDE）を使用します。
+Arduino is een open-source elektronica platform gebaseerd op gebruiksvriendelijke hardware en software. Arduino-borden kunnen ingangen lezen - licht op een sensor, een vinger op een knop, of een Twitter-bericht - en dit omzetten in een uitgang - het activeren van een motor, het aanzetten van een LED, iets online publiceren. Je kunt je bord vertellen wat het moet doen door de programmacode te schrijven in de IDE en de instructies naar de microcontroller op het bord te sturen. Hiervoor gebruik je de Arduino programmeertaal (gebaseerd op Wiring) en de Arduino Software (IDE), gebaseerd op Processing.
 
-## **2.2 Windows用Arduino IDEのインストール**
+## **2.2 Installeren van de Arduino IDE voor Windows**
 
-最新のArduino IDEバージョンをダウンロードするには、<https://www.arduino.cc/en/software> にアクセスしてください。Windows、Mac、Linux用のバージョンがあります。
+Bezoek <https://www.arduino.cc/en/software> om de nieuwste versie van de Arduino IDE te downloaden voor het besturingssysteem van je computer. Er zijn versies voor Windows, Mac en Linux systemen.
 
-**Arduino IDE 2**
+**De Arduino IDE 2**
 
-Arduino IDE 2は堅牢な前バージョンArduino IDE 1.xから大きく進化しており、UIの刷新、ボード＆ライブラリマネージャの改善、デバッガ、オートコンプリート機能など多くの新機能が搭載されています。
+De Arduino IDE 2 is een grote stap ten opzichte van zijn robuuste voorganger, Arduino IDE 1.x, en komt met een vernieuwde gebruikersinterface, verbeterde board- & bibliotheekbeheerder, debugger, autocomplete-functie en nog veel meer.
 
-ここではWindowsにArduino IDE 2.2.1をダウンロードしてインストールする方法を紹介します。
+Hier laten we zien hoe je de Arduino IDE 2.2.1 downloadt en installeert op je Windows.
 
-インストーラー（.exe）とZipパッケージのどちらかを選べます。Arduinoソフトウェア（IDE）を使うために必要なすべてを直接インストールし、ドライバも含まれているインストーラーの使用をお勧めします。Zipパッケージの場合はドライバを手動でインストールする必要があります。Zipファイルは[ポータブルインストール](https://arduino.cc/en/Guide/PortableIDE)を作成したい場合にも便利です。
+Je kunt kiezen tussen de Installer (.exe) en de Zip-pakketten. We raden aan de eerste te gebruiken die direct alles installeert wat je nodig hebt om de Arduino Software (IDE) te gebruiken, inclusief de drivers. Met het Zip-pakket moet je de drivers handmatig installeren. Het Zip-bestand is ook handig als je een [portable installatie](https://arduino.cc/en/Guide/PortableIDE) wilt maken.
 
 ![](../media/06c450364fe07776520f5b245a6ed165.png)
 
@@ -34,11 +34,11 @@ Arduino IDE 2は堅牢な前バージョンArduino IDE 1.xから大きく進化�
 
 ![](../media/7a1e5c40aec7d793ca7975966ddf3cc4.png)
 
-「Finish」をクリックしてArduino IDEを起動します。
+Klik op Voltooien en start Arduino IDE
 
 ![](../media/5038e9b20e71f7b401a691c43baf599a.png)
 
-ファイアウォールがアクセス許可を求めるので、**Allow access**をクリックしてください。
+De firewall zal vragen of we toegang willen toestaan, klik gewoon op **Toegang toestaan**.
 
 ![](../media/0194e55376dc05f8f403d1b547150003.png)
 
@@ -46,89 +46,89 @@ Arduino IDE 2.0
 
 ![Arduino IDE](../media/a438335b489d8e6390131b6f44eb2019.jpeg)
 
-**Verify / Upload** - コードをコンパイルしてArduinoボードにアップロードします。
+**Verify / Upload** - compileer en upload je code naar je Arduino Board.
 
-**Select Board & Port** - 検出されたArduinoボードとポート番号が自動的に表示されます。
+**Select Board & Port** - gedetecteerde Arduino-borden verschijnen hier automatisch, samen met het poortnummer.
 
-**Sketchbook** - コンピュータにローカル保存されているすべてのスケッチがここにあります。さらにArduino Cloudと同期したり、オンライン環境からスケッチを取得することもできます。
+**Sketchbook** - hier vind je al je lokaal opgeslagen sketches op je computer. Daarnaast kun je synchroniseren met de Arduino Cloud en ook je sketches ophalen uit de online omgeving.
 
-**Boards Manager** - Arduinoおよびサードパーティのパッケージを閲覧し、インストールできます。例えば、MKR WiFi 1010ボードを使うにはArduino SAMD Boardsパッケージのインストールが必要です。
+**Boards Manager** - blader door Arduino- en derde partij pakketten die geïnstalleerd kunnen worden. Bijvoorbeeld, voor het gebruik van een MKR WiFi 1010 board moet het Arduino SAMD Boards pakket geïnstalleerd zijn.
 
-**Library Manager** - Arduinoとそのコミュニティが作成した何千ものライブラリを閲覧できます。
+**Library Manager** - blader door duizenden Arduino bibliotheken, gemaakt door Arduino en de community.
 
-**Debugger** - プログラムをリアルタイムでテスト・デバッグします。
+**Debugger** - test en debug programma's in realtime.
 
-**Search** - コード内のキーワードを検索します。
+**Search** - zoek naar trefwoorden in je code.
 
-**Open Serial Monitor** - シリアルモニターツールをコンソールの新しいタブで開きます。
+**Open Serial Monitor** - opent het Serial Monitor gereedschap als een nieuw tabblad in de console.
 
-Arduino IDEについてもっと知りたい場合は、こちらのドキュメントを参照してください：[Getting Started with Arduino IDE 2](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2)
+Als je meer wilt leren over Arduino IDE, raadpleeg dan dit document: [Getting Started with Arduino IDE 2](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2)
 
-## 2.3 Keyestudio UNOボードの紹介
+## 2.3 Introductie van het Keyestudio UNO Board
 
-このボードのコアプロセッサはATMEGA328P-AUで、ATMEGA16U2がUART-USB変換チップとして使われています。
+De kernprocessor van dit bord is ATMEGA328P-AU en ATMEGA16U2 wordt gebruikt als een UART-naar-USB conversiechip.
 
-14本のデジタル入出力ピン（うち6本はPWM出力として使用可能）、6本のアナログ入力、16 MHzの水晶発振器、USB接続、電源ジャック、1つのICSPヘッダー、リセットボタンを備えています。
+Het heeft 14 digitale in-/uitgangspinnen (waarvan 6 kunnen worden gebruikt als PWM-uitgangen), 6 analoge ingangen, een 16 MHz kristaloscillator, een USB-verbinding, een voedingsaansluiting, 1 ICSP-header en een resetknop.
 
-USBケーブルでコンピュータに接続し、DC 7-12Vの外部電源で電源を供給するだけで使用できます。
+Alles wat je hoeft te doen is het verbinden met een computer via een USB-kabel en het van stroom voorzien met een externe voeding van DC 7-12V.
 
 ![](../media/8bb76386a2505a9dd0b18a8c78745a64.png)
 
-| **マイクロコントローラ**         | **ATMEGA328P-AU**                                        |
+| **Microcontroller**         | **ATMEGA328P-AU**                                        |
 |-----------------------------|----------------------------------------------------------|
-| 動作電圧                     | 5V                                                       |
-| 入力電圧（推奨）             | DC 7-12V                                                 |
-| デジタルI/Oピン             | 14 (D0-D13)                                              |
-| PWMデジタルI/Oピン          | 6 (D3，D5，D6，D9，D10，D11)                             |
-| アナログ入力ピン            | 6 (A0-A5)                                                |
-| フラッシュメモリ            | 32 KB (ATMEGA328P-AU)、うち0.5 KBはブートローダ使用     |
+| Bedrijfsspanning            | 5V                                                       |
+| Ingangsspanning (aanbevolen) | DC 7-12V                                                 |
+| Digitale I/O pinnen         | 14 (D0-D13)                                              |
+| PWM Digitale I/O pinnen     | 6 (D3，D5，D6，D9，D10，D11)                             |
+| Analoge ingangen            | 6 (A0-A5)                                                |
+| Flashgeheugen               | 32 KB (ATMEGA328P-AU) waarvan 0.5 KB gebruikt door bootloader |
 | SRAM                        | 2 KB (ATMEGA328P-AU)                                     |
 | EEPROM                      | 1 KB (ATMEGA328P-AU)                                     |
-| クロックスピード            | 16 MHz                                                   |
+| Kloksnelheid               | 16 MHz                                                   |
 
 ![](../media/fad6c7bef8e618006f403af9a068476f.png)
 
-| **インターフェース番号** | **説明**                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Interface nummer** | **Introductie**                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1                    | **ICSP（インサーキットシリアルプログラミング）ヘッダー**  AVRのArduinoマイクロプログラム用ヘッダーで、MOSI、MISO、SCK、RESET、VCC、GNDで構成されています。SPI（シリアルペリフェラルインターフェース）とも呼ばれ、出力の「拡張」と考えられます。SPIバスのホスト下でスレーブ出力デバイスとして機能します。PCに接続する際は、ATMEGA328P-AUにファームウェアを書き込みます。                                                                       |
-| 2                    | **シリアル通信ピン**  シリアル通信に接続します。4ピン（GND、VCC（スライドスイッチで3.3Vまたは5Vを切替）、RX、TX）                                                                                                                                                                                                                                                                                                                                     |
-| 3                    | **GND**  グランドピン                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 4                    | **Vピン（VCC）**  外部センサーやモジュールに電源を供給します。スライドスイッチで3.3Vまたは5Vを選択可能。                                                                                                                                                                                                                                                                                                                                                       |
-| 5                    | **デジタルI/O**  14本のデジタル入出力ピン（D0からD13まで）があり、そのうち6本はPWM出力として使用可能です。これらのピンはデジタル入力ピンとして論理値（0または1）を読み取ることができます。また、LEDやリレーなどのモジュールを駆動するデジタル出力ピンとしても使用できます。D3、D5、D6、D9、D10、D11はPWM生成に使用可能です。デジタルポートはメスヘッダーまたは2.54mmピッチのピンヘッダー（Sラベル付き）で接続可能です。 |
-| 6                    | **AREF**  アナログリファレンス用。外部リファレンス電圧（0-5V）をアナログ入力ピンの上限として設定する場合に使用します。                                                                                                                                                                                                                                                                                                                                 |
-| 7                    | **SDA**  IIC通信ピン                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 8                    | **SCL**  IIC通信ピン                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 9                    | **ICSP（インサーキットシリアルプログラミング）ヘッダー**  AVRのArduinoマイクロプログラム用ヘッダーで、MOSI、MISO、SCK、RESET、VCC、GNDで構成されています。ATMEGA16U2-MUに接続されています。PCに接続する際は、ATMEGA16U2-MUにファームウェアを書き込みます。                                                                                                                                                                                                                    |
-| 10                   | **マイクロコントローラ**  各制御ボードは独自のマイクロコントローラを持ち、ボードの「頭脳」と考えられます。マイクロコントローラは通常ATMEL製です。Arduino IDEで新しいプログラムをロードする前に、ボードに搭載されているICを確認する必要があります。この情報はICの上部に記載されています。このボードで使用されているマイクロコントローラはATMEGA328P-AUです。                                                                                                     |
-| 11                   | **D13 LED**  デジタルピン13に接続された内蔵LEDがあります。ピンがHIGHのときLEDが点灯し、LOWのとき消灯します。                                                                                                                                                                                                                                                                                                                            |
-| 12                   | **TX LED**  ボード上に「TX（送信）」ラベルがあります。シリアル通信でメッセージを送信するときにTX LEDが点滅します。                                                                                                                                                                                                                                                                                                                            |
-| 13                   | **RX LED**  ボード上に「RX（受信）」ラベルがあります。シリアル通信でメッセージを受信するときにRX LEDが点滅します。                                                                                                                                                                                                                                                                                                                          |
-| 14                   | **電源LED**  LEDが点灯している場合、回路ボードに正しく電源が供給されています。消灯している場合は電源が入っていません。                                                                                                                                                                                                                                                                                                                                                                  |
-| 15                   | **USB接続**  USB接続でボードに電源を供給できます。またUSBポート経由でプログラムをアップロードできます。USBケーブルでボードをPCに接続してください。                                                                                                                                                                                                                                                                                        |
-| 16                   | **ATMEGA16U2-MU**  USBからシリアルへの変換チップで、USB信号をシリアルポート信号に変換します。                                                                                                                                                                                                                                                                                                                                                                         |
-| 17                   | **電源スイッチ**  スライドスイッチでV（VCC）ピンの電圧を3.3Vまたは5Vに切り替えられます。                                                                                                                                                                                                                                                                                                                                                                       |
-| 18                   | **電圧レギュレータ**  ボードに供給される電圧を制御し、プロセッサや他のコンポーネントで使用される直流電圧を安定化します。外部入力のDC7-12VをDC5Vに変換し、プロセッサや他のコンポーネントにDC5Vを供給します。出力電流は2Aです。                                                                                                                                                           |
-| 19                   | **DC電源ジャック**  DC7-12Vの外部電源をDC電源ジャックから供給できます。                                                                                                                                                                                                                                                                                                                                                                 |
-| 20                   | **IOREF**  マイクロコントローラの動作電圧を設定するために使用します。あまり使いません。                                                                                                                                                                                                                                                                                                                                                                                 |
-| 21                   | **RESETヘッダー**  外部ボタンを接続してボードをリセットできます。リセットボタンと同じ機能です。                                                                                                                                                                                                                                                                                                                                                          |
-| 22                   | **3.3Vピン**  3.3Vの電圧出力を提供します。                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| 23                   | **5Vピン**  5Vの電圧出力を提供します。                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| 24                   | **Vin**  このピンを通じて外部からDC7-12Vの電圧入力をボードに供給できます。                                                                                                                                                                                                                                                                                                                                                                            |
-| 25                   | **アナログピン**  ボードには6つのアナログ入力ピン（A0からA5まで）があります。デジタルピンとしても使用可能で、A0=D14、A1=D15、A2=D16、A3=D17、A4=D18、A5=D19に対応します。アナログポートはメスヘッダーまたは2.54mmピッチのピンヘッダー（Sラベル付き）で接続可能です。                                                                                                                                                                                                  |
-| 26                   | **IIC通信ピン**  IIC通信に接続します。4ピン（GND、VCC（スライドスイッチで3.3Vまたは5Vを切替）、SDA、SCL）                                                                                                                                                                                                                                                                                                                                     |
-| 27                   | **リセットボタン**  ボードをリセットしてプログラムを初期状態から開始できます。                                                                                                                                                                                                                                                                                                                                                                            |
+| 1                    | **ICSP (In-Circuit Serial Programming) Header ICSP**  Het is de AVR, een Arduino micro-programmeerheader bestaande uit MOSI, MISO, SCK, RESET, VCC en GND. Het wordt vaak SPI (serial peripheral interface) genoemd en kan worden gezien als een "uitbreiding" van de output. In feite slave de outputapparaten onder de SPI-bus host. Bij aansluiting op PC wordt de firmware geprogrammeerd naar ATMEGA328P-AU.                                                                       |
+| 2                    | **Seriële Communicatie Pin**  Verbindt met seriële communicatie. 4 pinnen (GND, VCC (3.3V of 5V geregeld door schuifschakelaar), RX, TX)                                                                                                                                                                                                                                                                                                                             |
+| 3                    | **GND**  Aarde pinnen                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| 4                    | **V Pin (VCC)**  Voedt externe sensoren en modules. Kies de spanning van 3.3V of 5V via een schuifschakelaar.                                                                                                                                                                                                                                                                                                                                                       |
+| 5                    | **Digitale I/O**  Het heeft 14 digitale in-/uitgangspinnen, gelabeld D0 tot D13 (waarvan 6 kunnen worden gebruikt als PWM-uitgangen). Deze pinnen kunnen worden geconfigureerd als digitale ingangspin om de logische waarde (0 of 1) te lezen. Of gebruikt worden als digitale uitgangspin om verschillende modules zoals LED, relais, etc. aan te sturen. De pinnen D3, D5, D6, D9, D10 en D11 kunnen PWM genereren. Voor digitale poorten kun je verbinden via vrouwelijke headers, of via pinheaders (gelabeld S) met 2.54mm pitch. |
+| 6                    | **AREF**  Voor analoge referentie. Wordt soms gebruikt om een externe referentiespanning (0-5V) in te stellen als bovengrens van analoge ingangen.                                                                                                                                                                                                                                                                                                                 |
+| 7                    | **SDA**  IIC communicatie pin                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| 8                    | **SCL**  IIC communicatie pin                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| 9                    | **ICSP (In-Circuit Serial Programming) Header**  ICSP is een AVR, een Arduino micro-programmeerheader bestaande uit MOSI, MISO, SCK, RESET, VCC en GND. Verbonden met ATMEGA 16U2-MU. Bij aansluiting op PC wordt de firmware geprogrammeerd naar ATMEGA 16U2-MU.                                                                                                                                                                                                    |
+| 10                   | **Microcontroller** Elk besturingsbord heeft zijn eigen microcontroller. Je kunt het zien als het brein van je bord. Microcontrollers zijn meestal van ATMEL. Voordat je een nieuw programma laadt in de Arduino IDE, moet je weten welke IC op je bord zit. Deze informatie is te vinden op de bovenkant van de IC. De microcontroller die op dit bord wordt gebruikt is ATMEGA328P-AU.                                                                                                     |
+| 11                   | **D13 LED**  Er is een ingebouwde LED die wordt aangestuurd door digitale pin 13. Wanneer de pin HIGH is, gaat de LED aan, wanneer de pin LOW is, gaat deze uit.                                                                                                                                                                                                                                                                                                    |
+| 12                   | **TX LED**  Op het bord vind je het label: TX (transmit) Wanneer het bord via de seriële poort communiceert en een bericht verzendt, knippert de TX-led.                                                                                                                                                                                                                                                                                                          |
+| 13                   | **RX LED**  Op het bord vind je het label: RX (receive) Wanneer het bord via de seriële poort communiceert en een bericht ontvangt, knippert de RX-led.                                                                                                                                                                                                                                                                                                            |
+| 14                   | **Power LED**  LED aan betekent dat je schakeling correct van stroom wordt voorzien. Anders is de LED uit.                                                                                                                                                                                                                                                                                                                                                          |
+| 15                   | **USB Aansluiting**  Je kunt het bord van stroom voorzien via de USB-verbinding. Of het programma uploaden naar het bord via de USB-poort. Verbind het bord met de PC met een USB-kabel via de USB-poort.                                                                                                                                                                                                                                                        |
+| 16                   | **ATMEGA 16U2-MU**  USB naar seriële chip, kan het USB-signaal omzetten in een seriële poortsignaal.                                                                                                                                                                                                                                                                                                                                                                |
+| 17                   | **Voedingsschakelaar**  Je kunt de schakelaar schuiven om de spanning van pin V (VCC), 3.3V of 5V te regelen.                                                                                                                                                                                                                                                                                                                                                       |
+| 18                   | **Spanningsregelaar**  Om de spanning die aan het bord wordt geleverd te regelen en de DC-spanning te stabiliseren die door de processor en andere componenten wordt gebruikt. Zet een externe ingangsspanning DC7-12V om in DC 5V, en schakelt dan DC 5V naar de processor en andere componenten, uitgang DC 5V, stroomsterkte 2A.                                                                                                                                  |
+| 19                   | **DC Voedingsaansluiting**  Het bord kan worden gevoed met een externe voeding DC7-12V via de DC-voedingsaansluiting.                                                                                                                                                                                                                                                                                                                                              |
+| 20                   | **IOREF**  Wordt gebruikt om de bedrijfsspanning van de microcontroller te configureren. Wordt weinig gebruikt.                                                                                                                                                                                                                                                                                                                                                   |
+| 21                   | **RESET Header**  Verbind een externe knop om het bord te resetten. De functie is hetzelfde als de resetknop.                                                                                                                                                                                                                                                                                                                                                      |
+| 22                   | **Pin 3.3V** Uitgang Biedt 3.3V spanningsuitgang                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| 23                   | **Pin 5V**  Uitgang Biedt 5V spanningsuitgang                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| 24                   | **Vin**  Je kunt een externe spanningsingang DC7-12V via deze pin aan het bord leveren.                                                                                                                                                                                                                                                                                                                                                                             |
+| 25                   | **Analoge pinnen**  Het bord heeft 6 analoge ingangen, gelabeld A0 tot A5. Kunnen ook gebruikt worden als digitale pinnen, A0=D14, A1=D15, A2=D16, A3=D17, A4=D18, A5=D19. Voor analoge poorten kun je verbinden via vrouwelijke headers, of via pinheaders (gelabeld S) met 2.54mm pitch.                                                                                                                                                                             |
+| 26                   | **IIC Communicatie Pin**  Verbindt met de IIC-communicatie. 4 pinnen (GND, VCC (3.3V of 5V geregeld door schuifschakelaar), SDA, SCL)                                                                                                                                                                                                                                                                                                                               |
+| 27                   | **RESET Knop**  Je kunt je bord resetten om het programma vanaf de beginstatus te starten.                                                                                                                                                                                                                                                                                                                                                                         |
 
-## 2.4 Arduino IDEでのボードとポートの選択
+## 2.4 Selecteer Board en Poort in Arduino IDE
 
 ![](../media/9719a62c6ebf40346819de383b90d86c.png)
 
-接続された制御ボードにコードをアップロードする前に、Arduino IDEでボードとポートを選択する必要があります。
+Voordat je code uploadt naar het aangesloten besturingsbord, moeten we board en poort selecteren in Arduino IDE.
 
-以下の2つの方法を紹介します：
+Twee methoden worden hieronder geïntroduceerd:
 
-1. ツールのドロップダウンリストからボードとポートを選択する方法
+1. Gebruik maken van de Board en Port selector in de Tool dropdownlijst
 
-2. ボードセレクターを使用する方法
+2. Gebruik maken van de board selector
 
 ![](../media/9b6c571bb9efb9776d7f13e97356520f.jpeg)
 
@@ -136,21 +136,21 @@ USBケーブルでコンピュータに接続し、DC 7-12Vの外部電源で電
 
 ![](../media/7f90bccae208b43956dbb5ea18e7b96d.png)
 
-## 2.5 Arduino IDEへのライブラリの追加
+## 2.5 Bibliotheken toevoegen aan Arduino IDE
 
-**なぜライブラリを使うのか？**
+**Waarom bibliotheken gebruiken?**
 
-ライブラリはあらゆる種類のプロジェクト作成時に非常に役立ちます。開発体験を大幅にスムーズにし、ほぼ無限の数が存在します。多くの異なるセンサー、RTC、Wi-Fiモジュール、RGBマトリックス、もちろんボード上の他のコンポーネントとインターフェースするために使われます。
+Bibliotheken zijn ongelooflijk nuttig bij het maken van een project van welk type dan ook. Ze maken onze ontwikkelervaring veel soepeler, en er zijn er bijna oneindig veel. Ze worden gebruikt om te communiceren met veel verschillende sensoren, RTC's, Wi-Fi modules, RGB-matrices en natuurlijk met andere componenten op je bord.
 
-**スケッチにライブラリを含める**
+**Een bibliotheek opnemen in de sketch**
 
 ![](../media/04646b12f83ae55602cd7e186850034c.png)
 
 ![](../media/79939cc2b0037a52ce8b7571cb448699.png)![](../media/067e9b7efcc117f4dd702c49f66f1735.png)
 
-**Arduino IDEにライブラリを追加する2つの方法**
+**Twee manieren om bibliotheken toe te voegen aan Arduino IDE**
 
-1.**方法1：.zipライブラリのインポート**
+1.**Methode één: Importeren van een .zip bibliotheek**
 
 ![](../media/68b46d43a6912da4b010ae4c37cc496e.png)
 
@@ -158,15 +158,15 @@ USBケーブルでコンピュータに接続し、DC 7-12Vの外部電源で電
 
 ![](../media/0713a4d4dc9e43f97ffb5175bc094c96.jpeg)
 
-2.**方法2：手動インストール**
+2.**Methode twee: Handmatige installatie**
 
-Arduinoスケッチが保存されるデフォルトの場所はスケッチブックと呼ばれます。スケッチブックは他のフォルダと同様にコンピュータ上のフォルダで、スケッチの便利なリポジトリとして機能し、追加のコードライブラリもここに保存されます。
+De standaardlocatie waar Arduino sketches die je schrijft worden opgeslagen heet het Sketchbook. Het Sketchbook is gewoon een map op je computer zoals elke andere. Het fungeert als een handige opslagplaats voor sketches en is ook waar extra codebibliotheken worden opgeslagen.
 
-**Librariesフォルダ**
+**Bibliotheekmap**
 
-**sketchbook\\libraries**フォルダはArduino IDEからライブラリがインストールされるデフォルトの場所です。
+De **sketchbook\\libraries** map is de standaardlocatie waar bibliotheken vanuit de Arduino IDE worden geïnstalleerd.
 
-ライブラリを手動で追加したい場合、ライブラリファイルはzipファイルのままでは追加できません。解凍してスケッチブックの**libraries**フォルダに自分で入れる必要があります。
+Als je een bibliotheek handmatig wilt toevoegen, kan het bibliotheekbestand niet als zip-bestand worden toegevoegd, je moet het uitpakken en zelf in de **libraries** map van je sketchbook plaatsen.
 
 ![](../media/54ed3cb6b4303dfb851d49ec6c998256.jpeg)
 
@@ -174,10 +174,10 @@ Arduinoスケッチが保存されるデフォルトの場所はスケッチブ�
 
 ![](../media/28fdb140904c915c2b37ba02923a68f6.png)
 
-Arduinoライブラリのアンインストール
+Bibliotheek verwijderen
 
-Arduinoライブラリのアンインストールはインストールより簡単です。コンピュータ上のスケッチブックフォルダ（「手動でライブラリをインストールする」章と同じ場所）を見つけてください。その場所に移動し、「libraries」フォルダを開きます。削除したいライブラリのフォルダを選択して単純に削除してください。次回Arduino IDEを開くと、Sketch > Include Libraryメニューに削除したライブラリは表示されません。
+Het verwijderen van een Arduino bibliotheek is eenvoudiger dan het installeren ervan. Zoek de sketchbook map op je computer (zoals in het hoofdstuk “Handmatig installeren van een bibliotheek”). Ga naar die locatie en open de “libraries” map. Selecteer de map met de bibliotheek die je wilt verwijderen en verwijder deze simpelweg. De volgende keer dat je je Arduino IDE opent, zal de verwijderde bibliotheek niet meer zichtbaar zijn onder het menu Sketch > Include Library.
 
 ![](../media/7a7fc5fc95be160fe7f9aa50be140f6d.png)
 
-ライブラリはあまり容量を取らず、ほとんどの場合削除する理由はありません。ただし、今後使う予定がなくリストを整理したい場合は安全に削除できます。必要になったらいつでも再インストール可能です。
+Bibliotheken nemen niet veel ruimte in beslag en meestal is er geen reden om ze te verwijderen. Als je ze echter niet meer wilt gebruiken en de lijst wilt opruimen, kun je ze veilig verwijderen. Je kunt altijd een Arduino bibliotheek opnieuw installeren als je die in de toekomst weer nodig hebt.

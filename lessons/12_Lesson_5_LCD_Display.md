@@ -1,50 +1,50 @@
-## レッスン5：1602 LCDディスプレイモジュール
+## Les 5: 1602 LCD Display Module
 
-**(1).説明：**
+**(1).Beschrijving：**
 
 ![](../media/28bf5a86d2265afb050e55589e145fe9.png)
 
-I2C通信モジュール付きのこのディスプレイモジュールは、1行あたり16文字、2行表示が可能です。
+Met I2C-communicatiemodule is dit een displaymodule die 2 regels kan weergeven met 16 tekens per regel.
 
-青い背景に白い文字を表示し、MCUのI2Cインターフェースに接続するため、MCUのリソースを大幅に節約できます。
+Het toont een blauwe achtergrond en witte tekst en sluit aan op de I2C-interface van de MCU, wat de MCU-bronnen aanzienlijk bespaart.
 
-LCDディスプレイの背面にはバックライト調整用の青いポテンショメーターがあり、通信アドレスはデフォルトで0x27です。
+Aan de achterkant van het LCD-display bevindt zich een blauwe potentiometer voor het aanpassen van de achtergrondverlichting. Het communicatieadres staat standaard op 0x27.
 
-元の1602 LCDは11本のIOポートで起動・動作しますが、本製品はARDUINO IIC/I2Cインターフェースを採用しており、9本のIOポートを節約しています。さらに、モジュールには直径3mmの位置決め用穴が4つあり、他のデバイスに固定するのに便利です。
+De originele 1602 LCD kan starten en werken met 11 IO-poorten, maar de onze is gebouwd met ARDUINOIIC/I2C-interface, waardoor 9 IO-poorten worden bespaard. Daarnaast is de module voorzien van 4 positioneringsgaten met een diameter van 3 mm, wat handig is om deze op andere apparaten te bevestigen.
 
-**(2).パラメータ：**
+**(2).Parameters：**
 
-I2Cアドレス: 0x27
+I2C-adres: 0x27
 
-バックライト（青、白）
+Achtergrondverlichting (blauw, wit)
 
-電源電圧: **5V**
+Voedingsspanning: **5V**
 
-コントラスト調整可能
+Instelbaar contrast
 
-GND: グランドに接続するピン
+GND: Een pin die met de aarde is verbonden
 
-VCC: +5V電源に接続するピン
+VCC: Een pin die met een +5V voeding is verbonden
 
-SDA: IIC通信のためのアナログポートA4に接続するピン
+SDA: Een pin die met analoge poort A4 is verbonden voor IIC-communicatie
 
-SCL: IIC通信のためのアナログポートA5に接続するピン
+SCL: Een pin die met analoge poort A5 is verbonden voor IIC-communicatie
 
-**(3).準備するもの：**
+**(3).Je moet voorbereiden:**
 
-| コントロールボード*1                          | USBケーブル*1                                  | LCDディスプレイ*1                              | 4P-1P F-F デュポンワイヤ                          |
+| Besturingsbord*1                                | USB-kabel*1                                    | LCD Display*1                                  | 4P-1P F-F DuPon Draad                            |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/28bf5a86d2265afb050e55589e145fe9.png) | ![](../media/f4df3fe85086b2896d958b1caf93a038.png) |
 
-**(4)接続図**
+**(4)Aansluitschema**
 
-| ピン接続表                 |                      |
-|----------------------------|----------------------|
-| **LCDディスプレイ**のピン   | コントロールボードのピン |
-| GND                        | G(GND)               |
-| VCC                        | V(5V)                |
-| SDA                        | A4                   |
-| SCL                        | A5                   |
+| Pin Aansluitingstabel       |                      |
+|-----------------------------|----------------------|
+| Pin van het **LCD Display** | Pin van Besturingsbord |
+| GND                         | G(GND)                 |
+| VCC                         | V(5V)                 |
+| SDA                         | A4                 |
+| SCL                         | A5                 |
 
 ![](../media/8c306bd1b7399f0819f4a1c435177ec3.png)
 

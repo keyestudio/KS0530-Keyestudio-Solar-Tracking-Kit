@@ -1,151 +1,150 @@
-## レッスン10：ソーラートラッキングキットの充電原理
+## Les 10: Laadprincipe van de Solar Tracking Kit
 
-**(1) ソーラーおよびUSB充電モジュール：**
+**(1) Zonne- en USB-laadmodule:**
 
 ![](../media/35ee9ecf293719fbe6b09fa7d79673db.png)
 
-このモジュールは充放電チップを内蔵しており、PH2.0MMインターフェースを通じて外部の充電式バッテリーおよびソーラーパネルと接続できます。
+Deze module integreert een laad- en ontlaadchip, die kan worden aangesloten op een externe oplaadbare batterij en een zonnepaneel via de PH2.0MM interfaces.
 
-このキットでは、18650バッテリー1本を収納できるバッテリーボックスを提供しているため、充電式18650バッテリーはご自身でご用意ください。
+In deze kit leveren we een batterijhouder die één 18650 batterij bevat, dus je moet zelf een oplaadbare 18650 batterij voorbereiden.
 
-モジュールにはMicro USBポートがあり、パソコンを使ってMicro USBポート経由で18650バッテリーを充電できます。
+De module heeft een Micro USB-poort en je kunt de 18650 batterij opladen via de micro USB-poort met een computer.
 
-さらに、バッテリーの電圧を6.6Vに昇圧できるブーストモジュールが搭載されています。モジュール上のDIPスイッチは6.6VのOUTPUTスイッチです。このモジュールのGピンとVピンは6.6Vを出力でき、Sピンは抵抗で1/2に分圧されたバッテリー電圧を読み取れます。
+Daarnaast heeft het een boost-module die de spanning van batterijen kan verhogen tot 6,6V. De DIP-schakelaar op de module is de OUTPUT-schakelaar van 6,6V. De pin G en V van deze module kunnen 6,6V outputten en de pin S kan de batterijspanning lezen na de weerstand 1/2 spanning.
 
-**パラメータ：**
+**Parameters:**
 
-| 充電インターフェース                             | ソーラーパネル用Micro USB HP2.0MMインターフェース |
+| Laadinterface                                  | Micro USB HP2.0MM Interface voor Zonnepaneel |
 |------------------------------------------------|---------------------------------------------|
-| ソーラーパネルインターフェースの入力電圧         | 4.4-6V                                      |
-| バッテリーの定電圧充電値                         | 4.15-4.24V                                  |
-| 最大充電電流                                     | 800mA                                       |
-| 出力インターフェース                             | 3 P 2.54mm 曲げピン                         |
-| 入力電圧                                         | 6.6V                                        |
-| 最大出力電流                                     | 1A                                          |
-| 外部バッテリー                                   | 18650バッテリー                             |
-| 環境属性                                         | ROHS                                        |
+| Ingangsspanning van de zonnepaneelinterface    | 4,4-6V                                      |
+| Constante spanningslaadwaarde van de batterij | 4,15-4,24V                                  |
+| Maximale laadstroom                            | 800mA                                       |
+| Outputinterface                               | 3 P 2,54mm Gebogen Naald                     |
+| Ingangsspanning                               | 6,6V                                        |
+| Maximale uitgangsstroom                       | 1A                                          |
+| Externe batterij                              | 18650 batterij                              |
+| Milieu-eigenschappen                          | ROHS                                        |
 
-**回路図**
+**Schema**
 
 ![](../media/de5fe1122f8eac68785a2894a8312194.png)
 
-**特徴**
+**Kenmerken**
 
 ![](../media/aff5ac4262adb20b7af065a4599f8b91.png)
 
 
 ![](../media/8cc32ae4cc95d353f08354f4746ee047.jpeg)
 
-**(2) PETソーラーパネル**
+**(2) PET Zonnepaneel**
 
 ![](../media/9634ce5e4e9d603a21f5e83caafbd6f4.jpeg)
 
-ソーラーパネルの出力性能に影響を与える主な要因は以下の通りです：
+De belangrijkste factoren die de outputprestaties van zonnepanelen beïnvloeden zijn als volgt:
 
-(1) 負荷インピーダンス
+(1) Belastingsimpedantie
 
-(2) 日光の強さ
+(2) Zonlichtintensiteit
 
-(3) 温度
+(3) Temperatuur
 
-(4) 照射角度および照射面積
+(4) Verlichtingshoek en verlichtingsgebied
 
-マルチメーターを使ってソーラーパネルの出力電流を測定できます。マルチメーターを直流電流レベルかつ大きなレンジに設定し、赤ペンをソーラーパネルの正極、黒ペンを負極に接続して測定してください。
+Je kunt een multimeter gebruiken om de uitgangsstroom van het zonnepaneel te meten, stel de multimeter in op DC-stroomniveau en grote bereik aansluiting, verbind de rode pen van de multimeter met de positieve pool van het zonnepaneel en de zwarte pen met de negatieve pool van het zonnepaneel, en meet het.
 
-ソーラーパネルは電気を蓄えられますか？
+Kunnen zonnepanelen elektriciteit opslaan?
 
-いいえ、一般的にバッテリーと組み合わせて電気を蓄える必要があります。
+Nee, over het algemeen moeten ze worden gekoppeld aan een batterij om elektriciteit op te slaan.
 
-曇りの日にソーラーパネルは発電できますか？
+Kunnen zonnepanelen elektriciteit opwekken op bewolkte dagen?
 
-いいえ、曇りの日のソーラーパネルの発電量は非常に少ないです。この場合、電圧はありますが電流はほとんどありません。
+Nee, de stroom die zonnepanelen op bewolkte dagen genereren is zeer klein. In dit geval hebben ze spanning maar geen stroom.
 
-室内照明下でソーラーパネルは発電できますか？
+Kunnen zonnepanelen elektriciteit opwekken onder binnenverlichting?
 
-いいえ、室内照明下ではソーラーパネルは発電できません。
+Nee, zonnepanelen kunnen geen elektriciteit opwekken onder binnenverlichting.
 
-**(3) ソーラーパネルでバッテリーを充電する**
+**(3) Laad de batterij met het zonnepaneel.**
 
-このキットには18650バッテリー1本に対応したバッテリーケースが付属しており、充電や電源として使用できる2つのインターフェースも備えています。
+In deze kit leveren we een batterijhouder die compatibel is met één 18650 batterij, en het is ook uitgerust met twee interfaces zodat je de batterij kunt opladen of gebruiken voor stroomvoorziening.
 
 ![](../media/0b1a78bcd390a4a21c6079f86dbb00ca.png)
 
-18650バッテリーとバッテリーチャージャーはご自身でご用意ください。
+Je moet zelf een 18650 batterij en een batterijoplader voorbereiden.
 
-購入時の参考パラメータ：
+De volgende parameters zijn beschikbaar voor aankoop：
 
-| 仕様                      |                                                           |
+| Specificaties            |                                                           |
 |---------------------------|-----------------------------------------------------------|
-| サイズ                    | 18650                                                     |
-| 正極端子：               | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png)上部付き |
-| 容量                      | >2200mAh                                                 |
-| 公称電圧                  | 3.7V                                                      |
-| 最大電圧                  | 4.2V                                                      |
-| 放電カットオフ電圧        | 2.5V                                                      |
-| 充電可能                  | はい                                                       |
-| おおよその寸法            | 18.5mm x 65.2mm                                           |
+| Grootte                   | 18650                                                     |
+| Positieve Pool：          | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png) met een top |
+| Capaciteit                | >2200mAh                                                 |
+| Nominale Spanning         | 3,7V                                                      |
+| Maximale Spanning         | 4,2V                                                      |
+| Ontlaad afsnijspanning   | 2,5V                                                      |
+| Oplaadbaar                | Ja                                                        |
+| Ongeveer Afmetingen       | 18,5mm x 65,2mm                                           |
 
-ソーラーパネルを充電モジュールと18650リチウムケースに接続することで、ソーラーパネルがバッテリーを充電します。
+We kunnen het zonnepaneel aansluiten op de laadmodule en een 18650 lithiumhouder, zodat het zonnepaneel de batterij oplaadt.
 
 ![](../media/901cdf76ced95e24e2dc2a43441bb76f.png)
 
-ソーラーパネルはバッテリーではなく、電力貯蔵機能はありません。電気はバッテリーに蓄えられます。
+Zonnepanelen zijn geen batterijen, ze hebben niet de functie van stroomopslag. Ze kunnen elektriciteit opslaan in de batterij.
 
-太陽光がない環境、室内照明、冬の薄暗い光の下ではソーラーパネルの出力は弱いです。これらの光が持つエネルギーは非常に小さく、明るくても同様です。
+De output van zonnepanelen is zwak in omgevingen zonder zonlicht, binnenverlichting en laag winterlicht. De energie die deze lichten dragen is zeer klein, zelfs als het helderder is.
 
-**注意：**
+**Opmerking:**
 
-ソーラーパネルはバッテリーを十分に充電するために長時間の直射日光が必要な場合があります。18650バッテリーは直射日光にさらさず、高温環境を避けてください。過熱による損傷を防ぐためです。
+Het zonnepaneel kan lange periodes direct zonlicht nodig hebben om de batterijen voldoende op te laden. 18650 batterijen mogen niet worden blootgesteld aan direct zonlicht en moeten hoge temperaturen vermijden om doorbranden te voorkomen.
 
 ![](../media/741dcf23d13ba6e94e4910ac0baccf90.png)
+**(4) Smartphone laadmodule**
 
-**(4) スマートフォン充電モジュール**
+De mobiele telefoon laadmodule is een lithium batterij boost module van 3,7V die 5V, 1A kan outputten via de PH2.0 terminal en USB-poort.
 
-スマートフォン充電モジュールは3.7Vのリチウムバッテリーブーストモジュールで、PH2.0端子およびUSBポートを通じて5V、1Aを出力できます。
+Parameters:
 
-パラメータ：
+| Eigenschap             | niet-geïsoleerde boost module (BOOST)                                                                |
+|------------------------|-----------------------------------------------------------------------------------------------------|
+| Ingangsspanning        | 1-5V                                                                                                |
+| Uitgangsspanning       | 5±0,1V                                                                                             |
+| Uitgangsstroom:        | Nominaal 1-1,5A (enkele cel lithium batterij ingang), maximaal 1,5A (enkele cel lithium batterij ingang) |
+| Conversie-efficiëntie  | Tot 96%                                                                                            |
+| Schakelingsfrequentie  | 500KHz                                                                                            |
+| Werktemperatuur        | industriële graad (-40°C tot +85°C)                                                                |
+| Volledige belasting verwarming | 30°C                                                                                       |
+| Ruststroom             | 130uA                                                                                             |
 
-| 特性                  | 非絶縁昇圧モジュール（BOOST）                                                                    |
-|-----------------------|------------------------------------------------------------------------------------------------|
-| 入力電圧              | 1-5V                                                                                           |
-| 出力電圧              | 5±0.1V                                                                                        |
-| 出力電流              | 定格1-1.5A（単セルリチウム電池入力）、最大1.5A（単セルリチウム電池入力）                         |
-| 変換効率              | 最大96%                                                                                       |
-| スイッチング周波数    | 500KHz                                                                                       |
-| 動作温度              | 産業用グレード（-40°C～+85°C）                                                                |
-| フルロード時の発熱    | 30°C                                                                                         |
-| 待機電流              | 130uA                                                                                        |
+PH2.0 terminal van de telefoon laadmodule kan worden aangesloten op de batterijhouder.
 
-スマートフォン充電モジュールのPH2.0端子はバッテリーケースに接続できます。
+De USB-poort kan worden aangesloten op een Android-telefoon en opladen.
 
-USBポートはAndroidスマートフォンに接続して充電可能です。
-
-18650バッテリーの電力（電圧が3.2～4.2V）が十分でないとAndroidスマートフォンの充電はできません。充電中の表示があっても実際には充電されませんのでご注意ください。
+Let op dat de stroom van de 18650 batterij voldoende moet zijn (spanning tot 3,2-4,2V) om een Android-telefoon op te laden. Anders werkt het niet, zelfs als de telefoon aangeeft dat hij oplaadt.
 
 ![](../media/ac10bacad797ef9104c98f1c2735cea4.png)
 
-**(5) ソーラートラッキングキットの充電原理**
+**(5) Laadprincipe van de Solar Tracking Kit**
 
-1、Micro USBポートの最大充電電流は1A
+1. Maximale laadstroom van micro USB-poort 1A
 
-2、ソーラーパネルの最大充電電流は80mA
+2. Maximale laadstroom van zonnepaneel 80mA
 
-3、USB Aポート（メス）の最大出力電圧：5V/1.5A（スマートフォン充電に使用可能）
+3. Maximale uitgangsspanning van USB A vrouwelijke houder: 5V/1,5A (kan worden gebruikt voor het opladen van mobiele telefoons)
 
 ![](../media/406f0b8202788f1214fddca0970bd688.png)
 
-4、バッテリータイプ：トップ付き18650リチウムバッテリー、容量2200mAh以上推奨
+4. Batterijtype: 18650 lithium batterij met een top, aanbevolen capaciteit groter dan 2200mAh
 
-**注意：**
+**Opmerking:**
 
-1). スマートフォン充電モジュールの充電プロトコルはAndroidのみ対応し、iOSには対応していません。
+1). Het laadprotocol van de telefoon laadmodule ondersteunt alleen Android, niet iOS.
 
-2). ソーラーパネルはスマートフォンを直接充電できません。バッテリーに電気を蓄え、そのバッテリーがスマートフォンを充電します。
+2). Het zonnepaneel kan mobiele telefoons niet direct opladen; het moet elektriciteit opslaan in een batterij en de batterij laadt de telefoon op.
 
-3). 18650バッテリーの電圧は3.2～4.2Vの範囲内である必要があります。バッテリー電圧が3.2V未満の場合、スマートフォンは充電中と表示しても実際には充電されません。
+3). De spanning van de 18650 batterij moet in het bereik van 3,2---4,2V zijn om de mobiele telefoon op te laden. Wanneer de spanning van de batterij minder is dan 3,2V, laadt de telefoon niet echt op, ook al geeft hij aan dat hij oplaadt.
 
-4). ソーラーパネルはバッテリーを十分に充電するために長時間の直射日光が必要な場合があります。18650バッテリーは直射日光にさらさず、高温環境を避けてください。過熱による損傷を防ぐためです。
+4). Het zonnepaneel kan lange periodes direct zonlicht nodig hebben om de batterijen voldoende op te laden. 18650 batterijen mogen niet worden blootgesteld aan direct zonlicht en moeten hoge temperaturen vermijden om doorbranden te voorkomen.
 
-5). 18650バッテリーを速く充電したい場合は、専用の18650充電器を使用してください。またはUSB 2.0 to Micro USBケーブルを使って充電モジュールをパソコンや電源に接続して充電してください。（USB 2.0 to Micro USBケーブルはキットに含まれていません）
+5). Als je je 18650 batterij snel wilt opladen, kun je de batterij opladen met een speciale 18650 lader. Of gebruik een USB 2.0 naar micro USB-kabel om de laadmodule aan te sluiten en de batterij op te laden met een computer of voeding. (USB 2.0 naar micro USB-kabel niet inbegrepen in de kit)
 
-6). これはあくまでシミュレーション実験であり、日常の電力需要を満たすものではありません。スマートフォンの通常の電源として使用しないでください。
+6). Dit is slechts een simulatie-experiment en zal niet voldoen aan je dagelijkse stroombehoeften, gebruik het niet als je reguliere mobiele telefoon stroombron.

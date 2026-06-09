@@ -1,80 +1,80 @@
-# 6.トラブルシューティング
+# 6.Foutoplossing
 
-よくある問題の解決策をいくつかご紹介します。
+Hier zijn enkele oplossingen voor veelvoorkomende problemen die u kunnen helpen.
 
-ここでお探しの答えが見つからない場合は、技術サポートまでご連絡ください：
+Als u hier niet het antwoord vindt dat u zoekt, neem dan contact op met onze technische ondersteuning:
 
 Amazon: [service@keyestudio.com](mailto:service@keyestudio.com)
 
 AliExpress: [tivon@keyestudio.com](mailto:tivon@keyestudio.com)
 
-その他のチャネル: [sunny@keyestudio.com](mailto:sunny@keyestudio.com)
+Andere kanalen: [sunny@keyestudio.com](mailto:sunny@keyestudio.com)
 
-問題をより迅速かつ専門的に解決するために、メールを送る際には以下の情報を含めてください：
+Voor een snellere en professionelere oplossing van uw probleem, voeg alstublieft deze informatie toe wanneer u ons een e-mail stuurt:
 
-ご注文番号またはこの製品を入手した場所
+Uw ordernummer of waar u dit product heeft gekocht
 
-遭遇した問題の詳細な説明、写真や動画をできるだけ含めてください。
+De problemen die u tegenkomt, probeer gedetailleerde beschrijvingen, foto's of video's toe te voegen.
 
-「動かない」だけでは情報が不足しています。達成したいことや試したことを詳しく教えてください。
+We hebben meer informatie nodig dan "Het werkt niet." Geef ons alstublieft goede details over wat u wilt bereiken en wat u al heeft geprobeerd.
 
-ありがとうございます！
+Dank u!
 
-**(1)コントロールボードがコンピュータに認識されない。**
+**(1) Het besturingsbord wordt niet herkend door de computer.**
 
-- USBケーブルが正常か、コンピュータのUSBポートが使用可能か確認してください。
+-Controleer of de USB-kabel goed is en of de USB-poort van uw computer beschikbaar is.
 
-**(2)USBポートがコンピュータに認識されない。**
+**(2) USB-poort wordt niet herkend door de computer.**
 
-- USBドライバーがインストールされているか確認してください。
+-Controleer of u de USB-driver heeft geïnstalleerd.
 
-**(3)コードの問題／アップロード失敗／コードエラー。**
+**(3) Codeproblemen/Mislukte upload/Codefout.**
 
-これらの理由がコードの問題を引き起こす可能性があります：
+Deze redenen kunnen problemen met uw code veroorzaken:
 
-1) ドライバーがインストールされていない。
+1) De driver is niet geïnstalleerd.
 
-2) Arduino IDEでボードの種類やCOMポートが正しく選択されていない。
+2) Het bordtype en de COM-poort zijn niet correct geselecteerd in de Arduino IDE.
 
-3) ライブラリファイルがインストールされていない。
+3) Het bibliotheekbestand is niet geïnstalleerd.
 
-（上記の問題のトラブルシューティングは**2.Arduinoの始め方**を参照してください）
+(Volg alstublieft **2.Getting Started with Arduino** om bovenstaande problemen op te lossen)
 
 ![](../media/224c21b5aa737f11de351dbd9868e317.png)
 
-**(4)USB接触不良**
+**(4) Slechte USB-verbinding**
 
-上記の1～3の問題がない場合は、USBケーブルの接続が良好か確認し、再度差し直してからコードをアップロードしてください。
+Als u de problemen 1-3 hierboven niet heeft, controleer dan of de USB-kabelverbinding goed is, probeer deze opnieuw in te pluggen en upload de code opnieuw.
 
-**(5)組み立てたソーラートラッキングキットが反応しない。**
+**(5) De geassembleerde Solar tracking kit reageert niet.**
 
-1)ロボットが動作しない原因として以下が考えられます：
+1) Deze redenen kunnen ervoor zorgen dat de robot niet werkt:
 
-1) 配線ミス
+1) verkeerde bedrading
 
-2) コードをアップロードしていない
+2) U heeft de code niet geüpload
 
-3) アップロード失敗／コードエラー
+3) Mislukte upload/Codefout
 
-4) コントロールボードの5Vスイッチと充電モジュールの電源スイッチをオンにしていない。
+4) U heeft de 5V-schakelaar op het besturingsbord en de aan/uit-schakelaar op de oplaadmodule niet ingeschakeld.
 
 ![](../media/67fc5cb5b7eabda71fcb2296a8def597.png)![](../media/edc80fe0bd7a1cce69bd760ab5d247bc.png)
 
-5) バッテリー電力不足
+5) Onvoldoende batterijvermogen
 
-18650バッテリーは、2つのサーボ、LCDディスプレイ、4つの光センサー、DHT11センサー、ボタンモジュールに電力を供給するため、十分に充電しておく必要があります。
+U moet de 18650-batterij voldoende opgeladen houden omdat deze nodig is om twee servo's, een LCD-display, vier lichtsensoren, een DHT11-sensor en een knopmodule van stroom te voorzien.
 
-**(6)サーボが固まる／サーボが熱くなる**
+**(6) Servo blijft hangen/servo wordt heet**
 
-サーボを組み立てる前に初期角度を調整し、組み立てが完了するまで角度を変更しないようにしてください。これにより、ソーラートラッキングキットでサーボが正常に動作します。
+U moet de beginhoek van de servo aanpassen voordat u deze monteert en de hoek niet veranderen totdat de montage is voltooid om ervoor te zorgen dat de servo correct werkt voor de solar tracking kit.
 
-**(7)ソーラーパネルが光源や太陽の動きを追跡しない**
+**(7) Het zonnepaneel volgt de beweging van de lichtbron of de zon niet**
 
-周囲光センサーが光の強さの変化を検知すると、サーボがソーラーパネルを最も強い光の位置に回転させます。
+Wanneer de omgevingslichtsensor veranderingen in lichtintensiteit detecteert, draaien de servo's het zonnepaneel naar de positie waar het licht het sterkst is.
 
-均一な照明環境では、ソーラーパネルが光源の動きを追跡しない場合があります。非常に強い光源を当てるか、弱い光の場所に光源を置いてソーラーパネルが光源に追従するようにしてください。各周囲光センサーが検知する光の強度差が小さいため、ソーラーパネルが太陽の方向に動かないことがあります。
+In een omgeving met gelijkmatige verlichting kan het zonnepaneel de beweging van de lichtbron mogelijk niet volgen. U moet mogelijk een zeer sterke lichtbron toepassen, of een lichtbron in een zwak verlichte ruimte gebruiken om het zonnepaneel met de lichtbron te laten meebewegen. Het zonnepaneel beweegt mogelijk niet naar de zon omdat het verschil in lichtintensiteit dat door elke omgevingslichtsensor wordt gedetecteerd, niet groot genoeg is.
 
-1.  **ソーラーパネルの動きが非常に遅い、ぎくしゃくする、または固まる。**
-2.  サーボの配線が整理されていて、サーボが動くスペースが確保されているか確認してください。
-3.  18650バッテリーが完全に充電されている必要があります。
-4.  ボタンモジュールを押してサーボの回転量を調整できます。
+1.  **Het zonnepaneel beweegt erg langzaam, haperend of blijft hangen.**
+2.  Controleer of de servo-bedrading netjes is en niet klem zit zodat de servo voldoende ruimte heeft om te bewegen.
+3.  De 18650-batterij moet volledig opgeladen zijn.
+4.  U kunt op de knopmodule drukken om de hoeveelheid servo-rotatie aan te passen.

@@ -1,8 +1,8 @@
-## レッスン 4.2: パッシブブザーで音楽を演奏する
+## Les 4.2: Gebruik een passieve buzzer om muziek te spelen
 
-**>>>>>>>>このレッスンはレッスン 4.1 の拡張です**
+**>>>>>>>>Deze les is een uitbreiding van Les 4.1**
 
-前回のレッスンでは、ブザーモジュールに「ドレミファソラシド」を鳴らしました。今回のレッスンでは、異なるコードをアップロードしてパッシブブザーで「ハッピーバースデー」を演奏します。
+In de vorige les lieten we de buzzer-module "do re mi fa so la si do" afspelen. In deze les zullen we een andere code uploaden om de passieve buzzer "Happy Birthday" te laten spelen.
 
 ![](../media/c9ac3665f8ba3a9a78bae143823cc143.png)
 

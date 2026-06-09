@@ -1,32 +1,32 @@
-## レッスン 4.1: パッシブブザー
+## Les 4.1: Passieve Buzzer
 
-**(1)説明**
+**(1)Beschrijving**
 
-Arduinoで完成された多くのインタラクティブな作品があります。最も一般的なものは音と光の表示です。私たちは実験にLEDをよく使います。このレッスンでは、音を出す回路を設計します。一般的な音響部品はブザーとホーンです。ブザーの方が使いやすいです。そしてブザーにはアクティブブザーとパッシブブザーがあります。この実験ではパッシブブザーを採用します。
+Er zijn talloze interactieve projecten gemaakt met Arduino. De meest voorkomende is geluid- en lichtweergave. We gebruiken altijd LED's om experimenten te doen. Voor deze les ontwerpen we een circuit om geluid te produceren. De universele geluidscomponenten zijn buzzer en hoorns. Een buzzer is gemakkelijker te gebruiken. En buzzers zijn er in actieve en passieve varianten. In dit experiment gebruiken we een passieve buzzer.
 
-パッシブブザーを使用すると、異なる周波数の方形波を入力することで異なる音を制御できます。実験中は、コードを制御してブザーを鳴らし、「チック、チック」という音から始め、次にパッシブブザーで「ドレミファソラシド」を鳴らし、特定の曲を演奏します。
+Bij het gebruik van een passieve buzzer kunnen we verschillende geluiden aansturen door vierkante golven met verschillende frequenties in te voeren. Tijdens het experiment besturen we de code om de buzzer geluid te laten maken, beginnend met een “tik, tik” geluid, daarna laat de passieve buzzer “do re mi fa so la si do” horen, en speelt specifieke liedjes af.
 
-**(2)パラメータ:**
+**(2)Parameters:**
 
-制御インターフェース: デジタルポート
+Besturingsinterface: digitale poort
 
-動作電圧: DC 3.3-5V
+Werkspanning: DC 3.3-5V
 
-**(3)準備するもの:**
+**(3)Wat je nodig hebt:**
 
-| コントロールボード*1                           | USBケーブル*1                                 | パッシブブザー*1                              | 3ピン F-F 26AWG ワイヤー                       |
+| Besturingsbord*1                                | USB-kabel*1                                    | Passieve Buzzer*1                               | 3pin F-F 26AWG Draad                             |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/0a27e277ef5e39bc76315d74d9bfdf46.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) |
 
-**(4).接続図：**
+**(4).Aansluitschema：**
 
 ![](../media/427e69c5b4d8000e5aa7afaca63b8e4f.png)
 
-パッシブブザーのG、V、SピンはコントロールボードのG、V、D6に接続します。
+De G, V en S pinnen van de passieve buzzer zijn verbonden met G, V en D6 van het besturingsbord.
 
-| ピン接続表             |                      |
+| Pin Aansluitingstabel |                      |
 |-----------------------|----------------------|
-| **ブザー**のピン       | コントロールボードのピン |
+| Pin van de **Buzzer** | Pin van Besturingsbord |
 | G                     | G                    |
 | V                     | V                    |
 | S                     | D6                   |

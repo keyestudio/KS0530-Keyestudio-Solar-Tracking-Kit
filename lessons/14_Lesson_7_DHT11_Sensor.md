@@ -1,35 +1,35 @@
-## レッスン7: DHT11 温度・湿度センサー
+## Les 7: DHT11 Temperatuur- en Vochtigheidssensor
 
 ![](../media/569a9b768ff44fd8a88841c4515cca9d.png)
 
 
-**(1)説明:**
+**(1)Beschrijving:**
 
-このDHT11温度・湿度センサーは、温度と湿度の校正済みデジタル信号出力を含む複合センサーです。
+Deze DHT11 temperatuur- en vochtigheidssensor is een samengestelde sensor die een gekalibreerde digitale signaaluitgang van de temperatuur en vochtigheid bevat.
 
-DHT11温度・湿度センサーはデジタルモジュールの取得技術と温度・湿度検知技術を使用しており、高い信頼性と優れた長期安定性を確保しています。
+De DHT11 temperatuur- en vochtigheidssensor gebruikt de acquisitietechnologie van de digitale module en temperatuur- en vochtigheidssensor technologie, wat zorgt voor hoge betrouwbaarheid en uitstekende lange termijn stabiliteit.
 
-抵抗素子とNTC温度測定装置を含みます。
+Het bevat een resistief element en een NTC temperatuurmeetapparaat.
 
-**(2)パラメータ：**
+**(2)Parameters：**
 
-動作電圧: **+5 V**
+Werkspanning: **+5 V**
 
-動作温度: 0-50 ℃ ± 2 ℃の誤差
+Werktemperatuur: 0-50 ℃ fout van ± 2 ℃
 
-湿度: 20-90% RH ± 5% RHの誤差
+Vochtigheid: 20-90% RH ± 5% RH fout
 
-インターフェース: デジタルポート
+Interface: digitale poort
 
-**(3).準備するもの:**
+**(3).Je moet voorbereiden:**
 
-| コントロールボード*1                                | USBケーブル*1                                    | DHT11センサー*1                                        | 3ピンデュポンワイヤー                                |
+| Besturingsbord*1                                | USB-kabel*1                                    | DHT11 Sensor*1                                        | 3pin DuPont Draad                                |
 |-------------------------------------------------|-------------------------------------------------|--------------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/569a9b768ff44fd8a88841c4515cca9d.png) | ![](../media/1bd35f503278636f76403a931f5dc61a.png) |
 
-**(4)接続図**
+**(4)Aansluitschema**
 
-DHT11センサー*1のG、V、SピンをコントロールボードのG、V、D7に接続します。
+De G, V en S pinnen van DHT11 Sensor*1 zijn verbonden met G, V en D7 van het besturingsbord.
 
 ![](../media/8beddf04e8c9ee1c94c91b225328036e.png)
 

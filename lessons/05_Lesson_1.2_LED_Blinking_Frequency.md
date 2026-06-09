@@ -1,6 +1,6 @@
-## レッスン 1.2: LEDの点滅周波数を変更する
+## Les 1.2: De knipperfrequentie van de LED veranderen
 
-**>>>>>>>>このレッスンはレッスン 1.1 の拡張です**
+**>>>>>>>>Deze les is een uitbreiding van Les 1.1**
 
 ![](../media/dc02634b4874771998403f117ee1d947.png)
 

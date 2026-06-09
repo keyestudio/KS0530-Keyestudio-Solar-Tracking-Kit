@@ -1,32 +1,31 @@
-## レッスン 1.1: LEDの点滅
+## Les 1.1: LED Knippert
 
-**(1).説明：**
+**(1).Beschrijving：**
 
 ![](../media/90f495d6deb8516c95dea36fb1efa019.jpeg)![](../media/2aeeeb61ad2a3110303b3108f4ba31e1.png)
 
-LED（発光ダイオード）はGa、As、P、Nなどの化合物で構成されています。テストコードの遅延時間を変えることで、LEDはさまざまな色で点滅させることができます。制御時には、GNDとVCCに電源を入れ、S端子が高レベルの場合はLEDが点灯し、そうでなければ消灯します。
+LED, de afkorting van lichtgevende diodes, bestaat uit Ga, As, P, N chemische verbindingen, enzovoort. De LED kan in verschillende kleuren knipperen door de vertragingstijd in de testcode te wijzigen. Bij bediening, wanneer GND en VCC zijn ingeschakeld, zal de LED aan zijn als het S-eind op een hoog niveau staat; anders zal deze uitgaan.
 
 ![](../media/628e402ae3fc455a2812705b17d7c30d.png)
+**(2).Parameters：**
 
-**(2).パラメータ：**
+Bedieningsinterface: digitale poort
 
-制御インターフェース：デジタルポート
+Werkspanning: DC 3.3-5V
 
-動作電圧：DC 3.3-5V
+Pinafstand: 2.54mm
 
-ピン間隔：2.54mm
+LED weergavekleur: geel
 
-LED表示色：黄色
+**(3).Je moet voorbereiden:**
 
-**(3).準備するもの：**
-
-| コントロールボード*1                             | USBケーブル*1                                  | 黄色LEDモジュール*1                            | 3ピン F-F 26AWG ワイヤー                         |
+| Besturingsbord*1                                | USB-kabel*1                                    | Geel LED-module*1                            | 3pin F-F 26AWG Draad                             |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/628e402ae3fc455a2812705b17d7c30d.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) |
 
-**(4).LEDモジュールの接続図：**
+**(4).Aansluitschema van de led-module：**
 
-LEDモジュールのピン -, +, S はコントロールボードのピン G, 5V, D3 ポートに接続します。
+De pin -, + en S van de LED-module zijn verbonden met de pin G, 5V en D3-poort van het besturingsbord.
 
 ![](../media/045af155ff7b448adf0e819200ccef57.png)
 
@@ -34,12 +33,12 @@ LEDモジュールのピン -, +, S はコントロールボードのピン G, 5
 
 ![](../media/188b0bea1512ccc6a9b3e20ff8a9265d.png)
 
-**(5).テスト結果：** LEDが1秒間隔で点滅します
+**(5).Testresultaten:** LED knippert met een interval van 1s
 
 ![](../media/351380ab56f691b54869160828bc56d0.png)
 
-**(6).コードの説明：**
+**(6).Code-uitleg:**
 
-pinMode(LED，OUTPUT) - この関数はピンをINPUTまたはOUTPUTとして設定します
+pinMode(LED，OUTPUT) - Deze functie kan aangeven dat de pin INPUT of OUTPUT is
 
-digitalWrite(LED，HIGH) - ピンがOUTPUTの場合、HIGH（5V出力）またはLOW（0V出力）に設定できます
+digitalWrite(LED，HIGH) - Wanneer de pin OUTPUT is, kunnen we deze instellen op HIGH (uitgang 5V) of LOW (uitgang 0V)

@@ -1,36 +1,46 @@
-## レッスン8: BH1750 デジタル光強度モジュール
+## Les 8: BH1750 Digitale Lichtintensiteit Module
 
-**(1)説明:**
+**(1)Beschrijving:**
 
 ![](../media/53ab41d84e93814e57076a8cc25e1aa7.png)
 
-このセンサーの主なコンポーネントは、デジタル光強度用の集積チップであるBH1750FVIです。
+Het belangrijkste onderdeel van deze sensor is de chip BH1750FVI, een geïntegreerde chip voor digitale lichtintensiteit.
 
-下の図に示すように、BH1750はフォトダイオード、オペアンプ、ADC取得、クリスタルオシレーターなどで構成されています。フォトダイオードは光起電効果により入力された光信号を電気信号に変換します。オペアンプ回路で増幅された後、電圧はADCによって収集され、論理回路を通じて16ビットの2進数に変換され、内部レジスタに格納されます（注：光が強いほど光電流が大きくなり、電圧も大きくなるため、電圧の値で光の強さを判断できます）。
+Zoals te zien is op de onderstaande afbeelding, bestaat de BH1750 uit een fotodiode, een operationele versterker, een ADC acquisitie, een kristaloscillator, enz. De fotodiode zet het binnenkomende optische signaal om in een elektrisch signaal via het fotovoltaïsche effect. Nadat het versterkt is door de operationele versterker, wordt de spanning verzameld door de ADC en vervolgens omgezet in een 16-bits binair getal via de logische schakeling en opgeslagen in het interne register (Opmerking: hoe sterker het licht, hoe groter de fotostroom en hoe groter de spanning, dus de lichtintensiteit kan worden beoordeeld aan de hand van de waarde van de spanning.
 
-ただし、電圧と光強度は一対一の対応関係にありますが、比例関係ではありません。これがこのチップで線形処理が行われる理由であり、フォトダイオードの代わりに集積ICが直接使用される理由です）。BH1750はクロック線とデータ線を引き出しています。マイコンはI2Cプロトコルを通じてBH1750モジュールと通信できます。BH1750の動作モードを選択したり、BH1750レジスタの照度データを取得したりできます。
+Het moet echter worden opgemerkt dat de spanning en de lichtintensiteit een één-op-één relatie hebben, maar niet evenredig zijn. Daarom wordt deze chip lineair verwerkt en wordt de geïntegreerde IC direct gebruikt in plaats van fotodiodes). BH1750 leidt de kloklijn en datalijn uit. De microcontroller kan communiceren met de BH1750-module via het I2C-protocol. Je kunt de werkmodus van de BH1750 kiezen, of je kunt de verlichtingsgegevens van het BH1750-register uitlezen.
 
-**(2)パラメータ:**
+**(2)Parameters:**
 
-- I2Cデジタルインターフェース、最大通信速度400Kbps対応
-- 出力は照度
-- 測定範囲は1〜65535ルクス、最小分解能は1ルクス
-- 低消費電力（パワーダウン）機能
-- 50/60Hzの電源周波数による光変化の干渉を遮断
-- ADDRピンで選択可能な2つのI2Cアドレスをサポート
-- 小さな測定誤差（最大精度誤差±20%）
-- GND 電源グランド
-- SDA I2Cバスデータピン
-- SCL I2Cバスクロックピン
-- VCC 電源電圧3-5V
+I2C digitale interface, ondersteunt een maximale snelheid van 400Kbps
 
-**(3)準備するもの:**
+De output is verlichtingssterkte
 
-| コントロールボード*1                             | USBケーブル*1                                  | BH1750FVIセンサー*1                            | 350mm 4ピンF-Fワイヤ                             |
+Meetbereik is 1~65535 lux, de minimale resolutie is 1 lux
+
+Laag stroomverbruik (Power down) functie
+
+Onderdrukt interferentie van lichtveranderingen veroorzaakt door 50/60Hz netfrequentie
+
+Ondersteunt twee I2C-adressen, te selecteren via de ADDR-pin
+
+Kleine meetafwijking (maximale nauwkeurigheidsfout +/-20%)
+
+GND voedingsaarde
+
+SDA I2C-bus datapin
+
+SCL I2C-bus klokpin
+
+VCC voedingsspanning 3-5V
+
+**(3)Je moet voorbereiden:**
+
+| Besturingsbord*1                                | USB-kabel*1                                    | BH1750FVI Sensor*1                             | 350mm 4pin F-F Draad                             |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/53ab41d84e93814e57076a8cc25e1aa7.png) | ![](../media/626e88c46a8a1385bd0558610a17ca9f.png) |
 
-**(4)接続図:**
+**(4)Aansluitschema:**
 
 ![](../media/d7fccd89d5bed291ccce34babfbf5c91.png)
 
@@ -40,4 +50,4 @@
 
 ![](../media/92857c7b8c368330acb6630e39bd462c.png)
 
-(**注意**: I2Cバスは異なるアドレスを持つ複数のデバイスを接続可能なため、デジタル光強度モジュールをI2C LCD1602モジュールと一緒に使用しても、アドレスが異なるため競合は発生しません。)
+(**Opmerking**: omdat de I2C-bus meerdere apparaten met verschillende adressen kan hebben, is er geen conflict wanneer de digitale lichtintensiteitsmodule samen met de I2C LCD1602-module wordt gebruikt, omdat ze verschillende adressen hebben.)

@@ -1,37 +1,37 @@
-## レッスン 3.1: ボタンモジュールのデジタル信号を読み取る
+## Les 3.1: Lees het digitale signaal van de knopmodule
 
-**(1)説明**
+**(1)Beschrijving**
 
-このプロジェクトでは、プッシュボタンモジュールを使ってLEDを制御します。
+In dit project willen we de drukknopmodule gebruiken om de LED te bedienen.
 
-**(2)パラメータ：**
+**(2)Parameters:**
 
-動作電圧：DC 3.3-5V
+Werkspanning：DC 3.3-5V
 
-制御信号：デジタル信号
+Besturingssignaal：digitaal signaal
 
-サイズ：34mm
+Afmeting：34mm
 
-重量：3.8g
+Gewicht：3.8g
 
-**(3)準備するもの：**
+**(3)Je moet voorbereiden:**
 
-| コントロールボード*1                             | USBケーブル*1                                  | イエローLEDモジュール*1                        | 3pin F-F 26AWG ワイヤー*2                      | プッシュボタンモジュール*1                      |
+| Besturingsbord*1                                | USB-kabel*1                                    | Gele LED-module*1                            | 3pin F-F 26AWG draad*2                          | Drukknopmodule*1                           |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/628e402ae3fc455a2812705b17d7c30d.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) | ![](../media/6ba7e34f89af660ac90bb2552907ef3f.png) |
 
-**(4)接続図**
+**(4)Aansluitschema**
 
-| ピン接続表              |                      |
-|-------------------------|----------------------|
-| **ボタン**のピン         | コントロールボードのピン |
-| G                       | G(GND)               |
-| V                       | V(5V)                |
-| S                       | D2                   |
-
-| ピン接続表             |                      |
+| Pin Aansluitingstabel  |                      |
 |------------------------|----------------------|
-| **LED**のピン           | コントロールボードのピン |
+| Pin van de **Knop**    | Pin van het Besturingsbord |
+| G                      | G(GND)               |
+| V                      | V(5V)                |
+| S                      | D2                   |
+
+| Pin Aansluitingstabel  |                      |
+|------------------------|----------------------|
+| Pin van de **LED**     | Pin van het Besturingsbord |
 | G                      | G(GND)               |
 | V                      | V(5V)                |
 | S                      | D3                   |
@@ -44,10 +44,10 @@
 
 ![](../media/9688c560b185edabcf17838af3353b36.png)
 
-**(5)コードの説明：**
+**(5)Code-uitleg:**
 
-Serial.begin(9600) - シリアル通信を初期化し、ボーレートを9600に設定します
+Serial.begin(9600) - initialiseert de seriële communicatie en stelt de baudrate in op 9600
 
-pinMode(pin, INPUT) - pinMode()関数を使って、Arduinoにピンが出力ピンか入力ピンかを指定します
+pinMode(pin, INPUT) - gebruik de functie pinMode() om Arduino te vertellen of het een uitgangspin of een ingangspin is
 
-digitalRead(pin) - ピンのデジタルレベルを読み取り、HIGHかLOWかを判定します
+digitalRead(pin) - leest het digitale niveau van pinnen, is HOOG of LAAG

@@ -1,48 +1,48 @@
-## レッスン6：光センサー
+## Les 6: Fotosensitieve Sensor
 
-**(1)説明**
+**(1)Beschrijving**
 
-このキットには4つのフォトレジスターセンサーモジュールが含まれており、環境光センサーとしてフォトレジスターを主な部品としています。
+Er zijn vier fotoresistor sensormodules in deze kit, de omgevingslichtsensoren, met een fotoresistor als hoofdbestanddeel.
 
-フォトレジスターの抵抗値は光の強さによって変化します。周囲に光がある場合、その抵抗値は5〜10KΩの範囲ですが、暗い場合は抵抗値が0.2MΩ程度になります。この特性を利用して、抵抗の変化を電圧の変化に変換する回路を構築できます。
+De weerstand van een fotoresistor varieert met de lichtintensiteit. Wanneer er licht is, ligt de weerstand tussen 5-10KΩ; terwijl bij duisternis de weerstand slechts 0.2MΩ is. Op basis van deze eigenschap kan een circuit worden gebouwd om de verandering in weerstand om te zetten in veranderingen in spanning.
 
-さらに、このセンサーには配線を容易にするためにピッチ2.54mmの逆挿入防止端子が付いています。また、Arduinoマイクロコントローラーシリーズなど、多くの種類のマイクロコントローラーと互換性があります。
+Bovendien is de sensor voorzien van een anti-omgekeerde aansluiting met een pitch van 2,54 mm om het bedraden te vergemakkelijken. Hij is ook compatibel met veel soorten microcontrollers, zoals de Arduino microcontroller serie.
 
-ここでは、このセンサーをArduinoマイクロコントローラーと組み合わせて使用します。センサーのS（信号）端子はArduinoのアナログピンに入力し、アナログ値の変化を検出してシリアルモニターに表示します。また、センサーには直径4.9mmの位置決め用穴が2つあり、固定に役立ちますのでご注意ください。
+Hier passen we deze sensor toe met de Arduino microcontroller. Het S (signaal) uiteinde van de sensor moet worden aangesloten op de analoge pin van Arduino om de variatie in analoge waarde te detecteren, die op de seriële monitor wordt weergegeven. Let ook op dat er twee positioneringsgaten met een diameter van 4,9 mm in de sensor zijn ingebouwd om deze te bevestigen.
 
-**(2)パラメータ：**
+**(2)Parameters:**
 
-動作電圧：3.3V-5V（DC）
+Werkspanning：3,3V-5V（DC）
 
-インターフェース：3ピン
+Interface：3PIN
 
-出力信号：アナログ信号
+Uitgangssignaal：analoog signaal
 
-重量：2.3g
+Gewicht：2,3g
 
 ![](../media/537af5b84f09fe71a4e1f6cbeabdfc81.png)
 
-**(3)準備するもの：**
+**(3)Benodigdheden:**
 
-| コントロールボード*1                          | USBケーブル*1                                 | 黄LEDモジュール*1                             | 3ピンデュポン線*2                             | プッシュボタンモジュール*4                     |
+| Besturingsbord*1                                | USB-kabel*1                                    | Geel LED-module*1                            | 3pin DuPont-draad*2                             | Drukknopmodule*4                           |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/628e402ae3fc455a2812705b17d7c30d.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) | ![](../media/537af5b84f09fe71a4e1f6cbeabdfc81.png) |
 
-**(4).接続図：**
+**(4).Aansluitschema:**
 
-| ピン接続表               |                      |
+| Pin Aansluitingstabel     |                      |
 |--------------------------|----------------------|
-| **フォトレジスター**のピン | コントロールボードのピン |
+| Pin van **Fotoresistor** | Pin van Besturingsbord |
 | G                        | G(GND)               |
 | V                        | V(5V)                |
 | S                        | A0                   |
 
-| ピン接続表             |                      |
-|------------------------|----------------------|
-| **LED**のピン          | コントロールボードのピン |
-| G                      | G(GND)               |
-| V                      | V(5V)                |
-| S                      | D3                   |
+| Pin Aansluitingstabel |                      |
+|----------------------|----------------------|
+| Pin van de **LED**   | Pin van Besturingsbord |
+| G                    | G(GND)               |
+| V                    | V(5V)                |
+| S                    | D3                   |
 
 
 
