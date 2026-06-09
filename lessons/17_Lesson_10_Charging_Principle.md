@@ -1,150 +1,150 @@
-## Leçon 10 : Principe de charge du kit de suivi solaire
+## Lezione 10: Principio di Carica del Kit di Inseguimento Solare
 
-**(1) Module de charge solaire et USB :**
+**(1) Modulo di carica solare e USB:**
 
 ![](../media/35ee9ecf293719fbe6b09fa7d79673db.png)
 
-Ce module intègre une puce de charge et de décharge, qui peut être connectée à une batterie rechargeable externe et à un panneau solaire via les interfaces PH2.0MM.
+Questo modulo integra un chip di carica e scarica, che può essere collegato con una batteria ricaricabile esterna e un pannello solare tramite le interfacce PH2.0MM.
 
-Dans ce kit, nous fournissons un boîtier de batterie qui contient une batterie 18650, vous devrez donc préparer vous-même une batterie rechargeable 18650.
+In questo kit, forniamo una scatola per batteria che contiene una batteria 18650, quindi dovrai preparare una batteria ricaricabile 18650 da solo.
 
-Le module dispose d'un port Micro USB et vous pouvez utiliser l'ordinateur pour charger la batterie 18650 via le port micro USB.
+Il modulo ha una porta Micro USB e puoi usare il computer per caricare la batteria 18650 tramite la porta micro USB.
 
-De plus, il possède un module boost qui peut augmenter la tension des batteries à 6,6V. L'interrupteur DIP sur le module est l'interrupteur de SORTIE de 6,6V. Les broches G et V de ce module peuvent fournir 6,6V et la broche S peut lire la tension de la batterie après la résistance divisant la tension par 2.
+Inoltre, ha un modulo boost che può aumentare la tensione delle batterie a 6,6V. L'interruttore DIP sul modulo è l'interruttore OUTPUT di 6,6V. Il pin G e V di questo modulo possono fornire 6,6V e il pin S può leggere la tensione della batteria dopo la resistenza di dimezzamento della tensione.
 
-**Paramètres :**
+**Parametri:**
 
-| Interface de charge                            | Interface Micro USB HP2.0MM pour panneau solaire |
-|------------------------------------------------|-------------------------------------------------|
-| Tension d'entrée de l'interface panneau solaire | 4,4-6V                                          |
-| Valeur de charge en tension constante de la batterie | 4,15-4,24V                                    |
-| Courant de charge maximal                      | 800mA                                           |
-| Interface de sortie                            | 3 P 2,54mm Aiguille coudée                      |
-| Tension d'entrée                              | 6,6V                                            |
-| Courant de sortie maximal                      | 1A                                              |
-| Batterie externe                              | Batterie 18650                                  |
-| Attributs environnementaux                    | ROHS                                            |
+| Interfaccia di carica                          | Micro USB HP2.0MM per pannello solare          |
+|------------------------------------------------|------------------------------------------------|
+| Tensione di ingresso dell'interfaccia solare   | 4,4-6V                                         |
+| Valore di carica a tensione costante della batteria | 4,15-4,24V                                  |
+| Corrente massima di carica                      | 800mA                                          |
+| Interfaccia di uscita                            | 3 P 2,54mm Pin piegato                         |
+| Tensione di ingresso                             | 6,6V                                           |
+| Corrente massima di uscita                       | 1A                                             |
+| Batteria esterna                                 | Batteria 18650                                 |
+| Attributi ambientali                             | ROHS                                           |
 
-**Schéma**
+**Schema Elettrico**
 
 ![](../media/de5fe1122f8eac68785a2894a8312194.png)
 
-**Caractéristiques**
+**Caratteristiche**
 
 ![](../media/aff5ac4262adb20b7af065a4599f8b91.png)
 
 
 ![](../media/8cc32ae4cc95d353f08354f4746ee047.jpeg)
 
-**(2) Panneau solaire PET**
+**(2) Pannello Solare PET**
 
 ![](../media/9634ce5e4e9d603a21f5e83caafbd6f4.jpeg)
 
-Les principaux facteurs qui affectent la performance de sortie des panneaux solaires sont les suivants :
+I principali fattori che influenzano le prestazioni di uscita dei pannelli solari sono i seguenti:
 
-(1) Impédance de charge
+(1) Impedenza del carico
 
-(2) Intensité lumineuse du soleil
+(2) Intensità della luce solare
 
-(3) Température
+(3) Temperatura
 
-(4) Angle d'illumination et surface d'illumination
+(4) Angolo di illuminazione e area di illuminazione
 
-Vous pouvez utiliser un multimètre pour mesurer le courant de sortie du panneau solaire, régler le multimètre sur le niveau courant continu et la prise de grande plage, connecter la sonde rouge du multimètre au pôle positif du panneau solaire et la sonde noire au pôle négatif du panneau solaire, puis mesurer.
+Puoi usare un multimetro per misurare la corrente di uscita del pannello solare, impostare il multimetro sul livello di corrente continua e sulla presa a grande portata, collegare la punta rossa del multimetro al polo positivo del pannello solare e la punta nera al polo negativo del pannello solare, e misurare.
 
-Les panneaux solaires peuvent-ils stocker de l'électricité ?
+I pannelli solari possono immagazzinare elettricità?
 
-Non, en général ils doivent être associés à une batterie pour stocker l'électricité.
+No, generalmente devono essere abbinati a una batteria per immagazzinare elettricità.
 
-Les panneaux solaires peuvent-ils produire de l'électricité par temps nuageux ?
+I pannelli solari possono generare elettricità nei giorni nuvolosi?
 
-Non, la puissance générée par les panneaux solaires par temps nuageux est très faible. Dans ce cas, ils ont une tension mais pas de courant.
+No, la potenza generata dai pannelli solari nei giorni nuvolosi è molto piccola. In questo caso, hanno tensione ma nessuna corrente.
 
-Les panneaux solaires peuvent-ils produire de l'électricité sous un éclairage intérieur ?
+I pannelli solari possono generare elettricità sotto illuminazione interna?
 
-Non, les panneaux solaires ne peuvent pas produire d'électricité sous un éclairage intérieur.
+No, i pannelli solari non possono generare elettricità sotto illuminazione interna.
 
-**(3) Charger la batterie avec le panneau solaire.**
+**(3) Caricare la batteria con il pannello solare.**
 
-Dans ce kit, nous fournissons un boîtier de batterie compatible avec une batterie 18650, et il est également équipé de deux interfaces pour que vous puissiez charger la batterie ou l'utiliser comme source d'alimentation.
+In questo kit, forniamo una custodia per batteria compatibile con una batteria 18650, ed è anche dotata di due interfacce in modo che tu possa caricare la batteria o usarla per alimentazione.
 
 ![](../media/0b1a78bcd390a4a21c6079f86dbb00ca.png)
 
-Vous devrez préparer vous-même une batterie 18650 ainsi qu'un chargeur de batterie.
+Dovrai preparare una batteria 18650 e un caricabatterie.
 
-Les paramètres suivants sont disponibles pour votre achat :
+I seguenti parametri sono disponibili per l'acquisto：
 
-| Spécifications           |                                                           |
+| Specifiche               |                                                           |
 |--------------------------|-----------------------------------------------------------|
-| Taille                   | 18650                                                     |
-| Pôle positif :           | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png) avec un dessus |
-| Capacité                 | >2200mAh                                                 |
-| Tension nominale         | 3,7V                                                      |
-| Tension maximale         | 4,2V                                                      |
-| Tension de coupure de décharge | 2,5V                                                  |
-| Rechargeable             | Oui                                                       |
-| Dimensions approximatives | 18,5mm x 65,2mm                                           |
+| Dimensioni               | 18650                                                     |
+| Terminale positivo：     | ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png) con cima |
+| Capacità                 | >2200mAh                                                 |
+| Tensione nominale        | 3,7V                                                      |
+| Tensione massima         | 4,2V                                                      |
+| Tensione di cutoff di scarica | 2,5V                                                  |
+| Ricaricabile             | Sì                                                        |
+| Dimensioni approssimative | 18,5mm x 65,2mm                                          |
 
-Nous pouvons connecter le panneau solaire au module de charge et à un boîtier lithium 18650, de sorte que le panneau solaire charge la batterie.
+Possiamo collegare il pannello solare al modulo di carica e a una custodia per batteria 18650, così il pannello solare caricherà la batteria.
 
 ![](../media/901cdf76ced95e24e2dc2a43441bb76f.png)
 
-Les panneaux solaires ne sont pas des batteries, ils n'ont pas la fonction de stockage d'énergie. Ils peuvent stocker de l'électricité dans la batterie.
+I pannelli solari non sono batterie, non hanno la funzione di immagazzinamento dell'energia. Possono immagazzinare elettricità nella batteria.
 
-La sortie des panneaux solaires est faible dans les environnements sans lumière solaire, sous éclairage intérieur et en hiver avec peu de lumière. L'énergie portée par ces lumières est très faible, même si elle est plus intense.
+L'uscita dei pannelli solari è debole in ambienti senza luce solare, illuminazione interna e luce invernale bassa. L'energia trasportata da queste luci è molto piccola, anche se è più intensa.
 
-**Note :**
+**Nota:**
 
-Le panneau solaire peut nécessiter de longues périodes d'exposition directe au soleil pour charger suffisamment les batteries. Les batteries 18650 ne doivent pas être exposées à la lumière directe du soleil ni à des températures élevées autour d'elles pour éviter la surchauffe.
+Il pannello solare potrebbe richiedere lunghi periodi di luce solare diretta per caricare sufficientemente le batterie. Le batterie 18650 non devono essere esposte alla luce solare diretta e devono evitare alte temperature intorno per evitare il surriscaldamento.
 
 ![](../media/741dcf23d13ba6e94e4910ac0baccf90.png)
-**(4) Module de charge pour smartphone**
+**(4) Modulo di ricarica per smartphone**
 
-Le module de charge pour téléphone est un module boost lithium 3,7V qui peut fournir 5V, 1A via la borne PH2.0 et le port USB.
+Il modulo di ricarica per telefono è un modulo boost per batteria al litio da 3,7V che può fornire 5V, 1A tramite il terminale PH2.0 e la porta USB.
 
-Paramètres :
+Parametri:
 
-| Propriété              | Module boost non isolé (BOOST)                                                                   |
-|-----------------------|-------------------------------------------------------------------------------------------------|
-| Tension d'entrée      | 1-5V                                                                                            |
-| Tension de sortie     | 5±0,1V                                                                                          |
-| Courant de sortie :   | 1-1,5A nominal (entrée batterie lithium cellule unique), maximum 1,5A (entrée batterie lithium cellule unique) |
-| Rendement de conversion | Jusqu'à 96%                                                                                   |
-| Fréquence de commutation | 500KHz                                                                                       |
-| Température de fonctionnement | Grade industriel (-40°C à +85°C)                                                        |
-| Chauffe en charge complète | 30°C                                                                                        |
-| Courant de repos      | 130uA                                                                                           |
+| Proprietà              | modulo boost non isolato (BOOST)                                                                  |
+|------------------------|--------------------------------------------------------------------------------------------------|
+| Tensione di ingresso   | 1-5V                                                                                             |
+| Tensione di uscita     | 5±0,1V                                                                                          |
+| Corrente di uscita:    | Nominale 1-1,5A (ingresso batteria al litio a cella singola), massimo 1,5A (ingresso batteria al litio a cella singola) |
+| Efficienza di conversione | Fino al 96%                                                                                   |
+| Frequenza di commutazione | 500KHz                                                                                       |
+| Temperatura di lavoro  | grado industriale (-40°C a +85°C)                                                                |
+| Riscaldamento a pieno carico | 30°C                                                                                      |
+| Corrente a riposo      | 130uA                                                                                           |
 
-La borne PH2.0 du module de charge pour téléphone peut être connectée au boîtier de batterie.
+Il terminale PH2.0 del modulo di ricarica può essere collegato alla custodia della batteria.
 
-Le port USB peut être connecté à un téléphone Android pour le charger.
+La porta USB può essere collegata a un telefono Android per la ricarica.
 
-Notez que la puissance de la batterie 18650 doit être suffisante (tension entre 3,2 et 4,2V) pour charger un téléphone Android. Sinon, cela ne fonctionne pas, même si le téléphone indique qu'il est en charge.
+Nota che la potenza della batteria 18650 deve essere sufficiente (tensione da 3,2 a 4,2V) per caricare un telefono Android. Altrimenti non funziona, anche se il telefono mostra che si sta caricando.
 
 ![](../media/ac10bacad797ef9104c98f1c2735cea4.png)
 
-**(5) Principe de charge du kit de suivi solaire**
+**(5) Principio di carica del Kit di Inseguimento Solare**
 
-1. Courant de charge maximal du port micro USB : 1A
+1. Corrente massima di carica della porta micro USB 1A
 
-2. Courant de charge maximal du panneau solaire : 80mA
+2. Corrente massima di carica del pannello solare 80mA
 
-3. Tension de sortie maximale du port USB A femelle : 5V/1,5A (peut être utilisé pour charger un téléphone portable)
+3. Tensione massima di uscita della porta USB A femmina: 5V/1,5A (può essere usata per la ricarica del telefono)
 
 ![](../media/406f0b8202788f1214fddca0970bd688.png)
 
-4. Type de batterie : batterie lithium 18650 avec un dessus, capacité recommandée supérieure à 2200mAh
+4. Tipo di batteria: batteria al litio 18650 con cima, si consiglia di acquistare capacità superiore a 2200mAh
 
-**Note :**
+**Nota:**
 
-1). Le protocole de charge du module de charge pour téléphone ne supporte que Android et pas iOS.
+1). Il protocollo di carica del modulo di ricarica per telefono supporta solo Android e non iOS.
 
-2). Le panneau solaire ne peut pas charger directement les téléphones ; il doit stocker l'électricité dans une batterie et la batterie charge le téléphone.
+2). Il pannello solare non può caricare direttamente i telefoni; deve immagazzinare elettricità in una batteria e la batteria carica il telefono.
 
-3). La tension de la batterie 18650 doit être comprise entre 3,2 et 4,2V pour charger le téléphone. Lorsque la tension de la batterie est inférieure à 3,2V, même si le téléphone indique qu'il est en charge, il ne se charge pas réellement.
+3). La tensione della batteria 18650 deve essere compresa tra 3,2 e 4,2V per caricare il cellulare. Quando la tensione della batteria è inferiore a 3,2V, anche se il telefono mostra che si sta caricando, in realtà non si sta caricando.
 
-4). Le panneau solaire peut nécessiter de longues périodes d'exposition directe au soleil pour charger suffisamment les batteries. Les batteries 18650 ne doivent pas être exposées à la lumière directe du soleil ni à des températures élevées autour d'elles pour éviter la surchauffe.
+4). Il pannello solare potrebbe richiedere lunghi periodi di luce solare diretta per caricare sufficientemente le batterie. Le batterie 18650 non devono essere esposte alla luce solare diretta e devono evitare alte temperature intorno per evitare il surriscaldamento.
 
-5). Si vous souhaitez charger rapidement votre batterie 18650, vous pouvez utiliser un chargeur dédié 18650. Ou utiliser un câble USB 2.0 vers micro USB pour connecter le module de charge et charger la batterie via un ordinateur ou une alimentation. (Le câble USB 2.0 vers micro USB n'est pas inclus dans le kit)
+5). Se vuoi caricare rapidamente la tua batteria 18650, puoi usare un caricabatterie dedicato per 18650. Oppure usa un cavo USB 2.0 a micro USB per collegare il modulo di carica e caricare la batteria usando un computer o un alimentatore. (Cavo USB 2.0 a micro USB non incluso nel kit)
 
-6). Ceci est juste une expérience de simulation et ne répondra pas à vos besoins quotidiens en énergie, ne l'utilisez pas comme source d'alimentation régulière pour votre téléphone portable.
+6). Questo è solo un esperimento di simulazione e non soddisferà le tue esigenze quotidiane di energia, non usarlo come fonte di energia regolare per il tuo cellulare.

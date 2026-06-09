@@ -1,54 +1,54 @@
-# Lisez-moi d'abord
+# Leggi Prima
 
-Voici ce dont vous avez besoin pour faire fonctionner le kit de suivi solaire :
+Ecco cosa ti serve per far funzionare il kit di tracciamento solare:
 
-1) Bibliothèques
+1) Librerie
 
-2) Code
+2) Codice
 
-3) Manuel.pdf
+3) Manuale.pdf
 
-4) Dépannage.pdf
+4) Risoluzione dei problemi.pdf
 
-Les fichiers ci-dessus peuvent être téléchargés ici :
+I file sopra possono essere scaricati da qui:
 
 [https://fs.keyestudio.com/KS0530](https://fs.keyestudio.com/KS0530)
 
-5) Une batterie 18650 et un chargeur (à préparer vous-même)
+5) Batterie 18650 e un caricabatterie (da procurarsi autonomamente)
 
 ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png)
 
-Les paramètres suivants sont disponibles à l'achat :
+I seguenti parametri sono disponibili per l'acquisto：
 
-| Spécifications      |                 |
+| Specifiche          |                 |
 |---------------------|-----------------|
-| Taille              | 18650           |
-| Pôle positif :      | Avec un sommet  |
-| Capacité            | >2200mAh        |
-| Tension nominale    | 3.7V            |
-| Tension maximale    | 4.2V            |
-| Rechargeable        | Oui             |
-| Dimensions approx.  | 18.5mm x 65.2mm |
-| Poids               | env. 45g        |
+| Dimensione          | 18650           |
+| Terminale positivo: | Con una sommità |
+| Capacità            | >2200mAh        |
+| Tensione nominale   | 3.7V            |
+| Tensione massima    | 4.2V            |
+| Ricaricabile        | Sì              |
+| Dimensioni appross. | 18.5mm x 65.2mm |
+| Peso                | circa 45g       |
 
-Support
+Supporto
 
-KEYESTUDIO fournit un support technique gratuit et rapide, incluant mais ne se limitant pas à :
+KEYESTUDIO fornisce supporto tecnico gratuito e rapido, che include ma non si limita a:
 
-1) Problèmes de qualité du produit
+1) Problemi di qualità del prodotto
 
-2) Problèmes rencontrés lors de l'utilisation du produit
+2) Problemi riscontrati durante l'uso del prodotto
 
-3) Commentaires et suggestions
+3) Commenti e suggerimenti
 
-4) Vos projets et idées
+4) I tuoi progetti e idee
 
-Si vous trouvez une erreur technique ou confuse dans un document ou fichier, nous vous serions reconnaissants de bien vouloir nous la signaler.
+Se trovi un errore tecnico o confuso in un documento o file, saremmo grati se potessi segnalarcelo.
 
-Veuillez envoyer un email à :
+Per favore invia una email a:
 
-Amazon : service@keyestudio.com
+Amazon: service@keyestudio.com
 
-AliExpress : tivon@keyestudio.com
+AliExpress: tivon@keyestudio.com
 
-Autres canaux : sunny@keyestudio.com
+Altri canali: sunny@keyestudio.com

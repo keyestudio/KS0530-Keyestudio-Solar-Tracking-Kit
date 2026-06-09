@@ -1,6 +1,6 @@
-## Leçon 1.2 : Changer la fréquence de clignotement de la LED
+## Lezione 1.2: Cambiare la frequenza di lampeggio del LED
 
-**>>>>>>>>Cette leçon est une extension de la Leçon 1.1**
+**>>>>>>>>Questa lezione è un ampliamento della Lezione 1.1**
 
 ![](../media/dc02634b4874771998403f117ee1d947.png)
 

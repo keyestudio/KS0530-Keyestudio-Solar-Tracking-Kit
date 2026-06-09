@@ -1,35 +1,35 @@
-## Leçon 7 : Capteur de température et d'humidité DHT11
+## Lezione 7: Sensore di Temperatura e Umidità DHT11
 
 ![](../media/569a9b768ff44fd8a88841c4515cca9d.png)
 
 
-**(1) Description :**
+**(1)Descrizione:**
 
-Ce capteur de température et d'humidité DHT11 est un capteur composite qui contient une sortie numérique calibrée du signal de température et d'humidité.
+Questo sensore di temperatura e umidità DHT11 è un sensore composito che contiene un'uscita digitale calibrata del segnale di temperatura e umidità.
 
-Le capteur de température et d'humidité DHT11 utilise la technologie d'acquisition du module numérique ainsi que la technologie de détection de la température et de l'humidité, garantissant une haute fiabilité et une excellente stabilité à long terme.
+Il sensore di temperatura e umidità DHT11 utilizza la tecnologia di acquisizione del modulo digitale e la tecnologia di rilevamento della temperatura e umidità, garantendo alta affidabilità e un'eccellente stabilità a lungo termine.
 
-Il comprend un élément résistif et un dispositif de mesure de température NTC.
+Include un elemento resistivo e un dispositivo di misurazione della temperatura NTC.
 
-**(2) Paramètres :**
+**(2)Parametri：**
 
-Tension de fonctionnement : **+5 V**
+Tensione di lavoro: **+5 V**
 
-Température de fonctionnement : 0-50 ℃ avec une erreur de ± 2 ℃
+Temperatura di lavoro: 0-50 ℃ errore di ± 2 ℃
 
-Humidité : 20-90% HR avec une erreur de ± 5% HR
+Umidità: 20-90% RH ± 5% RH errore
 
-Interface : port numérique
+Interfaccia: porta digitale
 
-**(3). Vous devez préparer :**
+**(3).Occorrente:**
 
-| Carte de contrôle*1                                | Câble USB*1                                    | Capteur DHT11*1                                        | Fil DuPont 3 broches                                |
+| Scheda di Controllo*1                                | Cavo USB*1                                    | Sensore DHT11*1                                        | Cavo DuPont a 3 pin                                |
 |-------------------------------------------------|-------------------------------------------------|--------------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/569a9b768ff44fd8a88841c4515cca9d.png) | ![](../media/1bd35f503278636f76403a931f5dc61a.png) |
 
-**(4) Schéma de connexion**
+**(4)Schema di Collegamento**
 
-Les broches G, V et S du capteur DHT11*1 sont connectées respectivement aux broches G, V et D7 de la carte de contrôle.
+I pin G, V e S del Sensore DHT11*1 sono collegati a G, V e D7 della scheda di controllo.
 
 ![](../media/8beddf04e8c9ee1c94c91b225328036e.png)
 

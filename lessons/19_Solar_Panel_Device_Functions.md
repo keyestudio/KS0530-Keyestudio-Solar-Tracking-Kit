@@ -1,31 +1,31 @@
-# 5. Dispositif de panneau solaire avec fonctions multiples
+# 5.Dispositivo Pannello Solare con Funzioni Multiple
 
-Le dispositif de panneau solaire assemblé est prêt !
+Il dispositivo pannello solare assemblato è pronto!
 
-Dans les leçons précédentes, nous avons uniquement étudié la fonction et le principe de fonctionnement d'une certaine pièce électronique individuellement, et testé si elle pouvait fonctionner normalement.
+Nelle lezioni precedenti, abbiamo studiato solo la funzione e il principio di funzionamento di una certa parte elettronica singolarmente, e testato se può funzionare normalmente.
 
-Maintenant, nous les faisons fonctionner ensemble pour construire un dispositif de panneau solaire avec plusieurs fonctions.
+Ora li abbiamo fatti lavorare insieme per costruire un dispositivo pannello solare con più funzioni.
 
-Gardez la batterie 18650 suffisamment chargée car elle sera nécessaire pour alimenter deux servomoteurs, un écran LCD, quatre capteurs de lumière, un capteur DHT11 et un module bouton.
+Mantieni la batteria 18650 sufficientemente carica poiché sarà necessaria per alimentare due servomotori, un display LCD, quattro sensori di luce, un sensore DHT11 e un modulo pulsante.
 
 ![](../media/f4b78ac6371097b2e32409c226873651.png)
 
 ![](../media/94d386c19c8b95904852ee2a11a4f272.png)
 
-Après le téléchargement réussi du code, allumez l'interrupteur d'alimentation du module de charge et appuyez sur l'interrupteur d'alimentation de la carte de contrôle sur 5V.
+Dopo che il codice è stato caricato con successo, accendi l'interruttore di alimentazione del modulo di ricarica e premi l'interruttore di alimentazione della scheda di controllo a 5V.
 
 ![](../media/edc80fe0bd7a1cce69bd760ab5d247bc.png)![](../media/67fc5cb5b7eabda71fcb2296a8def597.png)
 
-Le servomoteur tournera vers l'angle initial. Lorsque le capteur de lumière ambiante détecte des changements d'intensité lumineuse, les servomoteurs orientent le panneau solaire vers la position où la lumière est la plus forte et l'écran LCD1602 affiche la valeur de l'intensité lumineuse ainsi que la température et l'humidité détectées respectivement par le BH1750 et le DHT11.
+Il servomotore ruoterà all'angolo iniziale. Quando il sensore di luce ambientale rileva variazioni nell'intensità luminosa, i servomotori ruotano il pannello solare nella posizione dove la luce è più intensa e l'LCD1602 mostra il valore dell'intensità luminosa e della temperatura e umidità rilevati rispettivamente dal BH1750 e dal DHT11.
 
-Si vous trouvez que le panneau solaire tourne trop lentement ou que le panneau solaire tremble, vous pouvez ajuster la vitesse de rotation du servomoteur via le module bouton.
+Se ritieni che il pannello solare ruoti troppo lentamente o che il pannello solare tremi, puoi regolare la velocità di rotazione del servomotore tramite il modulo pulsante.
 
-Par exemple, dans le temps spécifié, le servomoteur tourne de 1° à chaque fois. Après avoir appuyé sur le bouton, le servomoteur tournera de 2° à chaque fois dans le même temps.
+Ad esempio, entro il tempo specificato, il servomotore ruota di 1° ogni volta. Dopo aver premuto il pulsante, il servomotore ruoterà di 2° ogni volta nello stesso intervallo di tempo.
 
-Appuyez de nouveau et le servomoteur tournera de 3° à chaque fois dans le même temps. Par analogie, le servomoteur peut être réglé pour tourner jusqu'à 5° à chaque fois dans le même temps.
+Premilo di nuovo e il servomotore ruoterà di 3° ogni volta nello stesso intervallo di tempo. Per analogia, il servomotore può essere regolato per ruotare fino a 5° ogni volta nello stesso intervallo di tempo.
 
 **“byte resolution = 1”**
 
-Vous pouvez ajuster la résolution pour changer l'angle de rotation du servomoteur. Appuyez sur le bouton pour changer la résolution de 1° à 5°. Vous pouvez également modifier `byte m_speed = 10` pour régler le temps de délai afin d'ajuster la vitesse du servomoteur ; plus le temps est long, plus la vitesse est faible.
+Puoi regolare la risoluzione per cambiare l'angolo di rotazione del servomotore. Premi il pulsante per cambiare la risoluzione da 1° a 5°. Puoi anche modificare `byte m_speed = 10` per impostare il tempo di ritardo e regolare la velocità del servomotore; più lungo è il tempo, più bassa è la velocità.
 
 ![](../media/55bbbb88c4e18c1b90ce588fa76d0e3d.png)

@@ -1,5 +1,5 @@
 =====================================
-3.Test des composants électroniques
+3.Testare i componenti elettronici
 =====================================
 
 
