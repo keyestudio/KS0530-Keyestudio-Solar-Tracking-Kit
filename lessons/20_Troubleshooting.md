@@ -1,80 +1,80 @@
-# 6.Risoluzione dei problemi
+# 6.トラブルシューティング
 
-Ecco alcune soluzioni ai problemi comuni che potrebbero aiutarti.
+よくある問題の解決策をいくつかご紹介します。
 
-Se non trovi la risposta che cerchi qui, contatta il nostro supporto tecnico:
+ここでお探しの答えが見つからない場合は、技術サポートまでご連絡ください：
 
 Amazon: [service@keyestudio.com](mailto:service@keyestudio.com)
 
 AliExpress: [tivon@keyestudio.com](mailto:tivon@keyestudio.com)
 
-Altri canali: [sunny@keyestudio.com](mailto:sunny@keyestudio.com)
+その他のチャネル: [sunny@keyestudio.com](mailto:sunny@keyestudio.com)
 
-Per una risoluzione più rapida e professionale del tuo problema, includi queste informazioni quando ci invii un'email:
+問題をより迅速かつ専門的に解決するために、メールを送る際には以下の情報を含めてください：
 
-Il numero dell'ordine o da dove hai acquistato questo prodotto
+ご注文番号またはこの製品を入手した場所
 
-I problemi che incontri, cerca di includere descrizioni dettagliate, foto o video.
+遭遇した問題の詳細な説明、写真や動画をできるだけ含めてください。
 
-Abbiamo bisogno di più informazioni di "Non funziona." Per favore, fornisci dettagli su cosa vuoi ottenere e cosa hai provato.
+「動かない」だけでは情報が不足しています。達成したいことや試したことを詳しく教えてください。
 
-Grazie!
+ありがとうございます！
 
-**(1) La scheda di controllo non viene riconosciuta dal computer.**
+**(1)コントロールボードがコンピュータに認識されない。**
 
--Per favore verifica che il cavo USB sia in buone condizioni e che la porta USB del tuo computer sia disponibile.
+- USBケーブルが正常か、コンピュータのUSBポートが使用可能か確認してください。
 
-**(2) La porta USB non viene riconosciuta dal computer.**
+**(2)USBポートがコンピュータに認識されない。**
 
--Verifica se hai installato il driver USB
+- USBドライバーがインストールされているか確認してください。
 
-**(3) Problemi di codice/Fallimento caricamento/Errore di codice.**
+**(3)コードの問題／アップロード失敗／コードエラー。**
 
-Queste ragioni possono causare problemi con il tuo codice:
+これらの理由がコードの問題を引き起こす可能性があります：
 
-1) Il driver non è installato.
+1) ドライバーがインストールされていない。
 
-2) Il tipo di scheda e la porta COM non sono selezionati correttamente nell'Arduino IDE.
+2) Arduino IDEでボードの種類やCOMポートが正しく選択されていない。
 
-3) Il file della libreria non è installato.
+3) ライブラリファイルがインストールされていない。
 
-(Per favore segui **2.Getting Started with Arduino** per risolvere i problemi sopra indicati)
+（上記の問題のトラブルシューティングは**2.Arduinoの始め方**を参照してください）
 
 ![](../media/224c21b5aa737f11de351dbd9868e317.png)
 
-**(4) Scarso contatto USB**
+**(4)USB接触不良**
 
-Se non hai i problemi indicati nei punti 1-3, verifica che la connessione del cavo USB sia buona, prova a scollegarlo e ricollegarlo, quindi carica di nuovo il codice.
+上記の1～3の問題がない場合は、USBケーブルの接続が良好か確認し、再度差し直してからコードをアップロードしてください。
 
-**(5) Il kit di tracciamento solare assemblato non risponde.**
+**(5)組み立てたソーラートラッキングキットが反応しない。**
 
-1) Queste ragioni possono causare il mancato funzionamento del robot:
+1)ロボットが動作しない原因として以下が考えられます：
 
-1) cablaggio errato
+1) 配線ミス
 
-2) Non hai caricato il codice
+2) コードをアップロードしていない
 
-3) Fallimento caricamento/Errore di codice
+3) アップロード失敗／コードエラー
 
-4) Non hai acceso l'interruttore 5V sulla scheda di controllo e l'interruttore di alimentazione sul modulo di ricarica.
+4) コントロールボードの5Vスイッチと充電モジュールの電源スイッチをオンにしていない。
 
 ![](../media/67fc5cb5b7eabda71fcb2296a8def597.png)![](../media/edc80fe0bd7a1cce69bd760ab5d247bc.png)
 
-5) Batteria insufficiente
+5) バッテリー電力不足
 
-Devi mantenere la batteria 18650 sufficientemente carica poiché sarà necessaria per alimentare due servomotori, un display LCD, quattro sensori di luce, un sensore DHT11 e il modulo pulsante.
+18650バッテリーは、2つのサーボ、LCDディスプレイ、4つの光センサー、DHT11センサー、ボタンモジュールに電力を供給するため、十分に充電しておく必要があります。
 
-**(6) Servo bloccato/servo caldo**
+**(6)サーボが固まる／サーボが熱くなる**
 
-Dovrai regolare l'angolo iniziale del servo prima di assemblarli e non modificare l'angolo fino al completamento dell'assemblaggio per assicurarti che il servo funzioni correttamente per il kit di tracciamento solare.
+サーボを組み立てる前に初期角度を調整し、組み立てが完了するまで角度を変更しないようにしてください。これにより、ソーラートラッキングキットでサーボが正常に動作します。
 
-**(7) Il pannello solare non segue il movimento della fonte luminosa o del sole**
+**(7)ソーラーパネルが光源や太陽の動きを追跡しない**
 
-Quando il sensore di luce ambientale rileva variazioni nell'intensità luminosa, i servomotori ruotano il pannello solare nella posizione in cui la luce è più forte.
+周囲光センサーが光の強さの変化を検知すると、サーボがソーラーパネルを最も強い光の位置に回転させます。
 
-In un ambiente con illuminazione uniforme, il pannello solare potrebbe non seguire il movimento della fonte luminosa. Potresti dover applicare una fonte luminosa molto intensa, oppure applicare una fonte luminosa in un'area con luce debole per far muovere il pannello solare con la fonte luminosa. Il pannello solare potrebbe non muoversi verso il sole perché la differenza di intensità luminosa rilevata da ciascun sensore di luce ambientale potrebbe non essere significativa.
+均一な照明環境では、ソーラーパネルが光源の動きを追跡しない場合があります。非常に強い光源を当てるか、弱い光の場所に光源を置いてソーラーパネルが光源に追従するようにしてください。各周囲光センサーが検知する光の強度差が小さいため、ソーラーパネルが太陽の方向に動かないことがあります。
 
-1.  **Il pannello solare si muove molto lentamente, a scatti o si blocca.**
-2.  Verifica che il cablaggio del servo sia organizzato e non bloccato in modo che il servo abbia abbastanza spazio per muoversi.
-3.  La batteria 18650 deve essere completamente carica
-4.  Puoi premere il modulo pulsante per regolare la quantità di rotazione del servo.
+1.  **ソーラーパネルの動きが非常に遅い、ぎくしゃくする、または固まる。**
+2.  サーボの配線が整理されていて、サーボが動くスペースが確保されているか確認してください。
+3.  18650バッテリーが完全に充電されている必要があります。
+4.  ボタンモジュールを押してサーボの回転量を調整できます。

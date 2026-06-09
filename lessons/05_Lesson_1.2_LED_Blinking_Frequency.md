@@ -1,6 +1,6 @@
-## Lezione 1.2: Cambiare la frequenza di lampeggio del LED
+## レッスン 1.2: LEDの点滅周波数を変更する
 
-**>>>>>>>>Questa lezione è un ampliamento della Lezione 1.1**
+**>>>>>>>>このレッスンはレッスン 1.1 の拡張です**
 
 ![](../media/dc02634b4874771998403f117ee1d947.png)
 

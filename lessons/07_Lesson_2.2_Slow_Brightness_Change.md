@@ -1,8 +1,8 @@
-## Lezione 2.2: Rallentare il cambiamento della luminosità del LED
+## レッスン 2.2: LEDの明るさの変化を遅くする
 
-**>>>>>>>>Questa lezione è un'espansione della Lezione 2.1**
+**>>>>>>>>このレッスンはレッスン 2.1 の拡張です**
 
-L'hardware richiesto per questa lezione, la configurazione dell'IDE Arduino e il cablaggio tra il modulo LED e la scheda di controllo sono gli stessi della **Lezione 1.1**.
+このレッスンに必要なハードウェア、Arduino IDEの設定、およびLEDモジュールと制御ボード間の配線は**レッスン 1.1**と同じ方法です。
 
 ![](../media/485b0573e3c4e14d9b5c7df37c1223fb.png)
 

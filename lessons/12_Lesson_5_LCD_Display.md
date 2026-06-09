@@ -1,50 +1,50 @@
-## Lezione 5: Modulo Display LCD 1602
+## レッスン5：1602 LCDディスプレイモジュール
 
-**(1).Descrizione：**
+**(1).説明：**
 
 ![](../media/28bf5a86d2265afb050e55589e145fe9.png)
 
-Con modulo di comunicazione I2C, questo è un modulo display che può mostrare 2 righe con 16 caratteri per riga.
+I2C通信モジュール付きのこのディスプレイモジュールは、1行あたり16文字、2行表示が可能です。
 
-Mostra sfondo blu e caratteri bianchi e si collega all'interfaccia I2C del MCU, risparmiando notevolmente le risorse del MCU.
+青い背景に白い文字を表示し、MCUのI2Cインターフェースに接続するため、MCUのリソースを大幅に節約できます。
 
-Sul retro del display LCD, c'è un potenziometro blu per regolare la retroilluminazione. L'indirizzo di comunicazione predefinito è 0x27.
+LCDディスプレイの背面にはバックライト調整用の青いポテンショメーターがあり、通信アドレスはデフォルトで0x27です。
 
-Il display LCD 1602 originale può avviarsi e funzionare con 11 porte IO, ma il nostro è costruito con interfaccia ARDUINOIIC/I2C, risparmiando 9 porte IO. In alternativa, il modulo è dotato di 4 fori di posizionamento con un diametro di 3mm, che è comodo per fissarlo su altri dispositivi.
+元の1602 LCDは11本のIOポートで起動・動作しますが、本製品はARDUINO IIC/I2Cインターフェースを採用しており、9本のIOポートを節約しています。さらに、モジュールには直径3mmの位置決め用穴が4つあり、他のデバイスに固定するのに便利です。
 
-**(2).Parametri：**
+**(2).パラメータ：**
 
-Indirizzo I2C: 0x27
+I2Cアドレス: 0x27
 
-Retroilluminazione (blu, bianca)
+バックライト（青、白）
 
-Tensione di alimentazione: **5V**
+電源電圧: **5V**
 
-Contrasto regolabile
+コントラスト調整可能
 
-GND: Un pin che si collega a massa
+GND: グランドに接続するピン
 
-VCC: Un pin che si collega a un'alimentazione +5V
+VCC: +5V電源に接続するピン
 
-SDA: Un pin che si collega alla porta analogica A4 per comunicazione IIC
+SDA: IIC通信のためのアナログポートA4に接続するピン
 
-SCL: Un pin che si collega alla porta analogica A5 per comunicazione IIC
+SCL: IIC通信のためのアナログポートA5に接続するピン
 
-**(3).Devi preparare:**
+**(3).準備するもの：**
 
-| Scheda di Controllo*1                             | Cavo USB*1                                     | Display LCD*1                                  | Filo DuPon 4P-1P F-F                            |
-|--------------------------------------------------|------------------------------------------------|------------------------------------------------|-------------------------------------------------|
+| コントロールボード*1                          | USBケーブル*1                                  | LCDディスプレイ*1                              | 4P-1P F-F デュポンワイヤ                          |
+|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/28bf5a86d2265afb050e55589e145fe9.png) | ![](../media/f4df3fe85086b2896d958b1caf93a038.png) |
 
-**(4)Schema di Collegamento**
+**(4)接続図**
 
-| Tabella di Collegamento Pin |                      |
-|-----------------------------|----------------------|
-| Pin del **Display LCD**      | Pin della Scheda di Controllo |
-| GND                         | G(GND)                 |
-| VCC                         | V(5V)                 |
-| SDA                         | A4                 |
-| SCL                         | A5                 |
+| ピン接続表                 |                      |
+|----------------------------|----------------------|
+| **LCDディスプレイ**のピン   | コントロールボードのピン |
+| GND                        | G(GND)               |
+| VCC                        | V(5V)                |
+| SDA                        | A4                   |
+| SCL                        | A5                   |
 
 ![](../media/8c306bd1b7399f0819f4a1c435177ec3.png)
 

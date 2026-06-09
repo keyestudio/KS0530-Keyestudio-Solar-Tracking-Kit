@@ -1,40 +1,40 @@
-## Lezione 3.1: Leggere il Segnale Digitale del Modulo Pulsante
+## レッスン 3.1: ボタンモジュールのデジタル信号を読み取る
 
-**(1)Descrizione**
+**(1)説明**
 
-In questo progetto, intendiamo utilizzare il modulo pulsante per controllare il LED.
+このプロジェクトでは、プッシュボタンモジュールを使ってLEDを制御します。
 
-**(2)Parametri:**
+**(2)パラメータ：**
 
-Tensione di lavoro：DC 3.3-5V
+動作電圧：DC 3.3-5V
 
-Segnale di controllo：segnale digitale
+制御信号：デジタル信号
 
-Dimensione：34mm
+サイズ：34mm
 
-Peso：3.8g
+重量：3.8g
 
-**(3)Materiale necessario:**
+**(3)準備するもの：**
 
-| Scheda di Controllo*1                           | Cavo USB*1                                     | Modulo LED Giallo*1                            | Cavo 3pin F-F 26AWG*2                          | Modulo Pulsante*1                              |
+| コントロールボード*1                             | USBケーブル*1                                  | イエローLEDモジュール*1                        | 3pin F-F 26AWG ワイヤー*2                      | プッシュボタンモジュール*1                      |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/628e402ae3fc455a2812705b17d7c30d.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) | ![](../media/6ba7e34f89af660ac90bb2552907ef3f.png) |
 
-**(4)Schema di Collegamento**
+**(4)接続図**
 
-| Tabella di Collegamento Pin |                      |
-|-----------------------------|----------------------|
-| Pin del **Pulsante**        | Pin della Scheda di Controllo |
-| G                           | G(GND)               |
-| V                           | V(5V)                |
-| S                           | D2                   |
+| ピン接続表              |                      |
+|-------------------------|----------------------|
+| **ボタン**のピン         | コントロールボードのピン |
+| G                       | G(GND)               |
+| V                       | V(5V)                |
+| S                       | D2                   |
 
-| Tabella di Collegamento Pin |                      |
-|-----------------------------|----------------------|
-| Pin del **LED**             | Pin della Scheda di Controllo |
-| G                           | G(GND)               |
-| V                           | V(5V)                |
-| S                           | D3                   |
+| ピン接続表             |                      |
+|------------------------|----------------------|
+| **LED**のピン           | コントロールボードのピン |
+| G                      | G(GND)               |
+| V                      | V(5V)                |
+| S                      | D3                   |
 
 ![](../media/024ba0bbd683bf28f7783c8645f488be.png)
 
@@ -44,10 +44,10 @@ Peso：3.8g
 
 ![](../media/9688c560b185edabcf17838af3353b36.png)
 
-**(5)Spiegazione del Codice:**
+**(5)コードの説明：**
 
-Serial.begin(9600) - inizializza la comunicazione seriale e imposta la velocità di trasmissione a 9600
+Serial.begin(9600) - シリアル通信を初期化し、ボーレートを9600に設定します
 
-pinMode(pin, INPUT) - usa la funzione pinMode() per indicare ad Arduino se il pin è di output o di input
+pinMode(pin, INPUT) - pinMode()関数を使って、Arduinoにピンが出力ピンか入力ピンかを指定します
 
-digitalRead(pin) - legge il livello digitale dei pin, può essere HIGH o LOW
+digitalRead(pin) - ピンのデジタルレベルを読み取り、HIGHかLOWかを判定します

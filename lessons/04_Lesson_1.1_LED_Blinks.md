@@ -1,31 +1,32 @@
-## Lezione 1.1: Lampeggio LED
+## レッスン 1.1: LEDの点滅
 
-**(1).Descrizione：**
+**(1).説明：**
 
 ![](../media/90f495d6deb8516c95dea36fb1efa019.jpeg)![](../media/2aeeeb61ad2a3110303b3108f4ba31e1.png)
 
-LED, abbreviazione di diodi a emissione luminosa, è composto da composti chimici come Ga, As, P, N, e così via. Il LED può lampeggiare in diversi colori modificando il tempo di ritardo nel codice di prova. Quando è sotto controllo, alimentando GND e VCC, il LED si accenderà se il terminale S è a livello alto; altrimenti si spegnerà.
+LED（発光ダイオード）はGa、As、P、Nなどの化合物で構成されています。テストコードの遅延時間を変えることで、LEDはさまざまな色で点滅させることができます。制御時には、GNDとVCCに電源を入れ、S端子が高レベルの場合はLEDが点灯し、そうでなければ消灯します。
 
 ![](../media/628e402ae3fc455a2812705b17d7c30d.png)
-**(2).Parametri：**
 
-Interfaccia di controllo: porta digitale
+**(2).パラメータ：**
 
-Tensione di lavoro: DC 3.3-5V
+制御インターフェース：デジタルポート
 
-Spaziatura pin: 2.54mm
+動作電圧：DC 3.3-5V
 
-Colore di visualizzazione LED: giallo
+ピン間隔：2.54mm
 
-**(3).Materiale necessario:**
+LED表示色：黄色
 
-| Scheda di controllo*1                                | Cavo USB*1                                    | Modulo LED giallo*1                            | Cavo 3pin F-F 26AWG                             |
-|-----------------------------------------------------|------------------------------------------------|------------------------------------------------|-------------------------------------------------|
+**(3).準備するもの：**
+
+| コントロールボード*1                             | USBケーブル*1                                  | 黄色LEDモジュール*1                            | 3ピン F-F 26AWG ワイヤー                         |
+|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/628e402ae3fc455a2812705b17d7c30d.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) |
 
-**(4).Schema di collegamento del modulo led：**
+**(4).LEDモジュールの接続図：**
 
-I pin -, + e S del modulo LED sono collegati rispettivamente ai pin G, 5V e D3 della scheda di controllo.
+LEDモジュールのピン -, +, S はコントロールボードのピン G, 5V, D3 ポートに接続します。
 
 ![](../media/045af155ff7b448adf0e819200ccef57.png)
 
@@ -33,12 +34,12 @@ I pin -, + e S del modulo LED sono collegati rispettivamente ai pin G, 5V e D3 d
 
 ![](../media/188b0bea1512ccc6a9b3e20ff8a9265d.png)
 
-**(5).Risultati del test:** Il LED lampeggia con un intervallo di 1s
+**(5).テスト結果：** LEDが1秒間隔で点滅します
 
 ![](../media/351380ab56f691b54869160828bc56d0.png)
 
-**(6).Spiegazione del codice:**
+**(6).コードの説明：**
 
-pinMode(LED，OUTPUT) - Questa funzione indica che il pin è configurato come INPUT o OUTPUT
+pinMode(LED，OUTPUT) - この関数はピンをINPUTまたはOUTPUTとして設定します
 
-digitalWrite(LED，HIGH) - Quando il pin è OUTPUT, possiamo impostarlo su HIGH (uscita 5V) o LOW (uscita 0V)
+digitalWrite(LED，HIGH) - ピンがOUTPUTの場合、HIGH（5V出力）またはLOW（0V出力）に設定できます

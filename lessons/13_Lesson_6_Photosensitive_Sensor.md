@@ -1,48 +1,48 @@
-## Lezione 6: Sensore Fotosensibile
+## レッスン6：光センサー
 
-**(1)Descrizione**
+**(1)説明**
 
-In questo kit ci sono quattro moduli sensore fotoresistore, sensori di luce ambientale, con fotoresistore come componente principale.
+このキットには4つのフォトレジスターセンサーモジュールが含まれており、環境光センサーとしてフォトレジスターを主な部品としています。
 
-La resistenza di un fotoresistore varia con l'intensità della luce. Quando c'è luce intorno, la sua resistenza varia tra 5-10KΩ; mentre quando è buio, la resistenza è solo 0.2MΩ. Basandosi su questa proprietà, è possibile costruire un circuito per convertire la variazione di resistenza in variazioni di tensione.
+フォトレジスターの抵抗値は光の強さによって変化します。周囲に光がある場合、その抵抗値は5〜10KΩの範囲ですが、暗い場合は抵抗値が0.2MΩ程度になります。この特性を利用して、抵抗の変化を電圧の変化に変換する回路を構築できます。
 
-Inoltre, il sensore è dotato di un terminale anti-inversione con passo di 2.54mm per facilitare il cablaggio. È anche compatibile con molti tipi di microcontrollori, come la serie di microcontrollori Arduino.
+さらに、このセンサーには配線を容易にするためにピッチ2.54mmの逆挿入防止端子が付いています。また、Arduinoマイクロコントローラーシリーズなど、多くの種類のマイクロコントローラーと互換性があります。
 
-Qui applichiamo questo sensore con il microcontrollore Arduino. Il terminale S (segnale) del sensore deve essere collegato al pin analogico di Arduino per rilevare la variazione del valore analogico che sarà stampato sul monitor seriale. Si noti inoltre che sul sensore sono presenti due fori di posizionamento con un diametro di 4.9mm per facilitarne il fissaggio.
+ここでは、このセンサーをArduinoマイクロコントローラーと組み合わせて使用します。センサーのS（信号）端子はArduinoのアナログピンに入力し、アナログ値の変化を検出してシリアルモニターに表示します。また、センサーには直径4.9mmの位置決め用穴が2つあり、固定に役立ちますのでご注意ください。
 
-**(2)Parametri:**
+**(2)パラメータ：**
 
-Tensione di lavoro：3.3V-5V（DC）
+動作電圧：3.3V-5V（DC）
 
-Interfaccia：3PIN
+インターフェース：3ピン
 
-Segnale di uscita：segnale analogico
+出力信号：アナログ信号
 
-Peso：2.3g
+重量：2.3g
 
 ![](../media/537af5b84f09fe71a4e1f6cbeabdfc81.png)
 
-**(3)Materiale necessario:**
+**(3)準備するもの：**
 
-| Scheda di controllo*1                           | Cavo USB*1                                    | Modulo LED Giallo*1                           | Filo DuPont 3pin*2                            | Modulo Pulsante*4                             |
+| コントロールボード*1                          | USBケーブル*1                                 | 黄LEDモジュール*1                             | 3ピンデュポン線*2                             | プッシュボタンモジュール*4                     |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/628e402ae3fc455a2812705b17d7c30d.png) | ![](../media/d57e6d40ae04a5be544cb6b4833a3e98.png) | ![](../media/537af5b84f09fe71a4e1f6cbeabdfc81.png) |
 
-**(4).Schema di collegamento:**
+**(4).接続図：**
 
-| Tabella di collegamento pin |                      |
-|-----------------------------|----------------------|
-| Pin del **Fotoresistore**   | Pin della scheda di controllo |
-| G                           | G(GND)               |
-| V                           | V(5V)                |
-| S                           | A0                   |
+| ピン接続表               |                      |
+|--------------------------|----------------------|
+| **フォトレジスター**のピン | コントロールボードのピン |
+| G                        | G(GND)               |
+| V                        | V(5V)                |
+| S                        | A0                   |
 
-| Tabella di collegamento pin |                      |
-|-----------------------------|----------------------|
-| Pin del **LED**             | Pin della scheda di controllo |
-| G                           | G(GND)               |
-| V                           | V(5V)                |
-| S                           | D3                   |
+| ピン接続表             |                      |
+|------------------------|----------------------|
+| **LED**のピン          | コントロールボードのピン |
+| G                      | G(GND)               |
+| V                      | V(5V)                |
+| S                      | D3                   |
 
 
 

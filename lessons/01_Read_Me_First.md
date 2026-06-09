@@ -1,54 +1,54 @@
-# Leggi Prima
+# はじめにお読みください
 
-Ecco cosa ti serve per far funzionare il kit di tracciamento solare:
+ソーラートラッキングキットを動かすために必要なものは以下の通りです：
 
-1) Librerie
+1) ライブラリ
 
-2) Codice
+2) コード
 
-3) Manuale.pdf
+3) Manual.pdf
 
-4) Risoluzione dei problemi.pdf
+4) Troubleshooting.pdf
 
-I file sopra possono essere scaricati da qui:
+上記のファイルは以下からダウンロードできます：
 
 [https://fs.keyestudio.com/KS0530](https://fs.keyestudio.com/KS0530)
 
-5) Batterie 18650 e un caricabatterie (da procurarsi autonomamente)
+5) 18650バッテリーと充電器（ご自身でご用意ください）
 
 ![](../media/a073b35e565bb6f3c29ec114dc467e6b.png)
 
-I seguenti parametri sono disponibili per l'acquisto：
+以下の仕様のものを購入可能です：
 
-| Specifiche          |                 |
+| 仕様                 |                 |
 |---------------------|-----------------|
-| Dimensione          | 18650           |
-| Terminale positivo: | Con una sommità |
-| Capacità            | >2200mAh        |
-| Tensione nominale   | 3.7V            |
-| Tensione massima    | 4.2V            |
-| Ricaricabile        | Sì              |
-| Dimensioni appross. | 18.5mm x 65.2mm |
-| Peso                | circa 45g       |
+| サイズ               | 18650           |
+| 正極端子：           | トップ付き      |
+| 容量                 | >2200mAh       |
+| 公称電圧             | 3.7V            |
+| 最大電圧             | 4.2V            |
+| 充電可能             | はい            |
+| おおよその寸法       | 18.5mm x 65.2mm |
+| 重量                 | 約45g           |
 
-Supporto
+サポート
 
-KEYESTUDIO fornisce supporto tecnico gratuito e rapido, che include ma non si limita a:
+KEYESTUDIOは無料かつ迅速な技術サポートを提供しており、内容は以下に限定されません：
 
-1) Problemi di qualità del prodotto
+1) 製品の品質問題
 
-2) Problemi riscontrati durante l'uso del prodotto
+2) 製品使用中に発生した問題
 
-3) Commenti e suggerimenti
+3) コメントや提案
 
-4) I tuoi progetti e idee
+4) あなたのプロジェクトやアイデア
 
-Se trovi un errore tecnico o confuso in un documento o file, saremmo grati se potessi segnalarcelo.
+もしドキュメントやファイルに技術的または混乱を招く誤りを見つけた場合は、ご報告いただけると幸いです。
 
-Per favore invia una email a:
+メール送信先：
 
 Amazon: service@keyestudio.com
 
 AliExpress: tivon@keyestudio.com
 
-Altri canali: sunny@keyestudio.com
+その他のチャネル: sunny@keyestudio.com

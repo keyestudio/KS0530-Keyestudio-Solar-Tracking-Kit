@@ -1,35 +1,35 @@
-## Lezione 7: Sensore di Temperatura e Umidità DHT11
+## レッスン7: DHT11 温度・湿度センサー
 
 ![](../media/569a9b768ff44fd8a88841c4515cca9d.png)
 
 
-**(1)Descrizione:**
+**(1)説明:**
 
-Questo sensore di temperatura e umidità DHT11 è un sensore composito che contiene un'uscita digitale calibrata del segnale di temperatura e umidità.
+このDHT11温度・湿度センサーは、温度と湿度の校正済みデジタル信号出力を含む複合センサーです。
 
-Il sensore di temperatura e umidità DHT11 utilizza la tecnologia di acquisizione del modulo digitale e la tecnologia di rilevamento della temperatura e umidità, garantendo alta affidabilità e un'eccellente stabilità a lungo termine.
+DHT11温度・湿度センサーはデジタルモジュールの取得技術と温度・湿度検知技術を使用しており、高い信頼性と優れた長期安定性を確保しています。
 
-Include un elemento resistivo e un dispositivo di misurazione della temperatura NTC.
+抵抗素子とNTC温度測定装置を含みます。
 
-**(2)Parametri：**
+**(2)パラメータ：**
 
-Tensione di lavoro: **+5 V**
+動作電圧: **+5 V**
 
-Temperatura di lavoro: 0-50 ℃ errore di ± 2 ℃
+動作温度: 0-50 ℃ ± 2 ℃の誤差
 
-Umidità: 20-90% RH ± 5% RH errore
+湿度: 20-90% RH ± 5% RHの誤差
 
-Interfaccia: porta digitale
+インターフェース: デジタルポート
 
-**(3).Occorrente:**
+**(3).準備するもの:**
 
-| Scheda di Controllo*1                                | Cavo USB*1                                    | Sensore DHT11*1                                        | Cavo DuPont a 3 pin                                |
+| コントロールボード*1                                | USBケーブル*1                                    | DHT11センサー*1                                        | 3ピンデュポンワイヤー                                |
 |-------------------------------------------------|-------------------------------------------------|--------------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/569a9b768ff44fd8a88841c4515cca9d.png) | ![](../media/1bd35f503278636f76403a931f5dc61a.png) |
 
-**(4)Schema di Collegamento**
+**(4)接続図**
 
-I pin G, V e S del Sensore DHT11*1 sono collegati a G, V e D7 della scheda di controllo.
+DHT11センサー*1のG、V、SピンをコントロールボードのG、V、D7に接続します。
 
 ![](../media/8beddf04e8c9ee1c94c91b225328036e.png)
 

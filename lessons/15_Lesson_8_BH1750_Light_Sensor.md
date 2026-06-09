@@ -1,46 +1,36 @@
-## Lezione 8: Modulo Digitale di Intensità Luminosa BH1750
+## レッスン8: BH1750 デジタル光強度モジュール
 
-**(1)Descrizione:**
+**(1)説明:**
 
 ![](../media/53ab41d84e93814e57076a8cc25e1aa7.png)
 
-Il componente principale di questo sensore è il chip BH1750FVI, che è un chip integrato per l'intensità luminosa digitale.
+このセンサーの主なコンポーネントは、デジタル光強度用の集積チップであるBH1750FVIです。
 
-Come mostrato nell'immagine sottostante, BH1750 è composto da un fotodiodo, un amplificatore operazionale, un acquisitore ADC, un oscillatore al quarzo, ecc. Il fotodiodo converte il segnale ottico in ingresso in un segnale elettrico tramite l'effetto fotovoltaico. Dopo essere stato amplificato dal circuito amplificatore operazionale, la tensione viene acquisita dall'ADC, quindi convertita in un numero binario a 16 bit tramite il circuito logico e memorizzata nel registro interno (Nota: più forte è la luce, maggiore è la fotocorrente e maggiore è la tensione, quindi l'intensità della luce può essere giudicata dal valore della tensione.
+下の図に示すように、BH1750はフォトダイオード、オペアンプ、ADC取得、クリスタルオシレーターなどで構成されています。フォトダイオードは光起電効果により入力された光信号を電気信号に変換します。オペアンプ回路で増幅された後、電圧はADCによって収集され、論理回路を通じて16ビットの2進数に変換され、内部レジスタに格納されます（注：光が強いほど光電流が大きくなり、電圧も大きくなるため、電圧の値で光の強さを判断できます）。
 
-Tuttavia, va notato che la tensione e l'intensità luminosa sono in corrispondenza uno a uno, ma non proporzionali. Per questo motivo viene effettuata una elaborazione lineare su questo chip ed è per questo che si utilizza direttamente il circuito integrato invece dei fotodiodi). BH1750 porta fuori la linea di clock e la linea dati. Il microcontrollore può comunicare con il modulo BH1750 tramite il protocollo I2C. È possibile scegliere la modalità di funzionamento del BH1750 oppure estrarre i dati di illuminamento dal registro BH1750.
+ただし、電圧と光強度は一対一の対応関係にありますが、比例関係ではありません。これがこのチップで線形処理が行われる理由であり、フォトダイオードの代わりに集積ICが直接使用される理由です）。BH1750はクロック線とデータ線を引き出しています。マイコンはI2Cプロトコルを通じてBH1750モジュールと通信できます。BH1750の動作モードを選択したり、BH1750レジスタの照度データを取得したりできます。
 
-**(2)Parametri:**
+**(2)パラメータ:**
 
-Interfaccia digitale I2C, supporta una velocità massima di 400Kbps
+- I2Cデジタルインターフェース、最大通信速度400Kbps対応
+- 出力は照度
+- 測定範囲は1〜65535ルクス、最小分解能は1ルクス
+- 低消費電力（パワーダウン）機能
+- 50/60Hzの電源周波数による光変化の干渉を遮断
+- ADDRピンで選択可能な2つのI2Cアドレスをサポート
+- 小さな測定誤差（最大精度誤差±20%）
+- GND 電源グランド
+- SDA I2Cバスデータピン
+- SCL I2Cバスクロックピン
+- VCC 電源電圧3-5V
 
-L'uscita è Illuminamento
+**(3)準備するもの:**
 
-Gamma di misura da 1 a 65535 lux, la risoluzione minima è 1 lux
-
-Basso consumo energetico (funzione Power down)
-
-Filtra le interferenze dovute ai cambiamenti di luce causati dalla frequenza di rete a 50/60Hz
-
-Supporta due indirizzi I2C, selezionati dal pin ADDR
-
-Piccola deviazione di misura (errore massimo di precisione +/-20%)
-
-GND massa di alimentazione
-
-SDA pin dati bus I2C
-
-SCL pin clock bus I2C
-
-VCC tensione di alimentazione 3-5V
-
-**(3)Occorrente:**
-
-| Scheda di Controllo*1                          | Cavo USB*1                                    | Sensore BH1750FVI*1                            | Cavo 4pin F-F 350mm                            |
+| コントロールボード*1                             | USBケーブル*1                                  | BH1750FVIセンサー*1                            | 350mm 4ピンF-Fワイヤ                             |
 |-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![](../media/60cb7081df16f5d5169b0883a6fbf3df.png) | ![](../media/4f8d5af6dee9016b45d975adb2391d37.png) | ![](../media/53ab41d84e93814e57076a8cc25e1aa7.png) | ![](../media/626e88c46a8a1385bd0558610a17ca9f.png) |
 
-**(4)Schema di Collegamento:**
+**(4)接続図:**
 
 ![](../media/d7fccd89d5bed291ccce34babfbf5c91.png)
 
@@ -50,4 +40,4 @@ VCC tensione di alimentazione 3-5V
 
 ![](../media/92857c7b8c368330acb6630e39bd462c.png)
 
-(**Nota**: poiché il bus I2C può avere più dispositivi con indirizzi diversi, quando il modulo digitale di intensità luminosa viene usato insieme al modulo I2C LCD1602, non c'è conflitto perché hanno indirizzi differenti.)
+(**注意**: I2Cバスは異なるアドレスを持つ複数のデバイスを接続可能なため、デジタル光強度モジュールをI2C LCD1602モジュールと一緒に使用しても、アドレスが異なるため競合は発生しません。)

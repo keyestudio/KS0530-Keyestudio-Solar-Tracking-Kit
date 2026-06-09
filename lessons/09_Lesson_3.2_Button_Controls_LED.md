@@ -1,6 +1,6 @@
-## Lezione 3.2: Controllare il LED tramite il Modulo Pulsante
+## レッスン 3.2: ボタンモジュールでLEDを制御する
 
-**>>>>>>>>Questa lezione è un'espansione della Lezione 3.1**
+**>>>>>>>>このレッスンはレッスン 3.1 の拡張です**
 
 ![](../media/de673b32096aea19dd3aa94849b526f6.png)![3.2](../media/283cef6be70411c7ba729daab8b78cc8.png)
 

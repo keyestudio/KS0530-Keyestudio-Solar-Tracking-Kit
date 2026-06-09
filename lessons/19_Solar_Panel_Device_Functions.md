@@ -1,31 +1,31 @@
-# 5.Dispositivo Pannello Solare con Funzioni Multiple
+# 5. 多機能ソーラーパネルデバイス
 
-Il dispositivo pannello solare assemblato è pronto!
+組み立てられたソーラーパネルデバイスが完成しました！
 
-Nelle lezioni precedenti, abbiamo studiato solo la funzione e il principio di funzionamento di una certa parte elettronica singolarmente, e testato se può funzionare normalmente.
+これまでのレッスンでは、特定の電子部品の機能や動作原理を個別に学び、それが正常に動作するかどうかをテストしました。
 
-Ora li abbiamo fatti lavorare insieme per costruire un dispositivo pannello solare con più funzioni.
+今回は、それらを組み合わせて多機能ソーラーパネルデバイスを構築します。
 
-Mantieni la batteria 18650 sufficientemente carica poiché sarà necessaria per alimentare due servomotori, un display LCD, quattro sensori di luce, un sensore DHT11 e un modulo pulsante.
+18650バッテリーは十分に充電しておいてください。2つのサーボ、LCDディスプレイ、4つの光センサー、DHT11センサー、ボタンモジュールに電力を供給するために必要です。
 
 ![](../media/f4b78ac6371097b2e32409c226873651.png)
 
 ![](../media/94d386c19c8b95904852ee2a11a4f272.png)
 
-Dopo che il codice è stato caricato con successo, accendi l'interruttore di alimentazione del modulo di ricarica e premi l'interruttore di alimentazione della scheda di controllo a 5V.
+コードが正常にアップロードされたら、充電モジュールの電源スイッチをオンにし、制御ボードの電源スイッチを5Vに切り替えます。
 
 ![](../media/edc80fe0bd7a1cce69bd760ab5d247bc.png)![](../media/67fc5cb5b7eabda71fcb2296a8def597.png)
 
-Il servomotore ruoterà all'angolo iniziale. Quando il sensore di luce ambientale rileva variazioni nell'intensità luminosa, i servomotori ruotano il pannello solare nella posizione dove la luce è più intensa e l'LCD1602 mostra il valore dell'intensità luminosa e della temperatura e umidità rilevati rispettivamente dal BH1750 e dal DHT11.
+サーボは初期角度に回転します。周囲の光センサーが光の強度の変化を検知すると、サーボはソーラーパネルを最も光が強い位置に回転させ、LCD1602にはBH1750とDHT11がそれぞれ検出した光強度と温湿度の値が表示されます。
 
-Se ritieni che il pannello solare ruoti troppo lentamente o che il pannello solare tremi, puoi regolare la velocità di rotazione del servomotore tramite il modulo pulsante.
+もしソーラーパネルの回転が遅すぎる、またはパネルが揺れると感じた場合は、ボタンモジュールを使ってサーボの回転速度を調整できます。
 
-Ad esempio, entro il tempo specificato, il servomotore ruota di 1° ogni volta. Dopo aver premuto il pulsante, il servomotore ruoterà di 2° ogni volta nello stesso intervallo di tempo.
+例えば、指定された時間内にサーボが1°ずつ回転している場合、ボタンを押すと同じ時間内に2°ずつ回転するようになります。
 
-Premilo di nuovo e il servomotore ruoterà di 3° ogni volta nello stesso intervallo di tempo. Per analogia, il servomotore può essere regolato per ruotare fino a 5° ogni volta nello stesso intervallo di tempo.
+さらに押すと同じ時間内に3°ずつ回転し、同様に最大で5°ずつ回転するように調整可能です。
 
 **“byte resolution = 1”**
 
-Puoi regolare la risoluzione per cambiare l'angolo di rotazione del servomotore. Premi il pulsante per cambiare la risoluzione da 1° a 5°. Puoi anche modificare `byte m_speed = 10` per impostare il tempo di ritardo e regolare la velocità del servomotore; più lungo è il tempo, più bassa è la velocità.
+解像度を調整してサーボの回転角度を変更できます。ボタンを押して解像度を1°から5°に変更します。また、`byte m_speed = 10`を変更して遅延時間を設定し、サーボの速度を調整できます。時間が長いほど速度は遅くなります。
 
 ![](../media/55bbbb88c4e18c1b90ce588fa76d0e3d.png)
