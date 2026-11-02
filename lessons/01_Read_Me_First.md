@@ -10,9 +10,7 @@ Voici ce dont vous avez besoin pour faire fonctionner le kit de suivi solaire :
 
 4) Dépannage.pdf
 
-Les fichiers ci-dessus peuvent être téléchargés ici :
-
-[https://fs.keyestudio.com/KS0530](https://fs.keyestudio.com/KS0530)
+[Les fichiers ci-dessus peuvent être téléchargés ici](./Codes_Libraries.7z)
 
 5) Une batterie 18650 et un chargeur (à préparer vous-même)
 
