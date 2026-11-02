@@ -10,9 +10,7 @@ Dit heb je nodig om de zonnevolgkit te gebruiken:
 
 4) Troubleshooting.pdf
 
-De bovenstaande bestanden kunnen hier worden gedownload:
-
-[https://fs.keyestudio.com/KS0530](https://fs.keyestudio.com/KS0530)
+[De bovenstaande bestanden kunnen hier worden gedownload](./Codes_Libraries.7z)
 
 5) Een 18650 batterij en een oplader (deze moet je zelf voorbereiden)
 
