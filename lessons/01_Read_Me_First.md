@@ -10,9 +10,7 @@
 
 4) Troubleshooting.pdf
 
-上記のファイルは以下からダウンロードできます：
-
-[https://fs.keyestudio.com/KS0530](https://fs.keyestudio.com/KS0530)
+[上記のファイルは以下からダウンロードできます](./Codes_Libraries.7z)
 
 5) 18650バッテリーと充電器（ご自身でご用意ください）
 
