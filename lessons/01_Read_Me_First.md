@@ -10,9 +10,7 @@ Ecco cosa ti serve per far funzionare il kit di tracciamento solare:
 
 4) Risoluzione dei problemi.pdf
 
-I file sopra possono essere scaricati da qui:
-
-[https://fs.keyestudio.com/KS0530](https://fs.keyestudio.com/KS0530)
+[I file sopra possono essere scaricati da qui](./Codes_Libraries.7z)
 
 5) Batterie 18650 e un caricabatterie (da procurarsi autonomamente)
 
