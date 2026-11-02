@@ -10,7 +10,7 @@ Here's what you need to run the solar tracking kit:
 
 4)Troubleshooting.pdf
 
-[The above files can be downloaded from here:](./Codes_Libraries.7z)
+[The above files can be downloaded from here.](./Codes_Libraries.7z)
 
 5)A 18650 Batteries and a charger(you need to prepare yourself)
 
