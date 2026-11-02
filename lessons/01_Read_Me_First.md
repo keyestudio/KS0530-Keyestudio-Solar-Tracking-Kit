@@ -10,9 +10,7 @@ Esto es lo que necesitas para usar el kit de seguimiento solar:
 
 4) Troubleshooting.pdf
 
-Los archivos anteriores se pueden descargar aquí:
-
-[https://fs.keyestudio.com/KS0530](https://fs.keyestudio.com/KS0530)
+[Los archivos anteriores se pueden descargar aquí](./Codes_Libraries.7z)
 
 5) Una batería 18650 y un cargador (debes prepararlos tú mismo)
 
