@@ -10,9 +10,7 @@ Hier ist, was Sie benötigen, um das Solar-Tracking-Kit zu betreiben:
 
 4) Troubleshooting.pdf
 
-Die oben genannten Dateien können hier heruntergeladen werden:
-
-[https://fs.keyestudio.com/KS0530](https://fs.keyestudio.com/KS0530)
+[Die oben genannten Dateien können hier heruntergeladen werden](./Codes_Libraries.7z)
 
 5) Eine 18650 Batterie und ein Ladegerät (müssen selbst bereitgestellt werden)
 
